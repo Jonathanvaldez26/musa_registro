@@ -22,9 +22,9 @@ class Register{
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon.png">
-        <link rel="icon" type="image/vnd.microsoft.icon" href="/assets/img/favicon.png">
+        <link rel="icon" type="image/vnd.microsoft.icon" href="../../../assets/img/Musa0-01.png">
         <title>
-            Registro Conave
+            Registro - MUSA
         </title>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
         <!-- Nucleo Icons -->
@@ -205,7 +205,7 @@ html;
         <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon.png">
         <link rel="icon" type="image/vnd.microsoft.icon" href="/assets/img/favicon.png">
         <title>
-            Registro Conave
+            Regitro - MUSA
         </title>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
         <!-- Nucleo Icons -->
@@ -353,7 +353,7 @@ html;
         <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon.png">
         <link rel="icon" type="image/vnd.microsoft.icon" href="/assets/img/favicon.png">
         <title>
-            Registro Conave
+            Regitro - MUSA
         </title>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
         <!-- Nucleo Icons -->
@@ -499,7 +499,7 @@ html;
             <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon.png">
             <link rel="icon" type="image/vnd.microsoft.icon" href="/assets/img/favicon.png">
             <title>
-                Registro Conave
+                Regitro - MUSA
             </title>
             <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
             <!-- Nucleo Icons -->
@@ -714,7 +714,7 @@ html;
         <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon.png">
         <link rel="icon" type="image/vnd.microsoft.icon" href="/assets/img/favicon.png">
         <title>
-            Registro Conave
+            Regitro - MUSA
         </title>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
         <!-- Nucleo Icons -->
@@ -895,7 +895,7 @@ html;
         <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon.png">
         <link rel="icon" type="image/vnd.microsoft.icon" href="/assets/img/favicon.png">
         <title>
-            Registro Conave
+            Regitro - MUSA
         </title>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
         <!-- Nucleo Icons -->

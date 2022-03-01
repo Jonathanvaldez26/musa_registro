@@ -4,13 +4,13 @@ echo $header;
     <script src="/backend/public/assets/js/plugins/choices.min.js"></script>
     <body class="">
     <main class="main-content mt-0 ps">
-        <div class="page-header align-items-start min-vh-50 pt-5 pb-11 m-3 border-radius-lg" style="background-image: url('../../../assets/img/curved-images/curved.jpg');">
+        <div class="page-header align-items-start min-vh-50 pt-5 pb-11 m-3 border-radius-lg" style="background-image: url('../../../assets/img/curved-images/musa (2).jpeg');">
             <span class="mask bg-gradient-dark opacity-6"></span>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-5 text-center mx-auto">
                         <h1 class="text-white mb-2 mt-5">¡Bienvenido!</h1>
-                        <p class="text-lead text-white">Convención Nacional CONAVE 2022, Crece sin Límites. </p>
+                        <p class="text-lead text-white">Convención Nacional MUSA 2022, Mujer Salud. </p>
                     </div>
                 </div>
             </div>

@@ -14,9 +14,9 @@ class Login{
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon.ico">
-        <link rel="icon" type="image/vnd.microsoft.icon" href="/assets//img/favicon.ico">
+        <link rel="icon" type="image/vnd.microsoft.icon" href="../../../assets/img/Musa0-01.png">
         <title>
-           CONAVE Register
+           Login - MUSA
         </title>
         <!--     Fonts and icons     -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />

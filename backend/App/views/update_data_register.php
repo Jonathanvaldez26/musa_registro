@@ -5,13 +5,13 @@ echo $header;
 
 <body class="">
     <main class="main-content mt-0 ps">
-        <div class="page-header align-items-start min-vh-50 pt-5 pb-11 m-3 border-radius-lg" style="background-image: url('../../../assets/img/curved-images/curved9.jpg');">
-            <span class="mask bg-gradient-dark opacity-6"></span>
+        <div class="page-header align-items-start min-vh-50 pt-5 pb-11 m-3 border-radius-lg" style="background-image: url('../../../assets/img/curved-images/musa (1).jpeg');">
+            <span class="mask bg-gradient-dark opacity-1"></span>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-5 text-center mx-auto">
-                        <h1 class="text-white mb-2 mt-5">¡Bienvenido!</h1>
-                        <p class="text-lead text-white">Convención Nacional CONAVE 2022, Creciendo 5in Límites. </p>
+                        <h1 class="text-dark mb-2 mt-5">¡Bienvenido!</h1>
+                        <p class="text-lead text-dark">Convención Nacional MUSA 2022, Mujer Salud. </p>
                     </div>
                 </div>
             </div>
@@ -62,7 +62,7 @@ echo $header;
                                     <div class="col-sm-4 col-12">
                                         <label class="form-label mt-4">Me identifico como: *</label>
                                         <select class="form-control" style="cursor: pointer;" name="genero" id="genero" placeholder="Genero">
-                                            <option value="">Selecciona una opción</option>
+                                            <option value="" selected disabled>Selecciona una opción</option>
                                             <!-- <option value="Mujer">Mujer</option>
                                             <option value="Otro">Otro</option> -->
                                             <?php echo $optionsGenero; ?>
@@ -79,39 +79,39 @@ echo $header;
 
                                     </div>
                                     <div class="row">
-                                        <div class="col-lg-5 col-12">
+                                        <div class="col-lg-7 col-12">
                                             <label class="form-label mt-4">Email Rregistrado y Verificado</label>
                                             <div class="input-group">
-                                                <input id="email" name="email" maxlength="49" class="form-control" type="email" placeholder="example@email.com" onfocus="focused(this)" onfocusout="defocused(this)" value="<?= $userData['email'] ?>" readonly>
+                                                <input id="email" name="email" maxlength="49" class="form-control" type="email" placeholder="example@email.com" onfocus="focused(this)" onfocusout="defocused(this)" value="<?= $userData['email'] ?>">
                                             </div>
                                         </div>
-                                        <div class="col-lg-3 col-12">
+                                        <div class="col-lg-5 col-12">
                                             <label class="form-label mt-4">Número de Telefono</label>
                                             <div class="input-group">
                                                 <input id="telefono" name="telefono" maxlength="10" pattern="[0-9]" class="form-control" type="number" placeholder="+40 735 631 620" onfocus="focused(this)" onfocusout="defocused(this)" value="<?= $userData['telefono'] ?>">
                                             </div>
                                         </div>
-                                        <div class="col-md-4 align-self-center">
+                                        <!-- <div class="col-md-4 align-self-center">
                                             <label class="form-label mt-4">Pertenezco a la Línea ASOFARMA</label>
                                             <select class="form-control" style="cursor: pointer;" name="linea_principal" id="linea_principal" tabindex="-1" data-choice="active" disabled>
-                                                <option value="" disabled>Selecciona una opción</option>
+                                                <option value="" selected disabled>Selecciona una opción</option>
                                                 <?php echo $optionsLineaPrincipal; ?>
                                             </select>
-                                        </div>
+                                        </div> -->
                                     </div>
                                     <div class="row">
                                         <div class="col-md-3 align-self-center">
                                             <label class="form-label mt-4">Actividad: </label>
-                                            <select class="form-control" style="cursor: pointer;" name="actividad" id="actividad" tabindex="-1" data-choice="active" required disabled>
-                                                <option value disabled>Selecciona una opción</option>
+                                            <select class="form-control" style="cursor: pointer;" name="actividad" id="actividad" tabindex="-1" data-choice="active" required>
+                                                <option value="" selected disabled>Selecciona una opción</option>
                                                 <option value="caminata_3k">Caminata 3k</option>
                                                 <option value="carrera_5k">Carrera 5k</option>
                                             </select>
                                         </div>
                                         <div class="col-md-3 align-self-center">
                                             <label class="form-label mt-4">Talla de Playera</label>
-                                            <select class="form-control" style="cursor: pointer;" required="true" name="talla_playera" id="talla_playera" tabindex="-1" data-choice="active" readonly disabled>
-                                                <option value="" disabled>Seleccione una Talla</option>
+                                            <select class="form-control" style="cursor: pointer;" required="true" name="talla_playera" id="talla_playera" tabindex="-1" data-choice="active">
+                                                <option value="" selected disabled>Seleccione una Talla</option>
                                                 <option value="Chica">Chica</option>
                                                 <option value="Mediana">Mediana</option>
                                                 <option value="Grande">Grande</option>

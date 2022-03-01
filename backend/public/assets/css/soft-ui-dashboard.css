@@ -36112,6 +36112,10 @@ ul li.editMode label {
   position: absolute;
 }
 
+.bg-gradient-faded-musa {
+    background-image: radial-gradient(470px at 80% 50%, rgb(0, 222, 191) 0px, rgba(98, 57, 246, 0.86) 100%);
+}
+
 /* control positioning */
 .leaflet-control {
   position: relative;

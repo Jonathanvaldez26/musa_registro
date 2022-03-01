@@ -163,14 +163,14 @@
             <div class="col-xl-5 ms-auto mt-xl-0 mt-4">
                 <div class="row">
                     <div class="col-12">
-                        <div class="card bg-gradient-faded-dark">
+                        <div class="card bg-gradient-faded-musa">
                             <div class="card-body p-3">
                                 <div class="row">
                                     <div class="col-8 my-auto">
                                         <div class="numbers">
-                                            <p class="text-white text-sm mb-0 text-capitalize font-weight-bold opacity-7">Crecer 5in Límites</p>
+                                            <p class="text-white text-sm mb-0 text-capitalize font-weight-bold opacity-9">Convención Nacional MUSA 2022, Mujer Salud.</p>
                                             <h5 class="text-white font-weight-bolder mb-0">
-                                                CONAVE 2022
+                                                MUSA
                                             </h5>
                                         </div>
                                     </div>
