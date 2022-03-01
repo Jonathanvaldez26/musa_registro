@@ -183,9 +183,11 @@
                     <div class="col-md-6 mt-md-0 mt-4">
                         <div class="card">
                             <div class="card-body text-center">
-                                <div class="col-12 text-end">
-                                    <img class="w-30" src="../../assets/img/icons/iCONOS-03.png">
+                                <div class="col-12 text-center">
+                                    <img class="w-30 btn-img-home" src="../../assets/img/icons/iCONOS-03.png">
+                                    <br>
                                 </div>
+                                <br>
                                 <h6 class="mb-0 font-weight-bolder"><a href="/Account/">Datos Personales</a></h6>
                                 <p class="opacity-8 mb-0 text-sm">Disponible <i class="fa fa-check-circle me-sm-0" style="color: #01a31c"></i></p>
                             </div>
@@ -194,9 +196,11 @@
                     <div class="col-md-6 mt-md-0 mt-4">
                         <div class="card">
                             <div class="card-body text-center">
-                                <div class="col-12 text-end">
-                                    <img class="w-30" src="../../assets/img/icons/iCONOS-03.png">
+                                <div class="col-12 text-center">
+                                    <img class="w-30 btn-img-home" src="../../assets/img/icons/iCONOS-02.png">
+                                    <br>
                                 </div>
+                                <br>
                                 <h6 class="mb-0 font-weight-bolder"><a href="/Vaccination/">Comprobantes Vacuna</a></h6>
                                 <p class="opacity-8 mb-0 text-sm">Disponible <i class="fa fa-check-circle me-sm-0" style="color: #01a31c"></i></p>
                             </div>
@@ -207,9 +211,11 @@
                     <div class="col-md-6">
                         <div class="card">
                             <div class="card-body text-center">
-                                <div class="col-12 text-end">
-                                    <img class="w-30" src="../../assets/img/icons/iCONOS_Mesa de trabajo 1.png">
+                                <div class="col-12 text-center">
+                                    <img class="w-30 btn-img-home" src="../../assets/img/icons/iCONOS_Mesa de trabajo 1.png">
+                                    <br>
                                 </div>
+                                <br>
                                 <h6 class="mb-0 font-weight-bolder"><a href="/Covid/">Mis Pruebas Covid</a></h6>
                                 <p class="opacity-8 mb-0 text-sm">Disponible <i class="fa fa-clock me-sm-0" style="color: #8a6d3b"></i></p>
                             </div>
@@ -218,9 +224,11 @@
                     <div class="col-md-6 mt-md-0 mt-4">
                         <div class="card">
                             <div class="card-body text-center">
-                                <div class="col-12 text-end">
-                                    <img class="w-30" src="../../assets/img/icons/iCONOS-05.png">
+                                <div class="col-12 text-center">
+                                    <img class="w-30 btn-img-home" src="../../assets/img/icons/iCONOS-05.png">
+                                    <br>
                                 </div>
+                                <br>
                                 <h6 class="mb-0 font-weight-bolder"><a href="/Passes/">Pases de Abordar</a></h6>
                                 <p class="opacity-8 mb-0 text-sm">Disponible <i class="fa fa-check-circle me-sm-0" style="color: #01a31c"></i></p>
                             </div>
@@ -231,9 +239,11 @@
                     <div class="col-md-6">
                         <div class="card">
                             <div class="card-body text-center">
-                                <div class="col-12 text-end">
-                                    <img class="w-30" src="../../assets/img/icons/iCONOS-05.png">
+                                <div class="col-12 text-center">
+                                    <img class="w-30 btn-img-home" src="../../assets/img/icons/iCONOS-05.png">
+                                    <br>
                                 </div>
+                                <br>
                                 <h6 class="mb-0 font-weight-bolder"><a href="/VirtualTicket/">Mi boleto Virtual</a></h6>
                                 <p class="opacity-8 mb-0 text-sm">A un click tus asistencias</p>
                             </div>
@@ -242,9 +252,11 @@
                     <div class="col-md-6 mt-md-0 mt-4">
                         <div class="card">
                             <div class="card-body text-center">
-                                <div class="col-12 text-end">
-                                    <img class="w-30" src="../../assets/img/icons/iCONOS-04.png">
+                                <div class="col-12 text-center">
+                                    <img class="w-30 btn-img-home" src="../../assets/img/icons/iCONOS-04.png">
+                                    <br>
                                 </div>
+                                <br>
                                 <h6 class="mb-0 font-weight-bolder"><a href="/Dinners/">Cenas</a></h6>
                                 <p class="opacity-8 mb-0 text-sm">Reserva y disfruta</p>
                             </div>
@@ -255,9 +267,11 @@
                     <div class="col-md-6">
                         <div class="card">
                             <div class="card-body text-center">
-                                <div class="col-12 text-end">
-                                    <img class="w-30" src="../../assets/img/icons/iCONOS-06.png">
+                                <div class="col-12 text-center">
+                                    <img class="w-30 btn-img-home" src="../../assets/img/icons/iCONOS-06.png">
+                                    <br>
                                 </div>
+                                <br>
                                 <h6 class="mb-0 font-weight-bolder"><a type="button" data-toggle="modal" data-target="#ver-pickup">PICK UP</a></h6>
                                 <p class="opacity-8 mb-0 text-sm">A un click tus asistencias</p>
                             </div>
@@ -266,9 +280,11 @@
                     <div class="col-md-6 mt-md-0 mt-4">
                         <div class="card">
                             <div class="card-body text-center">
-                                <div class="col-12 text-end">
-                                    <img class="w-30" src="../../assets/img/icons/iCONOS-07.png">
+                                <div class="col-12 text-center">
+                                    <img class="w-30 btn-img-home" src="../../assets/img/icons/iCONOS-07.png">
+                                    <br>
                                 </div>
+                                <br>
                                 <h6 class="mb-0 font-weight-bolder"><a href="/News/">NOTIASOFARMA</a></h6>
                                 <p class="opacity-8 mb-0 text-sm">A un click</p>
                             </div>
