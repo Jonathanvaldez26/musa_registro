@@ -10,7 +10,7 @@ echo $header;
                 <div class="row justify-content-center">
                     <div class="col-lg-5 text-center mx-auto">
                         <h1 class="text-white mb-2 mt-5">¡Bienvenido!</h1>
-                        <p class="text-lead text-white">Convención Nacional CONAVE 2022, Creciendo 5in Límites. </p>
+                        <p class="text-lead text-white">Convención Nacional MUSA 2022, Mujer Salud. </p>
                     </div>
                 </div>
             </div>
@@ -23,7 +23,7 @@ echo $header;
                             
                                 <div class="card-body px-lg-2 py-lg-2 text-center">
                                         <div class="info mb-2">
-                                            <div class="icon icon-shape icon-xl rounded-circle bg-gradient-danger shadow text-center py-3 mx-auto">
+                                            <div class="icon icon-shape icon-xl rounded-circle bg-gradient-danger shadow text-center py-3 mx-auto" style="background: #DBBEDF; color: #6238F6;">
                                                 <svg class="mt-3" width="40px" height="35px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                                     <title>spaceship</title>
                                                     <g id="Basic-Elements" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -46,7 +46,7 @@ echo $header;
                                             <?php echo $alerta; ?>
                                             <h5>Ingresa tu código de verificación</h5>
                                             
-                                            <span class="text-muted text-sm">Recibiste un código de verificación de identidad en tu cuenta de correo electrónico institucional, introdúcelo a continuación. </span>
+                                            <span class="text-muted text-sm">Recibiste un código de verificación de identidad en tu cuenta de correo electrónico, introdúcelo a continuación. </span>
 
                                         </div>
                                         <form class="form-horizontal" id="code_form" action="/Register/Data" method="POST">
@@ -76,7 +76,7 @@ echo $header;
                                                 </div>
                                             </div>
                                             <div class="text-center">
-                                                <button class="btn btn-outline-danger w-100 my-0 mb-2 ms-auto" type="submit" id="btn_registro_email">Verifica tu Código</button>
+                                                <button style="background: #02DABE; color: #6238F6;" class="btn btn-faded-danger w-100 my-0 mb-2 ms-auto" type="submit" id="btn_registro_email"><b style="color: #FFFFFF">Verifica tu Código</b></button>
                                                 <span class="text-muted text-sm" style="font-weight:bold; font-size: 15px">¿No ha recibido recibido un código?<br><a href="javascript:0;" id="btn_reenviar_email">Reenviar un nuevo código</a>.</span>
                                             </div>
                                         </form>

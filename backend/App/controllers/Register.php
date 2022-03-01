@@ -128,7 +128,7 @@ html;
                     });
 
                     return response;
-                },"Usted no está registrado en la Base de Datos CONAVE 2022, verifique con su área y reintente.");
+                },"Usted no está registrado en la Base de Datos MUSA 2022, verifique con su área y reintente.");
 
                 $("#email_form").validate({
                    rules:{
@@ -196,34 +196,6 @@ html;
             //$this->Success();
             //$this->alerta($id,'error',$method_pay, $name_register);
         }
-    }
-
-    public function alerta($id, $parametro, $type_deposit, $name_register){
-
-        $pay = '';
-
-        if($parametro == 'add')
-        {
-            if($type_deposit == 'paypal')
-            {
-                $pay = 'CREDIT OR DEBIT CARD';
-                $name = $name_register;
-                $message_pay = 'Important note: Please include the reference provided by this system in the field "Concepto 
-                de pago" as per instructions above. The payment reference must be entered in capital 
-                letters. Do not add any spaces between names or include any other punctuation marks, as 
-                this may affect your bank transfer confirmation.';
-            }
-        }
-
-        if($parametro == "error")
-        {
-            $mensaje = "Al parecer ha ocurrido un problema";
-        }
-
-        View::set('pay',$pay);
-        View::set('message_pay',$message_pay);
-        View::set('name',$name);
-        View::render("alerta");
     }
 
     public function code($email , $alerta = null){
@@ -313,7 +285,7 @@ html;
                     });
 
                     return response;
-                },"Usted no está registrado en la Base de Datos CONAVE 2022, verifique con su área y reintente.");
+                },"Usted no está registrado en la Base de Datos MUSA 2022, verifique con su área y reintente.");
 
                 $("#email_form").validate({
                    rules:{
@@ -483,7 +455,7 @@ html;
                     });
 
                     return response;
-                },"Usted no está registrado en la Base de Datos CONAVE 2022, verifique con su área y reintente.");
+                },"Usted no está registrado en la Base de Datos MUSA 2022, verifique con su área y reintente.");
 
                 $("#email_form").validate({
                    rules:{
@@ -625,7 +597,7 @@ html;
                         });
 
                         return response;
-                    },"Usted no está registrado en la Base de Datos CONAVE 2022, verifique con su área y reintente.");
+                    },"Usted no está registrado en la Base de Datos MUSA 2022, verifique con su área y reintente.");
 
                     $("#email_form").validate({
                     rules:{

@@ -8,7 +8,7 @@ echo $header;
             <nav class="navbar navbar-expand-lg  blur blur-rounded top-0  z-index-3 shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
                 <div class="container-fluid">
                     <a class="navbar-brand font-weight-bolder ms-lg-0 ms-3 ">
-                        Crecer 5in Límites
+                        Mujer Salud 2022
                     </a>
                     <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon mt-2">
@@ -566,7 +566,7 @@ echo $header;
                         </ul>
                         <ul class="navbar-nav d-lg-block d-none">
                             <li class="nav-item">
-                                <a href="/Register/" class="btn btn-sm  bg-gradient-faded-danger  btn-round mb-0 me-1" onclick="smoothToPricing('pricing-soft-ui')"><b style="color: #ffffff">¡Quiero Registrarme!</b></a>
+                                <a href="/Register/" style="background: #02DABE;" class="btn btn-sm  bg-gradient-faded-danger  btn-round mb-0 me-1" onclick="smoothToPricing('pricing-soft-ui')"><b style="color: #ffffff">¡Quiero Registrarme!</b></a>
                             </li>
                         </ul>
                     </div>
@@ -579,7 +579,7 @@ echo $header;
                         <div class="col-xl-4 col-lg-5 col-md-6 d-flex flex-column mx-auto">
                             <div class="card card-plain mt-7">
                                 <div class="card-header pb-0 text-start">
-                                    <h3 class="font-weight-bolder text-info text-dark">CONAVE 2022</h3>
+                                    <h3 class="font-weight-bolder text-info text-dark">MUSA 2022</h3>
                                     <p class="mb-0">Introduce tus credenciales para iniciar sesión.</p>
                                 </div>
                                 <div class="card-body">
@@ -596,8 +596,9 @@ echo $header;
                                             <input class="form-check-input" type="checkbox" id="rememberMe" checked="">
                                             <label class="form-check-label" for="rememberMe">Recordar Contraseña</label>
                                         </div>
+
                                         <div class="text-center">
-                                            <button type="button" id="btnEntrar" class="btn bg-gradient-faded-danger w-100 mt-1 mb-0"><b style="color: #FFFFFF">ENTRAR</b></button>
+                                            <button style="background: #DBBEDF; color: #6238F6;" type="button" id="btnEntrar" class="btn bg-gradient-faded-danger w-100 mt-1 mb-0"><b style="color: #FFFFFF">ENTRAR</b></button>
                                         </div>
                                     </form>
                                     <div class="card-footer text-center pt-0 px-lg-2 px-1">
@@ -609,7 +610,7 @@ echo $header;
                                             Para crear su cuenta de acceso proporcione su cuenta de correo electrónico corporativo y de clic en el siguiente botón.
                                         </p>
                                         <div class="text-center">
-                                            <a href="/Register/" type="button" class="btn btn btn-outline-danger w-100 mt-4 mb-0 font-weight-bold"><b style="color: #b11313">¡QUIERO REGISTRARME!</b></a>
+                                            <a href="/Register/" style="background: #02DABE;" type="button" class="btn bg-gradient-faded-danger w-100 mt-4 mb-0 font-weight-bold"><b style="color: white">¡QUIERO REGISTRARME!</b></a>
                                         </div>
                                     </div>
                                 </div>
@@ -619,7 +620,7 @@ echo $header;
                             <div class="oblique position-absolute top-0 h-100 d-md-block d-none me-n9">
                                 <!-- <div class="oblique-image bg-cover position-absolute fixed-top ms-auto h-100 z-index-0 ms-n6" style="background-image:url('/assets/img/curved-images/curved9.jpg')"></div>-->
                                 <video autoplay muted loop >
-                                    <source class="oblique-image bg-cover position-absolute fixed-top ms-auto h-100 z-index-0 ms-n6" src="/assets/img/curved-images/fondo_a.mp4" type="video/mp4">
+                                    <source class="oblique-image bg-cover position-absolute fixed-top ms-auto h-100 z-index-0 ms-n6" src="/assets/img/curved-images/video.mp4" type="video/mp4">
                                 </video>
                             </div>
                         </div>
