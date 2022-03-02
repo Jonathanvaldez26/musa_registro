@@ -301,7 +301,7 @@
                         <div class="container">
                             <div class="row mt-lg-0 mt-8">
                                 <div class="col-lg-12 my-auto">
-                                    <h1 class="display-1 text-bolder text-gradient text-danger fadeIn1 fadeInBottom mt-5">Estamos preparando tu PickUp</h1>
+                                    <h1 class="display-1 text-bolder text-gradient text-rosa fadeIn1 fadeInBottom mt-5">Estamos preparando tu PickUp</h1>
                                     <h2 class="fadeIn3 fadeInBottom opacity-8">Equipo Asofarma</h2>
                                     <p class="lead opacity-6 fadeIn2 fadeInBottom">Le sugerimos consultar más tarde...</p>
                                 </div>

@@ -174,7 +174,7 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-12">
-                                        <label class="form-label mt-4">Pertenezco a la Línea ASOFARMA</label>
+                                        <label class="form-label mt-4">Especialidad</label>
                                         <!-- <select class="form-control" style="cursor: pointer;" name="linea_principal" id="linea_principal" tabindex="-1" data-choice="active">
                                                 <option value="" disabled>Selecciona una opción</option>
                                                 <?php echo $optionsLineaPrincipal; ?>

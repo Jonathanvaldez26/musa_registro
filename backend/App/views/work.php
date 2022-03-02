@@ -35,7 +35,7 @@
                         <a href="/Home/" type="button" class="btn bg-gradient-info mt-4 fadeIn2 fadeInBottom">Ir a la página de inicio</a>
                     </div>
                     <div class="col-lg-7 my-auto">
-                        <img class="w-100 fadeIn1 fadeInBottom" src="../../../img/error-05.png" alt="500-error">
+                        <img class="w-100 fadeIn1 fadeInBottom" src="../../../img/error-02.png" alt="500-error">
                     </div>
                 </div>
             </div>
