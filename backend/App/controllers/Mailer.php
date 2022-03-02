@@ -34,7 +34,7 @@ class Mailer
             $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
             //Recipients
-            $mail->setFrom($msg['email'], 'Convencion CONAVE 2022 Registro');
+            $mail->setFrom($msg['email'], 'MUSA 2022 Registro');
             $mail->addAddress($msg['email'], 'a');     //Add a recipient
 
 
@@ -86,7 +86,7 @@ class Mailer
             <img src="https://convencionasofarma2022.mx/img/img_email.jpeg" alt="">
                
                 <p>
-                    Codigo de Verificación: <span
+                    Codigo de Verificación Musa 2022: <span
                         style="color: #40982B;">(' . $msg['code'] . ')</span><br>
                 </p>
                     
@@ -133,7 +133,7 @@ class Mailer
             $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
             //Recipients
-            $mail->setFrom($msg['email'], 'Convencion CONAVE 2022 Registro');
+            $mail->setFrom($msg['email'], 'MUSA 2022 Registro');
             $mail->addAddress($msg['email'], 'a');     //Add a recipient
 
             $html = '     
@@ -183,8 +183,7 @@ class Mailer
                     <div class="container">
                     <img src="https://convencionasofarma2022.mx/img/img_email.jpeg" alt="">
                         <p style="text-align: center !important;">
-                            <strong>Thank you for submitting your
-                                pre-registration form!</strong>
+                            <strong>Graciass por suscribirte a Musa 2022, Asofarma!</strong>
                         </p>
                         <p>
                             <strong>Dear:

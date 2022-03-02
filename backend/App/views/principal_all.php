@@ -168,7 +168,11 @@
                                 <div class="row">
                                     <div class="col-8 my-auto">
                                         <div class="numbers">
+<<<<<<< HEAD
                                             <p class="text-white text-sm mb-0 text-capitalize font-weight-bold opacity-9">Foro MUSA 2022, Mujer Salud.</p>
+=======
+                                            <p class="text-white text-sm mb-0 text-capitalize font-weight-bold opacity-9">MUSA 2022, Mujer Salud.</p>
+>>>>>>> 6bbce8de103db760b951815525b9b2a6132efa0a
                                             <h5 class="text-white font-weight-bolder mb-0">
                                                 MUSA
                                             </h5>
@@ -235,6 +239,7 @@
                         </div>
                     </div>
                 </div>
+<<<<<<< HEAD
                 <div class="row mt-4" hidden > <!-- quitar cenas y pickup -->
                     <div class="col-md-6 mt-md-0 mt-4">
                         <div class="card">
@@ -263,6 +268,8 @@
                         </div>
                     </div>
                 </div>
+=======
+>>>>>>> 6bbce8de103db760b951815525b9b2a6132efa0a
                 <div class="row mt-4">
                     
                     <div class="col-md-6 mt-md-0 mt-4">
@@ -283,37 +290,6 @@
             </div>
         </div>
 
-    </div>
-    <!-- MODAL VISTA - COMPROBANTE -->
-    <div class="modal fade" id="ver-pickup" tabindex="-1" role="dialog" aria-labelledby="ver-comprobante" aria-hidden="true">
-        <div class="modal-dialog  modal-dialog-scrollable" role="document" style="max-width: 590px;">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">PICKUP Convención 2022</h5>
-                    <span type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
-                            X
-                        </span>
-                </div>
-                <!-- <div class="modal-header">
-                    <p>Por su seguridad y la de las demás personas, le pedimos que nos proporcione la Información siguiente para comprobar que no este contagiado de COVID.</p>
-                </div> -->
-                <div class="modal-body">
-                        <div class="container">
-                            <div class="row mt-lg-0 mt-8">
-                                <div class="col-lg-12 my-auto">
-                                    <h1 class="display-1 text-bolder text-gradient text-rosa fadeIn1 fadeInBottom mt-5">Estamos preparando tu PickUp</h1>
-                                    <h2 class="fadeIn3 fadeInBottom opacity-8">Equipo Asofarma</h2>
-                                    <p class="lead opacity-6 fadeIn2 fadeInBottom">Le sugerimos consultar más tarde...</p>
-                                </div>
-                            </div>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                        </div>
-                </div>
-            </div>
-        </div>
     </div>
 
     <?php echo $footer; ?>
