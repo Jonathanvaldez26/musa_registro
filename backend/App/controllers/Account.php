@@ -198,6 +198,21 @@ html;
             $imgUser=<<<html
             <img src="../../../img/user.png" alt="bruce" class="w-100 border-radius-lg shadow-sm">
 html;
+
+        }
+
+        if ($userData['genero'] == 'Hombre') {
+            $optionsGenero .=<<<html
+            <option value="Hombre" Selected>Hombre</option>
+            <option value="Mujer" >Mujer</option>
+            <option value="Otro" >Otro</option>
+html;
+        } else if ($userData['genero'] == 'Mujer') {
+            $optionsGenero .=<<<html
+            <option value="Hombre">Hombre</option>
+            <option value="Mujer" Selected>Mujer</option>
+            <option value="Otro">Otro</option>
+html;
         }
 
       View::set('imgUser',$imgUser);
