@@ -168,7 +168,7 @@
                                 <div class="row">
                                     <div class="col-8 my-auto">
                                         <div class="numbers">
-                                            <p class="text-white text-sm mb-0 text-capitalize font-weight-bold opacity-9">Convención Nacional MUSA 2022, Mujer Salud.</p>
+                                            <p class="text-white text-sm mb-0 text-capitalize font-weight-bold opacity-9">MUSA 2022, Mujer Salud.</p>
                                             <h5 class="text-white font-weight-bolder mb-0">
                                                 MUSA
                                             </h5>
@@ -236,34 +236,6 @@
                     </div>
                 </div>
                 <div class="row mt-4">
-                    <div class="col-md-6 mt-md-0 mt-4">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <div class="col-12 text-center">
-                                    <img class="w-30 btn-img-home" src="../../assets/img/icons/iCONOS-04.png">
-                                    <br>
-                                </div>
-                                <br>
-                                <h6 class="mb-0 font-weight-bolder"><a href="/Dinners/">Cenas</a></h6>
-                                <p class="opacity-8 mb-0 text-sm">Reserva y disfruta</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <div class="col-12 text-center">
-                                    <img class="w-30 btn-img-home" src="../../assets/img/icons/iCONOS-06.png">
-                                    <br>
-                                </div>
-                                <br>
-                                <h6 class="mb-0 font-weight-bolder"><a type="button" data-toggle="modal" data-target="#ver-pickup">PICK UP</a></h6>
-                                <p class="opacity-8 mb-0 text-sm">A un click tus asistencias</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-4">
                     
                     <div class="col-md-6 mt-md-0 mt-4">
                         <div class="card">
@@ -283,37 +255,6 @@
             </div>
         </div>
 
-    </div>
-    <!-- MODAL VISTA - COMPROBANTE -->
-    <div class="modal fade" id="ver-pickup" tabindex="-1" role="dialog" aria-labelledby="ver-comprobante" aria-hidden="true">
-        <div class="modal-dialog  modal-dialog-scrollable" role="document" style="max-width: 590px;">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">PICKUP Convención 2022</h5>
-                    <span type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
-                            X
-                        </span>
-                </div>
-                <!-- <div class="modal-header">
-                    <p>Por su seguridad y la de las demás personas, le pedimos que nos proporcione la Información siguiente para comprobar que no este contagiado de COVID.</p>
-                </div> -->
-                <div class="modal-body">
-                        <div class="container">
-                            <div class="row mt-lg-0 mt-8">
-                                <div class="col-lg-12 my-auto">
-                                    <h1 class="display-1 text-bolder text-gradient text-rosa fadeIn1 fadeInBottom mt-5">Estamos preparando tu PickUp</h1>
-                                    <h2 class="fadeIn3 fadeInBottom opacity-8">Equipo Asofarma</h2>
-                                    <p class="lead opacity-6 fadeIn2 fadeInBottom">Le sugerimos consultar más tarde...</p>
-                                </div>
-                            </div>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                        </div>
-                </div>
-            </div>
-        </div>
     </div>
 
     <?php echo $footer; ?>
