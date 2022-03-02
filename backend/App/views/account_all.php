@@ -184,11 +184,11 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-3 align-self-center">
+                                    <div class="col-md-3 align-self-center" hidden>
                                         <label class="form-label mt-4">Actividad</label>
                                         <input class="form-control" id="actividad" name="actividad" type="text" value="<?= $userData['actividad'] ?>" readonly />
                                     </div>
-                                    <div class="col-md-3 align-self-center">
+                                    <div class="col-md-3 align-self-center" hidden>
                                         <label class="form-label mt-4">Talla de Playera</label>
                                         <input class="form-control" id="talla" name="talla" type="text" value="<?= $userData['talla_playera'] ?>" readonly />
                                     </div>
