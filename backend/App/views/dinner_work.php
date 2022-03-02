@@ -5,8 +5,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="apple-touch-icon" sizes="76x76" href="../../../assets/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="../../../assets/img/favicon.png">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="../../../assets/img/Musa0-01.png">
     <title>
         En Proceso
     </title>
@@ -29,13 +28,13 @@
             <div class="container">
                 <div class="row mt-lg-0 mt-1">
                     <div class="col-lg-5 my-auto">
-                        <h1 class=" text-bolder text-gradient text-danger fadeIn1 fadeInBottom ">Próximamente Disponible</h1>
+                        <h1 class=" text-bolder text-gradient text-rosa fadeIn1 fadeInBottom ">Próximamente Disponible</h1>
                         <h4 class="fadeIn3 fadeInBottom opacity-8">Usted podrá consultar los restaurantes que tenemos preparados. </h4>
                         <p class="lead opacity-6 fadeIn2 fadeInBottom">Le sugerimos que vaya a la página de inicio...</p>
-                        <a href="/Home/" type="button" class="btn bg-gradient-danger mt-4 fadeIn2 fadeInBottom">Ir a la página de inicio</a>
+                        <a href="/Home/" type="button" class="btn bg-gradient-info mt-4 fadeIn2 fadeInBottom">Ir a la página de inicio</a>
                     </div>
                     <div class="col-lg-7 my-auto">
-                        <img class="w-100 fadeIn1 fadeInBottom" src="../../../assets/img/illustrations/menu.png" alt="500-error">
+                        <img class="w-100 fadeIn1 fadeInBottom" src="../../../img/error-03.png" alt="500-error">
                     </div>
                 </div>
             </div>

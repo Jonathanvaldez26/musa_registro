@@ -79,25 +79,25 @@ echo $header;
 
                                     </div>
                                     <div class="row">
-                                        <div class="col-lg-7 col-12">
+                                        <div class="col-lg-5 col-12">
                                             <label class="form-label mt-4">Email Rregistrado y Verificado</label>
                                             <div class="input-group">
                                                 <input id="email" name="email" maxlength="49" class="form-control" type="email" placeholder="example@email.com" onfocus="focused(this)" onfocusout="defocused(this)" value="<?= $userData['email'] ?>">
                                             </div>
                                         </div>
-                                        <div class="col-lg-5 col-12">
+                                        <div class="col-lg-3 col-12">
                                             <label class="form-label mt-4">Número de Telefono</label>
                                             <div class="input-group">
                                                 <input id="telefono" name="telefono" maxlength="10" pattern="[0-9]" class="form-control" type="number" placeholder="+40 735 631 620" onfocus="focused(this)" onfocusout="defocused(this)" value="<?= $userData['telefono'] ?>">
                                             </div>
                                         </div>
-                                        <!-- <div class="col-md-4 align-self-center">
-                                            <label class="form-label mt-4">Pertenezco a la Línea ASOFARMA</label>
-                                            <select class="form-control" style="cursor: pointer;" name="linea_principal" id="linea_principal" tabindex="-1" data-choice="active" disabled>
+                                        <div class="col-md-4 align-self-center">
+                                            <label class="form-label mt-4">Especialidades</label>
+                                            <select class="form-control" style="cursor: pointer;" name="linea_principal" id="linea_principal" tabindex="-1" data-choice="active">
                                                 <option value="" selected disabled>Selecciona una opción</option>
                                                 <?php echo $optionsLineaPrincipal; ?>
                                             </select>
-                                        </div> -->
+                                        </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-3 align-self-center">

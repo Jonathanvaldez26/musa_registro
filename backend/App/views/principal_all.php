@@ -236,19 +236,6 @@
                     </div>
                 </div>
                 <div class="row mt-4">
-                    <div class="col-md-6">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <div class="col-12 text-center">
-                                    <img class="w-30 btn-img-home" src="../../assets/img/icons/iCONOS-05.png">
-                                    <br>
-                                </div>
-                                <br>
-                                <h6 class="mb-0 font-weight-bolder"><a href="/VirtualTicket/">Mi boleto Virtual</a></h6>
-                                <p class="opacity-8 mb-0 text-sm">A un click tus asistencias</p>
-                            </div>
-                        </div>
-                    </div>
                     <div class="col-md-6 mt-md-0 mt-4">
                         <div class="card">
                             <div class="card-body text-center">
@@ -262,8 +249,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row mt-4">
                     <div class="col-md-6">
                         <div class="card">
                             <div class="card-body text-center">
@@ -277,6 +262,9 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="row mt-4">
+                    
                     <div class="col-md-6 mt-md-0 mt-4">
                         <div class="card">
                             <div class="card-body text-center">

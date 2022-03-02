@@ -40,7 +40,7 @@ echo $header;
                                         <input type="password" id="confirm_password" name="confirm_password" class="form-control" placeholder="Confirma tu Contraseña" aria-label="Confirmar tu Password" required="required">
                                     </div>
                                     <div class="form-group text-center">
-                                        <button class="btn btn-outline-danger w-100 my-4 mb-2 ms-auto " type="submit" id="btn_registro_password">terminar mi Registro</button>
+                                        <button class="btn btn-outline-primary w-100 my-4 mb-2 ms-auto " type="submit" id="btn_registro_password">terminar mi Registro</button>
                                     </div>
                                     
                                 </form>
