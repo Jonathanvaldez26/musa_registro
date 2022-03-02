@@ -183,7 +183,7 @@
                                         <input class="form-control" id="linea_principal_text" name="linea_principal_text" type="text" value="<?= $nombreLineaPrincipal; ?>" readonly />
                                     </div>
                                 </div>
-                                <div class="row">
+                                <!-- <div class="row">
                                     <div class="col-md-3 align-self-center" hidden>
                                         <label class="form-label mt-4">Actividad</label>
                                         <input class="form-control" id="actividad" name="actividad" type="text" value="<?= $userData['actividad'] ?>" readonly />
@@ -196,7 +196,7 @@
                                         <label class="form-label mt-4">Restricciones alimenticias</label>
                                         <input class="form-control" id="alergias" maxlength="149" name="alergias" data-color="dark" type="text" value="<?= $userData['alergias'] ?>" placeholder="Enter something" />
                                     </div>
-                                </div>
+                                </div> -->
 
                                 <div class="row">
                                     <div class="button-row d-flex mt-4 col-12">
