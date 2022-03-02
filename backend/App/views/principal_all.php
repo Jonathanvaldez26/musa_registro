@@ -168,11 +168,7 @@
                                 <div class="row">
                                     <div class="col-8 my-auto">
                                         <div class="numbers">
-<<<<<<< HEAD
                                             <p class="text-white text-sm mb-0 text-capitalize font-weight-bold opacity-9">Foro MUSA 2022, Mujer Salud.</p>
-=======
-                                            <p class="text-white text-sm mb-0 text-capitalize font-weight-bold opacity-9">MUSA 2022, Mujer Salud.</p>
->>>>>>> 6bbce8de103db760b951815525b9b2a6132efa0a
                                             <h5 class="text-white font-weight-bolder mb-0">
                                                 MUSA
                                             </h5>
@@ -239,37 +235,6 @@
                         </div>
                     </div>
                 </div>
-<<<<<<< HEAD
-                <div class="row mt-4" hidden > <!-- quitar cenas y pickup -->
-                    <div class="col-md-6 mt-md-0 mt-4">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <div class="col-12 text-center">
-                                    <img class="w-30 btn-img-home" src="../../assets/img/icons/iCONOS-04.png">
-                                    <br>
-                                </div>
-                                <br>
-                                <h6 class="mb-0 font-weight-bolder"><a href="/Dinners/">Cenas</a></h6>
-                                <p class="opacity-8 mb-0 text-sm">Reserva y disfruta</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <div class="col-12 text-center">
-                                    <img class="w-30 btn-img-home" src="../../assets/img/icons/iCONOS-06.png">
-                                    <br>
-                                </div>
-                                <br>
-                                <h6 class="mb-0 font-weight-bolder"><a type="button" data-toggle="modal" data-target="#ver-pickup">PICK UP</a></h6>
-                                <p class="opacity-8 mb-0 text-sm">A un click tus asistencias</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-=======
->>>>>>> 6bbce8de103db760b951815525b9b2a6132efa0a
                 <div class="row mt-4">
                     
                     <div class="col-md-6 mt-md-0 mt-4">
