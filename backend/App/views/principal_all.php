@@ -181,74 +181,84 @@
                 </div>
                 <div class="row  mt-md-4 mt-0">
                     <div class="col-md-6 mt-md-0 mt-4">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <div class="col-12 text-center">
-                                    <img class="w-30 btn-img-home" src="../../assets/img/icons/iCONOS-03.png">
+                        <a href="/Account/">
+                            <div class="card card-link">
+                                <div class="card-body text-center">
+                                    <div class="col-12 text-center">
+                                        <img class="w-30 btn-img-home" src="../../assets/img/icons/iCONOS-03.png">
+                                        <br>
+                                    </div>
                                     <br>
+                                    <h6 class="mb-0 font-weight-bolder">Datos Personales</h6>
+                                    <p class="opacity-8 mb-0 text-sm">Disponible <i class="fa fa-check-circle me-sm-0" style="color: #01a31c"></i></p>
                                 </div>
-                                <br>
-                                <h6 class="mb-0 font-weight-bolder"><a href="/Account/">Datos Personales</a></h6>
-                                <p class="opacity-8 mb-0 text-sm">Disponible <i class="fa fa-check-circle me-sm-0" style="color: #01a31c"></i></p>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-md-6 mt-md-0 mt-4">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <div class="col-12 text-center">
-                                    <img class="w-30 btn-img-home" src="../../assets/img/icons/iCONOS-02.png">
+                        <a href="/Vaccination/">
+                            <div class="card card-link">
+                                <div class="card-body text-center">
+                                    <div class="col-12 text-center">
+                                        <img class="w-30 btn-img-home" src="../../assets/img/icons/iCONOS-02.png">
+                                        <br>
+                                    </div>
                                     <br>
+                                    <h6 class="mb-0 font-weight-bolder">Comprobantes Vacuna</h6>
+                                    <p class="opacity-8 mb-0 text-sm">Disponible <i class="fa fa-check-circle me-sm-0" style="color: #01a31c"></i></p>
                                 </div>
-                                <br>
-                                <h6 class="mb-0 font-weight-bolder"><a href="/Vaccination/">Comprobantes Vacuna</a></h6>
-                                <p class="opacity-8 mb-0 text-sm">Disponible <i class="fa fa-check-circle me-sm-0" style="color: #01a31c"></i></p>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="row mt-4">
                     <div class="col-md-6">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <div class="col-12 text-center">
-                                    <img class="w-30 btn-img-home" src="../../assets/img/icons/iCONOS_Mesa de trabajo 1.png">
+                        <a href="/Covid/">
+                            <div class="card card-link">
+                                <div class="card-body text-center">
+                                    <div class="col-12 text-center">
+                                        <img class="w-30 btn-img-home" src="../../assets/img/icons/iCONOS_Mesa de trabajo 1.png">
+                                        <br>
+                                    </div>
                                     <br>
+                                    <h6 class="mb-0 font-weight-bolder">Mis Pruebas Covid</h6>
+                                    <p class="opacity-8 mb-0 text-sm">Disponible <i class="fa fa-clock me-sm-0" style="color: #8a6d3b"></i></p>
                                 </div>
-                                <br>
-                                <h6 class="mb-0 font-weight-bolder"><a href="/Covid/">Mis Pruebas Covid</a></h6>
-                                <p class="opacity-8 mb-0 text-sm">Disponible <i class="fa fa-clock me-sm-0" style="color: #8a6d3b"></i></p>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-md-6 mt-md-0 mt-4">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <div class="col-12 text-center">
-                                    <img class="w-30 btn-img-home" src="../../assets/img/icons/iCONOS-05.png">
+                        <a href="/Passes/">
+                            <div class="card card-link">
+                                <div class="card-body text-center">
+                                    <div class="col-12 text-center">
+                                        <img class="w-30 btn-img-home" src="../../assets/img/icons/iCONOS-05.png">
+                                        <br>
+                                    </div>
                                     <br>
+                                    <h6 class="mb-0 font-weight-bolder">Pases de Abordar</h6>
+                                    <p class="opacity-8 mb-0 text-sm">Disponible <i class="fa fa-check-circle me-sm-0" style="color: #01a31c"></i></p>
                                 </div>
-                                <br>
-                                <h6 class="mb-0 font-weight-bolder"><a href="/Passes/">Pases de Abordar</a></h6>
-                                <p class="opacity-8 mb-0 text-sm">Disponible <i class="fa fa-check-circle me-sm-0" style="color: #01a31c"></i></p>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="row mt-4">
                     
                     <div class="col-md-6 mt-md-0 mt-4">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <div class="col-12 text-center">
-                                    <img class="w-30 btn-img-home" src="../../assets/img/icons/iCONOS-07.png">
+                        <a href="/News/">
+                            <div class="card card-link">
+                                <div class="card-body text-center">
+                                    <div class="col-12 text-center">
+                                        <img class="w-30 btn-img-home" src="../../assets/img/icons/iCONOS-07.png">
+                                        <br>
+                                    </div>
                                     <br>
+                                    <h6 class="mb-0 font-weight-bolder">NOTIADIUM</h6>
+                                    <p class="opacity-8 mb-0 text-sm">A un click</p>
                                 </div>
-                                <br>
-                                <h6 class="mb-0 font-weight-bolder"><a href="/News/">NOTIADIUM</a></h6>
-                                <p class="opacity-8 mb-0 text-sm">A un click</p>
                             </div>
-                        </div>
+                        </a>
                     </div>
 
                 </div>
