@@ -282,7 +282,7 @@
     <div class="modal-dialog" role="document" style="max-width: 590px;">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">PICKUP Convención 2022</h5>
+                <h5 class="modal-title" id="exampleModalLabel">PICKUP MUSA 2022</h5>
                 <span type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
                             X
                         </span>

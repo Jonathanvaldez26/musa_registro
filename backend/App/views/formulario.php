@@ -10,7 +10,7 @@ echo $header;
                 <div class="row justify-content-center">
                     <div class="col-lg-5 text-center mx-auto">
                         <h1 class="text-white mb-2 mt-5">¡Bienvenido!</h1>
-                        <p class="text-lead text-white">Convención Nacional MUSA 2022, Mujer Salud. </p>
+                        <p class="text-lead text-white">MUSA, Mujer Salud 2022. </p>
                     </div>
                 </div>
             </div>

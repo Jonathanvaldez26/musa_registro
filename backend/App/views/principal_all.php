@@ -168,7 +168,7 @@
                                 <div class="row">
                                     <div class="col-8 my-auto">
                                         <div class="numbers">
-                                            <p class="text-white text-sm mb-0 text-capitalize font-weight-bold opacity-9">Foro MUSA 2022, Mujer Salud.</p>
+                                            <p class="text-white text-sm mb-0 text-capitalize font-weight-bold opacity-9">MUSA, Mujer Salud 2022.</p>
                                             <h5 class="text-white font-weight-bolder mb-0">
                                                 MUSA
                                             </h5>
@@ -245,7 +245,7 @@
                                     <br>
                                 </div>
                                 <br>
-                                <h6 class="mb-0 font-weight-bolder"><a href="/News/">NOTIASOFARMA</a></h6>
+                                <h6 class="mb-0 font-weight-bolder"><a href="/News/">NOTIADIUM</a></h6>
                                 <p class="opacity-8 mb-0 text-sm">A un click</p>
                             </div>
                         </div>
