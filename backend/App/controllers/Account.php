@@ -100,7 +100,7 @@ html;
                     });
                 });
         
-                $(document).on('change', '#file-input', function(e) {
+                 $(document).on('change', '#file-input', function(e) {
                     $("#form_upload_image").submit();
                 });
         
@@ -128,7 +128,8 @@ html;
                             console.log(respuesta);
                             if(respuesta.status == "success"){
                                 //location.reload();
-                                $("#img-user").attr("src","../../../img/users_conave/"+respuesta.img);
+                                $("#img-user").attr("src","../../../img/users_musa/"+respuesta.img);
+                                
                             }
                            
                         },
@@ -175,32 +176,6 @@ html;
         $idLineaPrincipal = '';
         $nombreLineaPrincipal = '';
 
-        foreach ($lineaGeneral as $key => $value) {
-
-            if($userData['id_linea_principal'] == $value['id_linea_principal']){
-                $idLineaPrincipal =  $value['id_linea_principal'];
-                $nombreLineaPrincipal =  $value['nombre'];
-            }
-            $optionsLineaPrincipal.=<<<html
-                <option value="{$value['id_linea_principal']}">{$value['nombre']}</option>
-               
-html;
-        }      
-
-        $userData = RegisterDao::getUserRegister($userData['email'])[0];
-
-        if($userData['img'] != ''){
-            $imgUser=<<<html
-            <img src="../../../img/users_conave/{$userData['img']}" alt="bruce" class="w-100 border-radius-lg shadow-sm">
-html;
-
-        }else{
-            $imgUser=<<<html
-            <img src="../../../img/user.png" alt="bruce" class="w-100 border-radius-lg shadow-sm">
-html;
-
-        }
-
         if ($userData['genero'] == 'Hombre') {
             $optionsGenero .=<<<html
             <option value="Hombre" Selected>Hombre</option>
@@ -220,6 +195,34 @@ html;
             <option value="Otro" Selected>Otro</option>
 html;
         }
+
+        foreach ($lineaGeneral as $key => $value) {
+
+            if($userData['id_linea_principal'] == $value['id_linea_principal']){
+                $idLineaPrincipal =  $value['id_linea_principal'];
+                $nombreLineaPrincipal =  $value['nombre'];
+            }
+            $optionsLineaPrincipal.=<<<html
+                <option value="{$value['id_linea_principal']}">{$value['nombre']}</option>
+               
+html;
+        }      
+
+        $userData = RegisterDao::getUserRegister($userData['email'])[0];
+
+        if($userData['img'] != ''){
+            $imgUser=<<<html
+            <img src="../../../img/users_musa/{$userData['img']}" alt="img" id="img-user" class="w-100 border-radius-lg shadow-sm">
+html;
+
+        }else{
+            $imgUser=<<<html
+            <img src="../../../img/user.png" alt="img" id="img-user" class="w-100 border-radius-lg shadow-sm">
+html;
+
+        }
+
+       
 
       View::set('imgUser',$imgUser);
       View::set('header',$this->_contenedor->header($extraHeader));
@@ -294,33 +297,36 @@ html;
 
       if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
+          $numero_rand = $this->generateRandomString();
           $email = $_POST['email_'];
           $img = $_FILES["file-input"];
           $img_name = $img["tmp_name"];
 
-          move_uploaded_file($img["tmp_name"], "img/users_conave/".$email.".png");
+          $this->deleteFile($email);
 
-          $documento->_img = $email.'.png';
+          move_uploaded_file($img["tmp_name"], "img/users_musa/".$numero_rand.".png");
+
+          $documento->_img = $numero_rand.'.png';
           $documento->_email = $email;
 
           $id = RegisterDao::updateImg($documento);
 
           if($id){
 
-            // $data = [
-            //     'status' => 'success',
-            //     'img' => $email.'.png'
-            // ];
-               echo "success";
+            $data = [
+                'status' => 'success',
+                'img' => $numero_rand.'.png'
+            ];
+               //echo "success";
           }else{
-               echo "fail";
-            // $data = [
-            //     'status' => 'fail'
+               //echo "fail";
+            $data = [
+                'status' => 'fail'
 
-            // ];
+            ];
           }
 
-         // echo json_encode($data);
+         echo json_encode($data);
 
 
       } else {
@@ -330,6 +336,14 @@ html;
 
     function generateRandomString($length = 10) {
         return substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, $length);
+    }
+
+    public function deleteFile($id_registro){
+        $regitser = RegisterDao::getUserRegister($id_registro)[0];
+        if (file_exists('img/users_musa/'.$regitser['img'])) {
+           // echo "El fichero ". $regitser['img']." existe";
+            unlink('img/users_musa/'.$regitser['img']);
+        }
     }
 
 
