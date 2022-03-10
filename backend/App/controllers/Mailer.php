@@ -99,7 +99,7 @@ class Mailer
 </html>';
 
             // $message = "<img src='https://convencionasofarma2022.mx/img/img_email.jpeg'/>";
-            // $message .= "<h5>Thank you for submitting your pre-registration form!</h5>";
+            // $message .= "<h5>¡Thank you for submitting your pre-registration form!</h5>";
             // $message .= "<h5>" . $msg['code'] . "</h5><br>";
 
             //Content
@@ -183,7 +183,7 @@ class Mailer
                     <div class="container">
                     <img src="https://convencionasofarma2022.mx/img/img_email.jpeg" alt="">
                         <p style="text-align: center !important;">
-                            <strong>Graciass por suscribirte a Musa 2022, Asofarma!</strong>
+                            <strong>¡Gracias por suscribirte a Musa 2022, Adium!</strong>
                         </p>
                         <p>
                             <strong>Dear:

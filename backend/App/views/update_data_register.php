@@ -80,7 +80,7 @@ echo $header;
                                     </div>
                                     <div class="row">
                                         <div class="col-lg-5 col-12">
-                                            <label class="form-label mt-4">Email Rregistrado y Verificado</label>
+                                            <label class="form-label mt-4">Email Registrado y Verificado</label>
                                             <div class="input-group">
                                                 <input id="email" name="email" maxlength="49" class="form-control" type="email" placeholder="example@email.com" onfocus="focused(this)" onfocusout="defocused(this)" value="<?= $userData['email'] ?>">
                                             </div>

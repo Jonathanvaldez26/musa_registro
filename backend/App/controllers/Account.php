@@ -82,12 +82,12 @@ html;
                         success: function(respuesta) {
         
                             if (respuesta == 'success') {
-                                swal("Se actualizaron tus datos correctamente!", "", "success").
+                                swal("¡Se actualizaron tus datos correctamente!", "", "success").
                                 then((value) => {
                                     window.location.replace("/Account/");
                                 });
                             } else {
-                                swal("Usted No Actualizo Nada!", "", "warning").
+                                swal("¡Usted No Actualizo Nada!", "", "warning").
                                 then((value) => {
                                     window.location.replace("/Account/")
                                 });
@@ -212,12 +212,12 @@ html;
 
         if($userData['img'] != ''){
             $imgUser=<<<html
-            <img src="../../../img/users_musa/{$userData['img']}" alt="img" id="img-user" class="w-100 border-radius-lg shadow-sm">
+            <img src="../../../img/users_musa/{$userData['img']}" alt="img" id="img-user" class="w-100 h-100 border-radius-lg shadow-sm">
 html;
 
         }else{
             $imgUser=<<<html
-            <img src="../../../img/user.png" alt="img" id="img-user" class="w-100 border-radius-lg shadow-sm">
+            <img src="../../../img/user.png" alt="img" id="img-user" class="w-100 h-100 border-radius-lg shadow-sm">
 html;
 
         }

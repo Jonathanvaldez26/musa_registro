@@ -28,11 +28,11 @@ echo $header;
                                 <form class="form-horizontal" id="email_form" action="/Register/Success" method="POST">
                                     <div class="mb-3 form-group">
                                         <label style="font-weight:bold; font-size: 15px">Correo Eléctronico *</label>
-                                        <input type="email" id="email" name="email" class="form-control" placeholder="Ej. usuario@asofarma.com.mx" aria-label="Correo Eléctronico" required="required">
+                                        <input type="email" id="email" name="email" class="form-control" placeholder="Ej. usuario@adium.com.mx" aria-label="Correo Eléctronico" required="required">
                                     </div>
                                     <div class="mb-3 form-group">
                                         <label style="font-weight:bold; font-size: 15px">Confirma tu Correo Eléctronico *</label>
-                                        <input type="email" id="confirm_email" name="confirm_email" class="form-control" placeholder="Ej. usuario@asofarma.com.mx" aria-label="Confirmar tu Correo Eléctronico" required="required">
+                                        <input type="email" id="confirm_email" name="confirm_email" class="form-control" placeholder="Ej. usuario@adium.com.mx" aria-label="Confirmar tu Correo Eléctronico" required="required">
                                     </div>
                                     <div class="form-group text-center">
                                         <button style="background: #02DABE;" class="btn btn-faded-danger w-100 my-4 mb-2 ms-auto" type="submit" id="btn_registro_email"><b style="color: #FFFFFF">Registrarme</b></button>

@@ -85,7 +85,7 @@
                                     <?= $userData['nombre'] . " " . $userData['segundo_nombre'] . " " . $userData['apellido_paterno'] . " " . $userData['apellido_materno'] ?>
                                 </h5>
                                 <p class="mb-0 font-weight-bold text-sm">
-                                    Equipo Asofarma
+                                    Equipo Adium
                                 </p>
                             </div>
                         </div>

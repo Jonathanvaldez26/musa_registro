@@ -695,7 +695,7 @@ html;
 
             $alerta =<<<html
             <div class="alert alert-danger text-white" role="alert" >
-                El codigo de verificación no coincide, Intenta nuevamente!
+                ¡El código de verificación no coincide, Intenta nuevamente!
             </div>
 html;
             $this->code($email,$alerta);
