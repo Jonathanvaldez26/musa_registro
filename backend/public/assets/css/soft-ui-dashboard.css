@@ -36856,4 +36856,8 @@ input#chk-4:checked ~ #lbl-4{display: block;}
 input#chk-5:checked ~ #lbl-5{display: block;}
 input#chk-6:checked ~ #lbl-6{display: block;}
 
+.borderless{
+  border: none;
+}
+
 /*# sourceMappingURL=dashboard-pro.css.map */

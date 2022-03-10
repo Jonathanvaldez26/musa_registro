@@ -369,42 +369,42 @@
                     </div>
                     <div class="card card-body m-2">
                         <ul class="list-group text-left mt-2">
-                            <li class="list-group-item">
+                            <li class="list-group-item borderless">
                                 <h4><i class="fas fa-language"></i>&nbsp;&nbsp; Idioma</h4>
                                 
                                 <p>
                                     Español
                                 </p>
                             </li>
-                            <li class="list-group-item">
+                            <li class="list-group-item borderless">
                                 <h4><i class="fas fa-money-bill"></i>&nbsp;&nbsp; Moneda</h4>
                                 
                                 <p>
                                     Peso mexicano
                                 </p>
                             </li>
-                            <li class="list-group-item">
+                            <li class="list-group-item borderless">
                                 <h4><i class="fas fa-utensils"></i>&nbsp;&nbsp; Gastronomía</h4>
                                 
                                 <p>
                                 La Cocina Mexicana es conocida por su suculencia y su gran variedad. Sus orígenes se remontan al período prehispánico, cuando una gran cantidad de platillos giraban alrededor del maíz, junto con otros ingredientes como: chiles, frijoles, calabazas, aguacate, tomate, cacao, nopal, así como insectos y una gran variedad de frutas.
                                 </p>
                             </li>
-                            <li class="list-group-item">
+                            <li class="list-group-item borderless">
                                 <h4><i class="fas fa-plane"></i>&nbsp;&nbsp; Distancia entre aeropuerto y sede</h4>
                                 
                                 <p>
                                     1 hora 5 min.
                                 </p>
                             </li>
-                            <li class="list-group-item">
+                            <li class="list-group-item borderless">
                                 <h4><i class="fas fa-clock"></i>&nbsp;&nbsp; Huso horario</h4>
                                 
                                 <p>
                                     UTC-05:00
                                 </p>
                             </li>
-                            <li class="list-group-item">
+                            <li class="list-group-item borderless">
                                 <h4><i class="fas fa-sun"></i>&nbsp;&nbsp; Clima</h4>
                                 
                                 <p>
@@ -413,7 +413,7 @@
                                     Habrá días de lluvia durante el mes de Abril en Cancún. así que recomendamos traer una chaqueta a prueba de agua para mantenerse seco este mes.
                                 </p>
                             </li>
-                            <li class="list-group-item">
+                            <li class="list-group-item borderless">
                                 <h4><i class="fas fa-tshirt"></i>&nbsp;&nbsp; Vestimenta Recomendada</h4>
                                 <p>
                                 <i class="fas fa-male"></i>
