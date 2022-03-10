@@ -1,6 +1,6 @@
 <?php echo $header; ?>
 
-<main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
+<main class="main-content main-content-bg mt-0">
     <nav class="navbar navbar-expand-lg  blur blur-rounded top-0  z-index-3 shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
         <div class="container-fluid">
             <a class="navbar-brand font-weight-bolder ms-lg-0 ms-3 ">
@@ -359,3 +359,77 @@
             </div>
         </div>
     </nav>
+    
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 col-lg-10 col-md-10 text-center mx-auto">
+                    <div class="card card-plain mt-8">
+                        <h2>Datos del evento</h2>
+                    </div>
+                    <div class="card card-body m-2">
+                        <ul class="list-group text-left mt-2">
+                            <li class="list-group-item">
+                                <h4><i class="fas fa-language"></i>&nbsp;&nbsp; Idioma</h4>
+                                
+                                <p>
+                                    Español
+                                </p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4><i class="fas fa-money-bill"></i>&nbsp;&nbsp; Moneda</h4>
+                                
+                                <p>
+                                    Peso mexicano
+                                </p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4><i class="fas fa-utensils"></i>&nbsp;&nbsp; Gastronomía</h4>
+                                
+                                <p>
+                                La Cocina Mexicana es conocida por su suculencia y su gran variedad. Sus orígenes se remontan al período prehispánico, cuando una gran cantidad de platillos giraban alrededor del maíz, junto con otros ingredientes como: chiles, frijoles, calabazas, aguacate, tomate, cacao, nopal, así como insectos y una gran variedad de frutas.
+                                </p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4><i class="fas fa-plane"></i>&nbsp;&nbsp; Distancia entre aeropuerto y sede</h4>
+                                
+                                <p>
+                                    1 hora 5 min.
+                                </p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4><i class="fas fa-clock"></i>&nbsp;&nbsp; Huso horario</h4>
+                                
+                                <p>
+                                    UTC-05:00
+                                </p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4><i class="fas fa-sun"></i>&nbsp;&nbsp; Clima</h4>
+                                
+                                <p>
+                                    El tiempo en Cancún durante abril 2022 será caluroso. La temperatura más baja que podrán encontrar será de 25°C y temperaturas altas de 29°C grados, es importantísimo tomar mucha agua y mantenerte fresco.
+                                    <br><br>
+                                    Habrá días de lluvia durante el mes de Abril en Cancún. así que recomendamos traer una chaqueta a prueba de agua para mantenerse seco este mes.
+                                </p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4><i class="fas fa-tshirt"></i>&nbsp;&nbsp; Vestimenta Recomendada</h4>
+                                <p>
+                                <i class="fas fa-male"></i>
+                                Hombres: <br><br>
+                                    Las telas más recomendables para estos eventos son: lino, algodón delgado y seda.  Recuerda que los colores claros te ayudaran a sentirte más fresco y que dependiendo de la hora del día puede hacer más o menos calor, por lo que debes estar preparado.
+                                <br><br>
+                                <i class="fas fa-female"></i>
+                                Mujeres: <br><br>
+                                    Las telas mas recomendables para estos eventos son:  sedas, linos, chiffon o chalis. Puedes usar traje tipo sastre, de telas frescas y puedes apostar por colores y estampados sutiles, o un vestido de corte ¾ o debajo de la rodilla.
+
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
