@@ -83,20 +83,7 @@
                                 </li>
                                 <div class="moving-tab position-absolute nav-link" style="padding: 0px; transition: all 0.5s ease 0s; transform: translate3d(0px, 0px, 0px); "><a class="nav-link mb-0 px-0 py-1 active" data-bs-toggle="tab" href="#cam1" role="tab" aria-controls="cam1" aria-selected="true">-</a></div></ul>
                         </div>
-                        <div class="dropdown pt-2">
-                            <a href="javascript:;" class="text-secondary ps-4" id="dropdownCam" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end me-sm-n4 px-2 py-3" aria-labelledby="dropdownCam">
-                                <li><a class="dropdown-item border-radius-md" href="/Dinners/">Mis cenas</a></li>
-                                <li><a class="dropdown-item border-radius-md" href="javascript:;">Reservar cena para mi y mis amigos</a></li>
-
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item border-radius-md text-danger" href="javascript:;">Cancelar Reservacion (Cena)</a></li>
-                            </ul>
-                        </div>
+                        
                     </div>
                     
                     <div id="days-movil" class="card-header pb-0 p-3">
@@ -168,7 +155,7 @@
                                 <div class="row">
                                     <div class="col-8 my-auto">
                                         <div class="numbers">
-                                            <p class="text-white text-sm mb-0 text-capitalize font-weight-bold opacity-9">Foro MUSA 2022, Mujer Salud.</p>
+                                            <p class="text-white text-sm mb-0 text-capitalize font-weight-bold opacity-9">MUSA, Mujer Salud 2022.</p>
                                             <h5 class="text-white font-weight-bolder mb-0">
                                                 MUSA
                                             </h5>
@@ -181,74 +168,84 @@
                 </div>
                 <div class="row  mt-md-4 mt-0">
                     <div class="col-md-6 mt-md-0 mt-4">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <div class="col-12 text-center">
-                                    <img class="w-30 btn-img-home" src="../../assets/img/icons/iCONOS-03.png">
+                        <a href="/Account/">
+                            <div class="card card-link">
+                                <div class="card-body text-center">
+                                    <div class="col-12 text-center">
+                                        <img class="w-30 btn-img-home" src="../../assets/img/icons/iCONOS-03.png">
+                                        <br>
+                                    </div>
                                     <br>
+                                    <h6 class="mb-0 font-weight-bolder">Datos Personales</h6>
+                                    <p class="opacity-8 mb-0 text-sm">Disponible <i class="fa fa-check-circle me-sm-0" style="color: #01a31c"></i></p>
                                 </div>
-                                <br>
-                                <h6 class="mb-0 font-weight-bolder"><a href="/Account/">Datos Personales</a></h6>
-                                <p class="opacity-8 mb-0 text-sm">Disponible <i class="fa fa-check-circle me-sm-0" style="color: #01a31c"></i></p>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-md-6 mt-md-0 mt-4">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <div class="col-12 text-center">
-                                    <img class="w-30 btn-img-home" src="../../assets/img/icons/iCONOS-02.png">
+                        <a href="/Vaccination/">
+                            <div class="card card-link">
+                                <div class="card-body text-center">
+                                    <div class="col-12 text-center">
+                                        <img class="w-30 btn-img-home" src="../../assets/img/icons/iCONOS-02.png">
+                                        <br>
+                                    </div>
                                     <br>
+                                    <h6 class="mb-0 font-weight-bolder">Comprobantes Vacuna</h6>
+                                    <p class="opacity-8 mb-0 text-sm">Disponible <i class="fa fa-check-circle me-sm-0" style="color: #01a31c"></i></p>
                                 </div>
-                                <br>
-                                <h6 class="mb-0 font-weight-bolder"><a href="/Vaccination/">Comprobantes Vacuna</a></h6>
-                                <p class="opacity-8 mb-0 text-sm">Disponible <i class="fa fa-check-circle me-sm-0" style="color: #01a31c"></i></p>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="row mt-4">
                     <div class="col-md-6">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <div class="col-12 text-center">
-                                    <img class="w-30 btn-img-home" src="../../assets/img/icons/iCONOS_Mesa de trabajo 1.png">
+                        <a href="/Covid/">
+                            <div class="card card-link">
+                                <div class="card-body text-center">
+                                    <div class="col-12 text-center">
+                                        <img class="w-30 btn-img-home" src="../../assets/img/icons/iCONOS_Mesa de trabajo 1.png">
+                                        <br>
+                                    </div>
                                     <br>
+                                    <h6 class="mb-0 font-weight-bolder">Mis Pruebas Covid</h6>
+                                    <p class="opacity-8 mb-0 text-sm">Disponible <i class="fa fa-clock me-sm-0" style="color: #8a6d3b"></i></p>
                                 </div>
-                                <br>
-                                <h6 class="mb-0 font-weight-bolder"><a href="/Covid/">Mis Pruebas Covid</a></h6>
-                                <p class="opacity-8 mb-0 text-sm">Disponible <i class="fa fa-clock me-sm-0" style="color: #8a6d3b"></i></p>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-md-6 mt-md-0 mt-4">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <div class="col-12 text-center">
-                                    <img class="w-30 btn-img-home" src="../../assets/img/icons/iCONOS-05.png">
+                        <a href="/Passes/">
+                            <div class="card card-link">
+                                <div class="card-body text-center">
+                                    <div class="col-12 text-center">
+                                        <img class="w-30 btn-img-home" src="../../assets/img/icons/iCONOS-05.png">
+                                        <br>
+                                    </div>
                                     <br>
+                                    <h6 class="mb-0 font-weight-bolder">Pases de Abordar</h6>
+                                    <p class="opacity-8 mb-0 text-sm">Disponible <i class="fa fa-check-circle me-sm-0" style="color: #01a31c"></i></p>
                                 </div>
-                                <br>
-                                <h6 class="mb-0 font-weight-bolder"><a href="/Passes/">Pases de Abordar</a></h6>
-                                <p class="opacity-8 mb-0 text-sm">Disponible <i class="fa fa-check-circle me-sm-0" style="color: #01a31c"></i></p>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="row mt-4">
                     
                     <div class="col-md-6 mt-md-0 mt-4">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <div class="col-12 text-center">
-                                    <img class="w-30 btn-img-home" src="../../assets/img/icons/iCONOS-07.png">
+                        <a href="/News/">
+                            <div class="card card-link">
+                                <div class="card-body text-center">
+                                    <div class="col-12 text-center">
+                                        <img class="w-30 btn-img-home" src="../../assets/img/icons/iCONOS-07.png">
+                                        <br>
+                                    </div>
                                     <br>
+                                    <h6 class="mb-0 font-weight-bolder">NOTIADIUM</h6>
+                                    <p class="opacity-8 mb-0 text-sm">A un click</p>
                                 </div>
-                                <br>
-                                <h6 class="mb-0 font-weight-bolder"><a href="/News/">NOTIASOFARMA</a></h6>
-                                <p class="opacity-8 mb-0 text-sm">A un click</p>
                             </div>
-                        </div>
+                        </a>
                     </div>
 
                 </div>

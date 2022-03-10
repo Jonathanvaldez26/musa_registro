@@ -63,9 +63,9 @@
             <div class="row">
                 <div class="col-sm-8 m-auto">
                     <!-- Page Title -->
-                    <h1>NotiAsofarma</h1>
+                    <h1>NotiAdium</h1>
                     <!-- Page Description -->
-                    <p>Una seccion dedicada a lo mas nuevo en noticias Asofarma, enterate ya, aquí. </p>
+                    <p>Una seccion dedicada a lo mas nuevo en noticias Adium, enterate ya, aquí. </p>
                 </div>
             </div>
         </div>

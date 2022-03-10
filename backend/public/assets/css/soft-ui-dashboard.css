@@ -36831,4 +36831,33 @@ svg.leaflet-image-layer.leaflet-interactive path {
   border-radius: 10px;
 }
 
+.card-link:hover{
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 10px 0px #aaa;
+}
+
+.chk-datos{
+  display: none;
+}
+
+#lbl-0{display: none;}
+#lbl-1{display: none;}
+#lbl-2{display: none;}
+#lbl-3{display: none;}
+#lbl-4{display: none;}
+#lbl-5{display: none;}
+#lbl-6{display: none;}
+
+input#chk-0:checked ~ #lbl-0{display: block;}
+input#chk-1:checked ~ #lbl-1{display: block;}
+input#chk-2:checked ~ #lbl-2{display: block;}
+input#chk-3:checked ~ #lbl-3{display: block;}
+input#chk-4:checked ~ #lbl-4{display: block;}
+input#chk-5:checked ~ #lbl-5{display: block;}
+input#chk-6:checked ~ #lbl-6{display: block;}
+
+.borderless{
+  border: none;
+}
+
 /*# sourceMappingURL=dashboard-pro.css.map */

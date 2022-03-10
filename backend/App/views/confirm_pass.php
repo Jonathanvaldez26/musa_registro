@@ -10,7 +10,7 @@ echo $header;
                 <div class="row justify-content-center">
                     <div class="col-lg-5 text-center mx-auto">
                         <h1 class="text-dark mb-2 mt-5">¡Bienvenido!</h1>
-                        <p class="text-lead text-dark">Convención Nacional MUSA 2022, Mujer Salud. </p>
+                        <p class="text-lead text-dark">MUSA, Mujer Salud 2022. </p>
                     </div>
                 </div>
             </div>
@@ -82,12 +82,12 @@ echo $header;
                         console.log(respuesta);
                         
                         if(respuesta == 'success'){
-                            swal("Te has registrado exitosamente!", "", "success").
+                            swal("¡Te has registrado exitosamente!", "", "success").
                             then((value) => {
                                 window.location.replace("/Login");
                             });
                         }else{
-                            swal("Hubo un error al registrarte!", "", "error").
+                            swal("¡Hubo un error al registrarte!", "", "error").
                             then((value) => {
                                 window.location.replace("/Login")
                             });
