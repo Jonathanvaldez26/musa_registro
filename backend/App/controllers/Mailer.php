@@ -97,7 +97,7 @@ class Mailer
                 </p>
 
                 <p>
-                    Su código de verificación es: <span><b style="background: #e389;">'. $msg['code'] .'</b></span>
+                    Su código es: <span><b style="background: #e389;">'. $msg['code'] .'</b></span>
                 </p>
                 <p>
                     El código de verificación es valido por 24 horas y solo se puede usar una vez, atentamente su equipo ADIUM.
