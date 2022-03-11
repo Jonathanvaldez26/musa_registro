@@ -100,7 +100,7 @@ class Mailer
                     Su código es: <span><b style="background: #e389;">'. $msg['code'] .'</b></span>
                 </p>
                 <p>
-                    El código de verificación es valido por 24 horas y solo se puede usar una vez, atentamente su equipo ADIUM.
+                    El código es válido por 24 horas y sólo se puede usar una vez, atentamente su equipo ADIUM.
                 </p> 
                 
             </div>
