@@ -151,7 +151,7 @@
                                 <div class="col-sm-6 col-12 col-lg-4">
 
                                     <label class="form-label mt-4">País *</label>
-                                    <input class="form-control" id="pais" maxlength="149" required name="pais" data-color="dark" type="text" value="<?= $userData['pais'] ?>" placeholder="Ej: México" />
+                                    <input class="form-control" id="pais" maxlength="149" required name="pais" data-color="dark" type="text" value="<?= $userData['pais'] ?>" placeholder="Ej: México" readonly/>
 
                                 </div>
 

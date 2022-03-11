@@ -261,7 +261,7 @@ html;
             $apellido_paterno = $_POST['apellido_paterno'];
             $apellido_materno = $_POST['apellido_materno'];
             $genero = $_POST['genero'];
-            $pais = $_POST['pais'];
+            // $pais = $_POST['pais'];
             $email = $_POST['email'];
             $telefono = $_POST['telefono'];
             $especialidad = $_POST['especialidad'];
@@ -272,13 +272,13 @@ html;
             $documento->_apellido_paterno = $apellido_paterno;
             $documento->_apellido_materno = $apellido_materno;
             $documento->_genero = $genero;
-            $documento->_pais = $pais;
+            // $documento->_pais = $pais;
             $documento->_email = $email;
             $documento->_telefono = $telefono;
             $documento->_especialidad = $especialidad;
             $documento->_alergia = $alergia;
 
-              $id = DataDao::update($documento);
+              $id = DataDao::updateAccount($documento);
 
               if($id){
                   echo "success";
