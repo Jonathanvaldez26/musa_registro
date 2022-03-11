@@ -115,7 +115,7 @@ echo $header;
                                         <div class="col-md-4 align-self-center">
                                             <label class="form-label mt-4">Especialidad *</label>
                                             <select class="form-control" style="cursor: pointer;" name="especialidad" id="especialidad" tabindex="-1" data-choice="active" required>
-                                                <option value="" selected disabled>Selecciona una opción</option>
+                                                <!-- <option value="" selected disabled>Selecciona una opción</option> -->
                                                 <?php echo $optionsLineaPrincipal; ?>
                                             </select>
                                         </div>

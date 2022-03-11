@@ -648,11 +648,20 @@ html;
         $lineaGeneral = LineaGeneralDao::getLineaPrincialAll();
 
         foreach ($lineaGeneral as $key => $value) {
-            $optionsLineaPrincipal.=<<<html
-                <option value="{$value['especialidad']}">{$value['nombre']}</option>
-               
+
+            
+            if ($value['id_linea_principal'] == 1 ) {
+                $optionsLineaPrincipal.=<<<html
+                    <option value="" disabled >Selecciona una opción</option>
+                    <option value="{$value['id_linea_principal']}"selected>{$value['nombre']}</option>
 html;
-        }        
+            } else {
+                $optionsLineaPrincipal.=<<<html
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="{$value['id_linea_principal']}" >{$value['nombre']}</option>
+html;
+            }
+        }   
         
         $userData = RegisterDao::getUserRegister($email)[0];
 
