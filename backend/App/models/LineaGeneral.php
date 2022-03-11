@@ -16,4 +16,13 @@ sql;
 
         return $mysqli->queryAll($query);
     }
+
+    public static function getPais(){
+        $mysqli = Database::getInstance(true);
+        $query =<<<sql
+        SELECT * FROM linea_principal
+sql;
+
+        return $mysqli->queryAll($query);
+    }
 }

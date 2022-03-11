@@ -204,7 +204,7 @@ html;
         <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon.png">
         <link rel="icon" type="image/vnd.microsoft.icon" href="../../../assets/img/Musa0-01.png">
         <title>
-            Regitro - MUSA
+            Registro - MUSA
         </title>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
         <!-- Nucleo Icons -->
@@ -352,7 +352,7 @@ html;
         <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon.png">
         <link rel="icon" type="image/vnd.microsoft.icon" href="../../../assets/img/Musa0-01.png">
         <title>
-            Regitro - MUSA
+            Registro - MUSA
         </title>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
         <!-- Nucleo Icons -->
@@ -498,7 +498,7 @@ html;
             <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon.png">
             <link rel="icon" type="image/vnd.microsoft.icon" href="../../../assets/img/Musa0-01.png">
             <title>
-                Regitro - MUSA
+                Registro - MUSA
             </title>
             <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
             <!-- Nucleo Icons -->
@@ -643,12 +643,13 @@ html;
         $code_received  = $digit1.$digit2.$digit3.$digit4;
         $optionsGenero = '';
         $optionsLineaPrincipal = '';
+        $especialidad = '';
 
         $lineaGeneral = LineaGeneralDao::getLineaPrincialAll();
 
         foreach ($lineaGeneral as $key => $value) {
             $optionsLineaPrincipal.=<<<html
-                <option value="{$value['id_linea_principal']}">{$value['nombre']}</option>
+                <option value="{$value['especialidad']}">{$value['nombre']}</option>
                
 html;
         }        
@@ -713,7 +714,7 @@ html;
         <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon.png">
         <link rel="icon" type="image/vnd.microsoft.icon" href="../../../assets/img/Musa0-01.png">
         <title>
-            Regitro - MUSA
+            Registro - MUSA
         </title>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
         <!-- Nucleo Icons -->
@@ -838,27 +839,22 @@ html;
               $apellido_paterno = $_POST['apellido_paterno'];
               $apellido_materno = $_POST['apellido_materno'];
               $genero = $_POST['genero'];
-              $fecha_nacimiento = $_POST['fecha_nacimiento'];
+              $pais = $_POST['pais'];
               $email = $_POST['email'];
               $telefono = $_POST['telefono'];
-              $linea_principal = $_POST['linea_principal'];
-              $actividad = $_POST['actividad'];
-              $talla = $_POST['talla'];
-              $alergias = $_POST['alergias'];
-             
+              $especialidad = $_POST['especialidad'];
+              $alergia = $_POST['alergia'];
   
               $documento->_nombre = $nombre;
               $documento->_segundo_nombre = $segundo_nombre;
               $documento->_apellido_paterno = $apellido_paterno;
               $documento->_apellido_materno = $apellido_materno;
               $documento->_genero = $genero;
-              $documento->_fecha_nacimiento = $fecha_nacimiento;
+              $documento->_pais = $pais;
               $documento->_email = $email;
               $documento->_telefono = $telefono;
-              $documento->_linea_principal = $linea_principal;
-              $documento->_actividad = $actividad;
-              $documento->_talla = $talla;
-              $documento->_alergias = $alergias;
+              $documento->_especialidad = $especialidad;
+              $documento->_alergia = $alergia;
 
 
               $id = DataDao::update($documento);
@@ -894,7 +890,7 @@ html;
         <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon.png">
         <link rel="icon" type="image/vnd.microsoft.icon" href="../../../assets/img/Musa0-01.png">
         <title>
-            Regitro - MUSA
+            Registro - MUSA
         </title>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
         <!-- Nucleo Icons -->

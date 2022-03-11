@@ -12,20 +12,18 @@ class Data {
   public static function update($user){
     $mysqli = Database::getInstance(true);
     $query=<<<sql
-    UPDATE registros_acceso SET id_linea_principal = :id_linea_principal, nombre = :nombre, segundo_nombre = :segundo_nombre, apellido_materno = :apellido_materno, apellido_paterno = :apellido_paterno, genero = :genero, fecha_nacimiento = :fecha_nacimiento, telefono = :telefono  WHERE email = :email;
+    UPDATE registros_acceso SET especialidad = :especialidad, nombre = :nombre, segundo_nombre = :segundo_nombre, apellido_materno = :apellido_materno, apellido_paterno = :apellido_paterno, genero = :genero, pais = :pais, telefono = :telefono, alergia = :alergia  WHERE email = :email;
 sql;
     $parametros = array(
-      ':id_linea_principal'=>$user->_linea_principal,
+      ':especialidad'=>$user->_especialidad,
       ':nombre'=>$user->_nombre,
       ':segundo_nombre'=>$user->_segundo_nombre,
       ':apellido_paterno'=>$user->_apellido_paterno,
       ':apellido_materno'=>$user->_apellido_materno,
       ':genero'=>$user->_genero,
-      ':fecha_nacimiento'=>$user->_fecha_nacimiento,
+      ':pais'=>$user->_pais,
       ':telefono'=>$user->_telefono,
-      // ':actividad'=>$user->_actividad,
-      // ':talla_playera'=>$user->_talla,
-      // ':alergias'=>$user->_alergias,
+      ':alergia'=>$user->_alergia,
       ':email'=>$user->_email
       
     );

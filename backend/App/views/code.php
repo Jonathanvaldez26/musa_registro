@@ -77,7 +77,7 @@ echo $header;
                                             </div>
                                             <div class="text-center">
                                                 <button style="background: #02DABE; color: #6238F6;" class="btn btn-faded-danger w-100 my-0 mb-2 ms-auto" type="submit" id="btn_registro_email"><b style="color: #FFFFFF">Verifica tu Código</b></button>
-                                                <span class="text-muted text-sm" style="font-weight:bold; font-size: 15px">¿No ha recibido recibido un código?<br><a href="javascript:0;" id="btn_reenviar_email">Reenviar un nuevo código</a>.</span>
+                                                <span class="text-muted text-sm" style="font-weight:bold; font-size: 15px">¿No has recibido un código?<br><a href="javascript:0;" id="btn_reenviar_email">Reenviar un nuevo código</a>.</span>
                                             </div>
                                         </form>
                                     </div>

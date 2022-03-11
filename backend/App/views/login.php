@@ -19,7 +19,7 @@ echo $header;
                     </button>
                     <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
                         <ul class="navbar-nav navbar-nav-hover mx-auto">
-                            <li class="nav-item dropdown dropdown-hover mx-2">
+                            <!-- <li class="nav-item dropdown dropdown-hover mx-2">
                                 <a role="button" class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center " id="dropdownMenuBlocks" data-bs-toggle="dropdown" aria-expanded="false">
                                     ¿Quienes Somos?
                                     <img src=" ../../../assets/img/down-arrow-dark.svg " alt="down-arrow" class="arrow ms-1 d-lg-block d-none">
@@ -100,7 +100,7 @@ echo $header;
                                             </li>
                                         </ul>
                                     </div>
-                                    <!-- responsive -->
+                                    responsive 
                                     <div class="row d-lg-none">
                                         <div class="col-md-12">
                                             <a class="py-2 ps-3 border-radius-md" href="../../../pages/applications/kanban.html">
@@ -154,8 +154,8 @@ echo $header;
                                         </div>
                                     </div>
                                 </div>
-                            </li>
-                            <li class="nav-item dropdown dropdown-hover mx-2">
+                            </li> -->
+                            <!-- <li class="nav-item dropdown dropdown-hover mx-2">
                                 <a role="button" class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center " id="dropdownMenuEcommerce" data-bs-toggle="dropdown" aria-expanded="false">
                                     Nuestro Programa
                                     <img src=" ../../../assets/img/down-arrow-dark.svg  " alt="down-arrow" class="arrow ms-1 d-lg-block d-none">
@@ -258,7 +258,7 @@ echo $header;
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- responsive -->
+                                    responsive
                                     <div class="d-lg-none">
                                         <div class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0">
                                             <div class="d-inline-block">
@@ -347,10 +347,10 @@ echo $header;
                                         </a>
                                     </div>
                                 </div>
-                            </li>
+                            </li> -->
                             <li class="nav-item dropdown dropdown-hover mx-2">
                                 <a role="button" class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center " id="dropdownMenuDocs" data-bs-toggle="dropdown" aria-expanded="false">
-                                    FAQs
+                                    Datos del evento
                                     <img src=" ../../../assets/img/down-arrow-dark.svg " alt="down-arrow" class="arrow ms-1 d-lg-block d-none">
                                     <img src="../../../assets/img/down-arrow-dark.svg" alt="down-arrow" class="arrow ms-1 d-lg-none d-block">
                                 </a>
@@ -443,7 +443,7 @@ echo $header;
                                 </div>
                                 <div class="card-body">
                                     <form role="form" class="text-start" id="login" action="/Login/crearSession" method="POST" class="form-horizontal">
-                                        <label style="font-weight:bold; font-size: 15px">Correo Electrónico</label>
+                                        <label style="font-weight:bold; font-size: 15px">Correo electrónico</label>
                                         <div class="mb-3">
                                             <input type="email" name="usuario" id="usuario" class="form-control" placeholder="usuario@grupolahe.com" aria-label="Email">
                                         </div>
@@ -453,7 +453,7 @@ echo $header;
                                         </div>
                                         <div class="form-check form-switch">
                                             <input class="form-check-input" type="checkbox" id="rememberMe" checked="">
-                                            <label class="form-check-label" for="rememberMe">Recordar Contraseña</label>
+                                            <label class="form-check-label" for="rememberMe">Recordar contraseña</label>
                                         </div>
 
                                         <div class="text-center">
@@ -462,11 +462,11 @@ echo $header;
                                     </form>
                                     <div class="card-footer text-center pt-0 px-lg-2 px-1">
                                         <p class="mb-2 text-sm mx-auto">
-                                            ¿Olvidaste tu Contraseña?
-                                            <a href="/Register/" class="text-info text-dark font-weight-bold">Da Click Aquí</a>
+                                            ¿Olvidaste tu contraseña?
+                                            <a href="/Register/" class="text-info text-dark font-weight-bold">Da clic aquí</a>
                                         </p>
                                         <p class="mb-1 text-sm mx-auto text-center">
-                                            Para crear su cuenta de acceso proporcione su cuenta de correo electrónico corporativo y de clic en el siguiente botón.
+                                            Para crear su cuenta de acceso proporcione su cuenta de correo electrónico y de clic en el siguiente botón.
                                         </p>
                                         <div class="text-center">
                                             <a href="/Register/" style="background: #02DABE;" type="button" class="btn bg-gradient-faded-danger w-100 mt-4 mb-0 font-weight-bold"><b style="color: white">¡QUIERO REGISTRARME!</b></a>

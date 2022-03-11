@@ -198,15 +198,24 @@ html;
 
         foreach ($lineaGeneral as $key => $value) {
 
-            if($userData['id_linea_principal'] == $value['id_linea_principal']){
+            if($userData['especialidad'] == $value['id_linea_principal']){
                 $idLineaPrincipal =  $value['id_linea_principal'];
-                $nombreLineaPrincipal =  $value['nombre'];
+                $nombreLineaPrincipal = $value['nombre'];
             }
-            $optionsLineaPrincipal.=<<<html
-                <option value="{$value['id_linea_principal']}">{$value['nombre']}</option>
-               
+            if ($value['id_linea_principal'] == 1 ) {
+                $optionsLineaPrincipal.=<<<html
+                    <option value="" disabled >Selecciona una opción</option>
+                    <option value="{$value['id_linea_principal']}"selected>{$value['nombre']}</option>
 html;
-        }      
+            } else {
+                $optionsLineaPrincipal.=<<<html
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="{$value['id_linea_principal']}" >{$value['nombre']}</option>
+html;
+            }
+        }
+
+
 
         $userData = RegisterDao::getUserRegister($userData['email'])[0];
 
@@ -246,32 +255,28 @@ html;
 
           if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-              $id_registro = $_POST['id_registro'];
-              $nombre = $_POST['nombre'];
-              $segundo_nombre = $_POST['segundo_nombre'];
-              $apellido_paterno = $_POST['apellido_paterno'];
-              $apellido_materno = $_POST['apellido_materno'];
-              $genero = $_POST['genero'];
-              $fecha_nacimiento = $_POST['fecha_nacimiento'];
-              $email = $_POST['email'];
-              $telefono = $_POST['telefono'];
-              $linea_principal = $_POST['linea_principal'];
-            //   $talla = $_POST['talla'];
-            //   $actividad = $_POST['actividad'];
-            //   $alergias = $_POST['alergias'];
+            $id_registro = $_POST['id_registro'];
+            $nombre = $_POST['nombre'];
+            $segundo_nombre = $_POST['segundo_nombre'];
+            $apellido_paterno = $_POST['apellido_paterno'];
+            $apellido_materno = $_POST['apellido_materno'];
+            $genero = $_POST['genero'];
+            $pais = $_POST['pais'];
+            $email = $_POST['email'];
+            $telefono = $_POST['telefono'];
+            $especialidad = $_POST['especialidad'];
+            $alergia = $_POST['alergia'];
 
-              $documento->_nombre = $nombre;
-              $documento->_segundo_nombre = $segundo_nombre;
-              $documento->_apellido_paterno = $apellido_paterno;
-              $documento->_apellido_materno = $apellido_materno;
-              $documento->_genero = $genero;
-              $documento->_fecha_nacimiento = $fecha_nacimiento;
-              $documento->_email = $email;
-              $documento->_telefono = $telefono;
-              $documento->_linea_principal = $linea_principal;
-            //   $documento->_talla = $talla;
-            //   $documento->_actividad = $actividad;
-            //   $documento->_alergias = $alergias;
+            $documento->_nombre = $nombre;
+            $documento->_segundo_nombre = $segundo_nombre;
+            $documento->_apellido_paterno = $apellido_paterno;
+            $documento->_apellido_materno = $apellido_materno;
+            $documento->_genero = $genero;
+            $documento->_pais = $pais;
+            $documento->_email = $email;
+            $documento->_telefono = $telefono;
+            $documento->_especialidad = $especialidad;
+            $documento->_alergia = $alergia;
 
               $id = DataDao::update($documento);
 

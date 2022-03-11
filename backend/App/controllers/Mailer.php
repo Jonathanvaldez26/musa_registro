@@ -126,8 +126,8 @@ class Mailer
             $mail->isSMTP();                                            //Send using SMTP
             $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
             $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-            $mail->Username   = 'contacto@foromusa.com';                     //SMTP username
-            $mail->Password   = 'P0amq38%';                               //SMTP password
+            $mail->Username   = 'mujersalud2022@gmail.com';                     //SMTP username
+            $mail->Password   = 'grupolahe664';                               //SMTP password
             $mail->SMTPSecure = 'ssl';
             $mail->SMTPAutoTLS = false;            //Enable implicit TLS encryption
             $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
@@ -181,15 +181,25 @@ class Mailer
                 <body leftmargin="0" topmargin="0" marginheight="0" marginwidth="0">
                     
                     <div class="container">
-                    <img src="https://convencionasofarma2022.mx/img/img_email.jpeg" alt="">
-                        <p style="text-align: center !important;">
-                            <strong>¡Gracias por suscribirte a Musa 2022, Adium!</strong>
-                        </p>
-                        <p>
-                            <strong>Dear:
-                                ' . $msg['name'] . '</strong><br>
-                                <h5>Se ha generado tu registro exitosamente</h5><br>
-                        </p>  
+                    <img src="https://registro.foromusa.com/img/musa-01.png" alt="">
+                    <br>
+                    <p>
+                        Estamos ansiosos de volvernos a ver…
+                    </p>
+                    <p>
+                        Este mensaje se le envió porque usted está intentando registrar su cuenta de correo electrónico a <b>Mujer Salud 2022 - MUSA</b>. Si no fue usted ignore este mensaje.
+                    </p>
+                    
+                    <p>
+                        Copie este código de verificación y péguelo en el formulario de la plataforma a la que usted está intentando registrarse.
+                    </p>
+    
+                    <p>
+                        Su código de verificación es: <span><b style="background: #e389;">'. $msg['code'] .'</b></span>
+                    </p>
+                    <p>
+                        El código de verificación es valido por 24 horas y solo se puede usar una vez, atentamente tu equipo ASOFARMA.
+                    </p> 
                         
                     </div>
                     

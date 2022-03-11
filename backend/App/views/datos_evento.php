@@ -15,7 +15,7 @@
             </button>
             <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
                 <ul class="navbar-nav navbar-nav-hover mx-auto">
-                    <li class="nav-item dropdown dropdown-hover mx-2">
+                    <!-- <li class="nav-item dropdown dropdown-hover mx-2">
                         <a role="button" class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center " id="dropdownMenuBlocks" data-bs-toggle="dropdown" aria-expanded="false">
                             ¿Quienes Somos?
                             <img src=" ../../../assets/img/down-arrow-dark.svg " alt="down-arrow" class="arrow ms-1 d-lg-block d-none">
@@ -96,7 +96,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <!-- responsive -->
+                            responsive
                             <div class="row d-lg-none">
                                 <div class="col-md-12">
                                     <a class="py-2 ps-3 border-radius-md" href="../../../pages/applications/kanban.html">
@@ -150,8 +150,8 @@
                                 </div>
                             </div>
                         </div>
-                    </li>
-                    <li class="nav-item dropdown dropdown-hover mx-2">
+                    </li> -->
+                    <!-- <li class="nav-item dropdown dropdown-hover mx-2">
                         <a role="button" class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center " id="dropdownMenuEcommerce" data-bs-toggle="dropdown" aria-expanded="false">
                             Nuestro Programa
                             <img src=" ../../../assets/img/down-arrow-dark.svg  " alt="down-arrow" class="arrow ms-1 d-lg-block d-none">
@@ -254,7 +254,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- responsive -->
+                            responsive
                             <div class="d-lg-none">
                                 <div class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0">
                                     <div class="d-inline-block">
@@ -343,7 +343,7 @@
                                 </a>
                             </div>
                         </div>
-                    </li>
+                    </li> -->
                 </ul>
                 <ul class="navbar-nav d-lg-block d-none">
                     <li class="nav-item">

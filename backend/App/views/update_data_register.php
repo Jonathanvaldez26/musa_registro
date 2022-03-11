@@ -32,19 +32,19 @@ echo $header;
                                 <div class="row">
                                     <div class="col-12 col-lg-4">
                                         <!-- <input type="text" id="id_registro" name="id_registro" value="<?= $userData['id_registro'] ?> "> -->
-                                        <label class="form-label">Nombre *</label>
+                                        <label class="form-label"> Primer nombre *</label>
                                         <div class="input-group">
                                             <input id="nombre" name="nombre" maxlength="29" pattern="[a-zA-Z ÑñáÁéÉíÍóÚ]*" class="form-control" type="text" placeholder="Alec" required="" onfocus="focused(this)" onfocusout="defocused(this)" value="<?= $userData['nombre'] ?>" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();">
                                         </div>
                                     </div>
                                     <div class="col-12 col-lg-4">
-                                        <label class="form-label">Segundo Nombre </label>
+                                        <label class="form-label">Segundo nombre </label>
                                         <div class="input-group">
                                             <input id="segundo_nombre" name="segundo_nombre" maxlength="49" pattern="[a-zA-Z ÑñáÁéÉíÍóÚ]*" class="form-control" type="text" placeholder="Alec"  onfocus="focused(this)" onfocusout="defocused(this)" value="<?= $userData['segundo_nombre'] ?>" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();">
                                         </div>
                                     </div>
                                     <div class="col-12 col-lg-4">
-                                        <label class="form-label">Apellido Paterno *</label>
+                                        <label class="form-label">Apellido paterno *</label>
                                         <div class="input-group">
                                             <input id="apellido_paterno" name="apellido_paterno" maxlength="29" pattern="[a-zA-Z ÑñáÁéÉíÍóÚ]*" class="form-control" type="text" placeholder="Thompson" required="required" onfocus="focused(this)" onfocusout="defocused(this)" value="<?= $userData['apellido_paterno'] ?>" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();">
                                         </div>
@@ -54,7 +54,7 @@ echo $header;
 
                                 <div class="row">
                                     <div class="col-12 col-lg-4">
-                                        <label class="form-label mt-4">Apellido Materno *</label>
+                                        <label class="form-label mt-4">Apellido materno *</label>
                                         <div class="input-group">
                                             <input id="apellido_materno" name="apellido_materno" maxlength="29" pattern="[a-zA-Z ÑñáÁéÉíÍóÚ]*" class="form-control" type="text" placeholder="Thompson" required="required" onfocus="focused(this)" onfocusout="defocused(this)" value="<?= $userData['apellido_materno'] ?>" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();">
                                         </div>
@@ -71,29 +71,50 @@ echo $header;
                                     </div>
                                     <div class="col-sm-4 col-12">
 
-                                        <label class="form-label mt-4">Fecha de Nacimiento * </label>
+                                        <label class="form-label mt-4">País de procedencia * </label>
 
-                                        <input type="date" class="form-control"  max="<?php echo $fecha_min?>" id="fecha_nacimiento" name="fecha_nacimiento" required="" value="<?= $userData['fecha_nacimiento'] ?>">
+                                        <select class="form-control" style="cursor: pointer;" name="pais" id="pais" tabindex="-1" data-choice="active">
+                                            <option value="" selected disabled>Selecciona una opción</option>
+                                            <option value="Argentina" >Argentina</option>
+                                            <option value="Bolivia" >Bolivia</option>
+                                            <option value="Brasil" >Brasil</option>
+                                            <option value="Chile" >Chile</option>
+                                            <option value="Colombia" >Colombia</option>
+                                            <option value="Costa Rica" >Costa Rica</option>
+                                            <option value="Cuba" >Cuba</option>
+                                            <option value="Ecuador" >Ecuador</option>
+                                            <option value="El Salvador" >El Salvador</option>
+                                            <option value="Guatemala" >Guatemala</option>
+                                            <option value="Honduras" >Honduras</option>
+                                            <option value="México" >México</option>
+                                            <option value="Nicaragua" >Nicaragua</option>
+                                            <option value="Panamá" >Panamá</option>
+                                            <option value="Paraguay" >Paraguay</option>
+                                            <option value="Perú" >Perú</option>
+                                            <option value="Puerto Rico" >Puerto Rico</option>
+                                            <option value="República Dominicana" >República Dominicana</option>
+                                            <option value="Uruguay" >Uruguay</option>
+                                            <option value="Venezuela" >Venezuela</option>
                                         </select>
 
 
                                     </div>
                                     <div class="row">
                                         <div class="col-lg-5 col-12">
-                                            <label class="form-label mt-4">Email Registrado y Verificado</label>
+                                            <label class="form-label mt-4">Correo electrónico</label>
                                             <div class="input-group">
-                                                <input id="email" name="email" maxlength="49" class="form-control" type="email" placeholder="example@email.com" onfocus="focused(this)" onfocusout="defocused(this)" value="<?= $userData['email'] ?>">
+                                                <input id="email" name="email" maxlength="49" class="form-control" type="email" placeholder="example@email.com" onfocus="focused(this)" onfocusout="defocused(this)" value="<?= $userData['email'] ?>" readonly>
                                             </div>
                                         </div>
                                         <div class="col-lg-3 col-12">
-                                            <label class="form-label mt-4">Número de Teléfono</label>
+                                            <label class="form-label mt-4">Número de teléfono</label>
                                             <div class="input-group">
                                                 <input id="telefono" name="telefono" maxlength="10" pattern="[0-9]" class="form-control" type="number" placeholder="+40 735 631 620" onfocus="focused(this)" onfocusout="defocused(this)" value="<?= $userData['telefono'] ?>">
                                             </div>
                                         </div>
                                         <div class="col-md-4 align-self-center">
-                                            <label class="form-label mt-4">Especialidades</label>
-                                            <select class="form-control" style="cursor: pointer;" name="linea_principal" id="linea_principal" tabindex="-1" data-choice="active">
+                                            <label class="form-label mt-4">Especialidad *</label>
+                                            <select class="form-control" style="cursor: pointer;" name="especialidad" id="especialidad" tabindex="-1" data-choice="active" required>
                                                 <option value="" selected disabled>Selecciona una opción</option>
                                                 <?php echo $optionsLineaPrincipal; ?>
                                             </select>
@@ -103,7 +124,7 @@ echo $header;
                                         
                                         <div class="col-md-6">
                                             <label class="form-label mt-4">Restricciones alimenticias *</label>
-                                            <input class="form-control" id="alergias" maxlength="149" required name="alergias" data-color="dark" type="text" value="<?= $userData['alergias'] ?>" placeholder="Enter something" />
+                                            <input class="form-control" id="alergia" maxlength="149" required name="alergia" data-color="dark" type="text" value="<?= $userData['alergia'] ?>" placeholder="Escribe las restricciones alimenticias" />
                                         </div>
                                         <br>
                                         <br>
