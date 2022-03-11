@@ -31,7 +31,7 @@ echo $header;
                                         <input type="email" id="email" name="email" class="form-control" placeholder="Ej. usuario@adium.com.mx" aria-label="Correo Eléctronico" required="required">
                                     </div>
                                     <div class="mb-3 form-group">
-                                        <label style="font-weight:bold; font-size: 15px">Escribe nuevamente tu correo eléctronico *</label>
+                                        <label style="font-weight:bold; font-size: 15px">Escriba nuevamente su correo eléctronico *</label>
                                         <input type="email" id="confirm_email" name="confirm_email" class="form-control" placeholder="Ej. usuario@adium.com.mx" aria-label="Confirmar tu Correo Eléctronico" required="required">
                                     </div>
                                     <div class="form-group text-center">
