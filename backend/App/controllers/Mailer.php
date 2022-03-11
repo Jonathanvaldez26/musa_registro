@@ -86,7 +86,7 @@ class Mailer
                 <img src="https://registro.foromusa.com/img/musa-01.png" alt="">
                 <br>
                 <p>
-                    Estamos ansiosos de volvernos a ver…
+                    Estamos ansiosos de volverlo a ver…
                 </p>
                 <p>
                     Este mensaje se le envió porque usted está intentando registrar su cuenta de correo electrónico a <b>Mujer Salud 2022 - MUSA</b>. Si no fue usted ignore este mensaje.
@@ -100,7 +100,7 @@ class Mailer
                     Su código de verificación es: <span><b style="background: #e389;">'. $msg['code'] .'</b></span>
                 </p>
                 <p>
-                    El código de verificación es valido por 24 horas y solo se puede usar una vez, atentamente tu equipo ADIUM.
+                    El código de verificación es valido por 24 horas y solo se puede usar una vez, atentamente su equipo ADIUM.
                 </p> 
                 
             </div>
@@ -195,8 +195,8 @@ class Mailer
                     <div class="container">
                     <img src="https://registro.foromusa.com/img/musa-01.png" alt="">
                         <p style="text-align: center !important;">
-                            Hola, ' . $msg['name'] . ' : 
-                            <strong>¡Tu registro a MUSA fue exitoso! </strong>
+                            Estimado, ' . $msg['name'] . ' : 
+                            <strong>¡Su registro a MUSA fue exitoso! </strong>
                         </p>
                     </div>
                     
