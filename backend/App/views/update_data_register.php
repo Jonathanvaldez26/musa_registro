@@ -86,13 +86,13 @@ echo $header;
                                             <option value="El Salvador" >El Salvador</option>
                                             <option value="Guatemala" >Guatemala</option>
                                             <option value="Honduras" >Honduras</option>
-                                            <option value="MÃ©xico" >México</option>
+                                            <option value="México" >México</option>
                                             <option value="Nicaragua" >Nicaragua</option>
-                                            <option value="PanamÃ¡" >Panamá</option>
+                                            <option value="Panamá" >Panamá</option>
                                             <option value="Paraguay" >Paraguay</option>
-                                            <option value="PerÃº" >Perú</option>
+                                            <option value="Perú" >Perú</option>
                                             <option value="Puerto Rico" >Puerto Rico</option>
-                                            <option value="RepÃºblica Dominicana" >República Dominicana</option>
+                                            <option value="República Dominicana" >República Dominicana</option>
                                             <option value="Uruguay" >Uruguay</option>
                                             <option value="Venezuela" >Venezuela</option>
                                         </select>
