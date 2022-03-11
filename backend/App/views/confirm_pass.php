@@ -9,7 +9,7 @@ echo $header;
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-5 text-center mx-auto">
-                        <h1 class="text-dark mb-2 mt-5">¡Bienvenido!</h1>
+                        <h1 class="text-dark mb-2 mt-5">¡Bienvenid@!</h1>
                         <p class="text-lead text-dark">MUSA, Mujer Salud 2022. </p>
                     </div>
                 </div>
@@ -20,11 +20,11 @@ echo $header;
                 <div class="col-xl-4 col-lg-5 col-md-7 mx-auto">
                         <div class="card z-index-0">
                             <div class="card-header text-center pt-4">
-                                <p>Crea tu contraseña</p>
+                                <p>Crea su contraeña</p>
                                 <p class="text-sm font-weight-bold mb-2 text-secondary text-border d-inline z-index-2 bg-white px-3">
                                     <i class="fa fa-user-circle"></i>
                                 </p>
-                                <p class="text-center" style="font-weight:bold; font-size: 15px">Introduce una contraseña con un mínimo de 6 caracteres alfanuméricos</p>
+                                <p class="text-center" style="font-weight:bold; font-size: 15px">Introduzca una contraseña con un mínimo de 6 caracteres alfanuméricos</p>
                             </div>
                             <div class="card-body pt-0">
                                 <form class="form-horizontal" id="pass_form" action="" method="POST">
@@ -33,11 +33,11 @@ echo $header;
                                     <input type="hidden" id="politica" name="politica" value="<?=$politica?>">
                                     <div class="mb-3 form-group">
                                         <label style="font-weight:bold; font-size: 15px">Contraseña *</label>
-                                        <input type="password" id="password" name="password" class="form-control" placeholder="Ingresa tu Contraseña *" aria-label="Password" required="required">
+                                        <input type="password" id="password" name="password" class="form-control" placeholder="Ingrese su contraseña *" aria-label="Password" required="required">
                                     </div>
                                     <div class="mb-3 form-group">
                                         <label style="font-weight:bold; font-size: 15px">Confirma tu Contraseña *</label>
-                                        <input type="password" id="confirm_password" name="confirm_password" class="form-control" placeholder="Confirma tu Contraseña" aria-label="Confirmar tu Password" required="required">
+                                        <input type="password" id="confirm_password" name="confirm_password" class="form-control" placeholder="Confirme su Contraseña" aria-label="Confirmar tu Password" required="required">
                                     </div>
                                     <div class="form-group text-center">
                                         <button class="btn btn-outline-primary w-100 my-4 mb-2 ms-auto " type="submit" id="btn_registro_password">terminar mi Registro</button>
@@ -82,7 +82,7 @@ echo $header;
                         console.log(respuesta);
                         
                         if(respuesta == 'success'){
-                            swal("¡Te has registrado exitosamente!", "", "success").
+                            swal("¡Se ha registrado exitosamente!", "", "success").
                             then((value) => {
                                 window.location.replace("/Login");
                             });

@@ -439,7 +439,7 @@ echo $header;
                             <div class="card card-plain mt-7">
                                 <div class="card-header pb-0 text-start">
                                     <h3 class="font-weight-bolder text-info text-dark">MUSA 2022</h3>
-                                    <p class="mb-0">Introduce tus credenciales para iniciar sesión.</p>
+                                    <p class="mb-0">Introduzca sus credenciales para iniciar sesión.</p>
                                 </div>
                                 <div class="card-body">
                                     <form role="form" class="text-start" id="login" action="/Login/crearSession" method="POST" class="form-horizontal">
@@ -462,8 +462,8 @@ echo $header;
                                     </form>
                                     <div class="card-footer text-center pt-0 px-lg-2 px-1">
                                         <p class="mb-2 text-sm mx-auto">
-                                            ¿Olvidaste tu contraseña?
-                                            <a href="/Register/" class="text-info text-dark font-weight-bold">Da clic aquí</a>
+                                            ¿Olvido su contraseña?
+                                            <a href="/Register/" class="text-info text-dark font-weight-bold">De clic aquí.</a>
                                         </p>
                                         <p class="mb-1 text-sm mx-auto text-center">
                                             Para crear su cuenta de acceso proporcione su cuenta de correo electrónico y de clic en el siguiente botón.

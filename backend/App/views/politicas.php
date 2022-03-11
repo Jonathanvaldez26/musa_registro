@@ -20,7 +20,7 @@ echo $header;
                 <div class="col-xl-8 col-lg-8 col-md-12 mx-auto">
                         <div class="card z-index-0">
                             <div class="card-header text-center pt-4">
-                                <p>Terminos y Condiciones</p>
+                                <p>Términos y Condiciones</p>
                                 <p class="text-sm font-weight-bold mb-2 text-secondary text-border d-inline z-index-2 bg-white px-3">
                                     <i class="fa fa-user-circle"></i>
                                 </p>
@@ -34,7 +34,7 @@ echo $header;
 
                                     <div class="text-center">
                                         <span class="text-danger">
-                                            Para registrarte es necesario leer completo los términos, condiciones y políticas del evento.
+                                            Para registrarse es necesario leer completo los términos, condiciones y políticas del evento.
                                         </span>
                                     </div>
                                     <br>
@@ -102,12 +102,12 @@ echo $header;
                                     <div class="row justify-content-center">
                                         <div class="col-md-4 col-sm-12">
                                             <button class="btn btn-sm btn-success" id="btn_success" disabled name="btn_success" value="1" type="submit">
-                                                Acepto terminos, condiciones y politicas del evento
+                                                Acepto términos, condiciones y políticas del evento
                                             </button>
                                         </div>
                                         <div class="col-md-4 col-sm-12">
                                             <button class="btn btn-sm btn-danger" id="btn_danger" disabled name="btn_danger" value="0" type="submit">
-                                                No acepto terminos, condiciones y politicas del evento 
+                                                No acepto términos, condiciones y políticas del evento 
                                             </button>
                                         </div>
                                     </div>

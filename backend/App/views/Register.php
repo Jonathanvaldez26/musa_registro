@@ -8,7 +8,7 @@ echo $header;
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-5 text-center mx-auto">
-                        <h1 class=" mb-2 mt-5">¡Bienvenido!</h1>
+                        <h1 class=" mb-2 mt-5">¡Bienvenid@!</h1>
                         <p class="text-lead text-dark">MUSA, Mujer Salud 2022. </p>
                     </div>
                 </div>
@@ -19,7 +19,7 @@ echo $header;
                 <div class="col-xl-4 col-lg-5 col-md-7 mx-auto">
                         <div class="card z-index-0">
                             <div class="card-header text-center pt-4">
-                                <p>Introduce tu cuenta de correo electrónico para crear tu cuenta</p>
+                                <p>Introduzca su cuenta de correo electrónico para crear su cuenta.</p>
                                 <p class="text-sm font-weight-bold mb-2 text-secondary text-border d-inline z-index-2 bg-white px-3">
                                     <i class="fa fa-user-circle"></i>
                                 </p>
