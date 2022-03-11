@@ -256,9 +256,9 @@ html;
               $email = $_POST['email'];
               $telefono = $_POST['telefono'];
               $linea_principal = $_POST['linea_principal'];
-              $talla = $_POST['talla'];
-              $actividad = $_POST['actividad'];
-              $alergias = $_POST['alergias'];
+            //   $talla = $_POST['talla'];
+            //   $actividad = $_POST['actividad'];
+            //   $alergias = $_POST['alergias'];
 
               $documento->_nombre = $nombre;
               $documento->_segundo_nombre = $segundo_nombre;
@@ -269,9 +269,9 @@ html;
               $documento->_email = $email;
               $documento->_telefono = $telefono;
               $documento->_linea_principal = $linea_principal;
-              $documento->_talla = $talla;
-              $documento->_actividad = $actividad;
-              $documento->_alergias = $alergias;
+            //   $documento->_talla = $talla;
+            //   $documento->_actividad = $actividad;
+            //   $documento->_alergias = $alergias;
 
               $id = DataDao::update($documento);
 

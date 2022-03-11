@@ -344,7 +344,6 @@
                             </div>
                         </div>
                     </li>
-                    
                 </ul>
                 <ul class="navbar-nav d-lg-block d-none">
                     <li class="nav-item">
@@ -352,6 +351,14 @@
                     </li>
                 </ul>
                 <ul class="navbar-nav d-lg-block d-none">
+                    <li class="nav-item">
+                        <a href="/Register/" style="background: #02DABE;" class="btn btn-sm  bg-gradient-faded-danger  btn-round mb-0 me-1" onclick="smoothToPricing('pricing-soft-ui')"><b style="color: #ffffff">¡Quiero Registrarme!</b></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav text-center mt-3 mb-2 d-block d-lg-none">
+                    <li class="nav-item">
+                        <a href="/Login/" style="background: #02DABE;" class="btn btn-sm  bg-gradient-faded-danger  btn-round mb-2 me-1" onclick="smoothToPricing('pricing-soft-ui')"><b style="color: #ffffff">Iniciar Sesión</b></a>
+                    </li>
                     <li class="nav-item">
                         <a href="/Register/" style="background: #02DABE;" class="btn btn-sm  bg-gradient-faded-danger  btn-round mb-0 me-1" onclick="smoothToPricing('pricing-soft-ui')"><b style="color: #ffffff">¡Quiero Registrarme!</b></a>
                     </li>
@@ -364,10 +371,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-10 col-lg-10 col-md-10 text-center mx-auto">
-                    <div class="card card-plain mt-8">
+                    <div class="card card-plain mt-8 mb-4">
                         <h2>Datos del evento</h2>
                     </div>
-                    <div class="card card-body m-2">
+                    <div class="card card-body m-2 mb-6">
                         <ul class="list-group text-left mt-2">
                             <li class="list-group-item borderless">
                                 <h4><i class="fas fa-language"></i>&nbsp;&nbsp; Idioma</h4>
@@ -433,3 +440,6 @@
         </div>
     </div>
 </main>
+
+
+<?php echo $footer; ?>
