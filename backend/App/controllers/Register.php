@@ -21,9 +21,10 @@ class Register{
         $extraHeader =<<<html
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="icon" type="image/vnd.microsoft.icon" href="../../../assets/img/Musa0-01.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../../../assets/img/aso_icon.png">
+        <link rel="icon" type="image/vnd.microsoft.icon" href="../../../assets/img/aso_icon.png">
         <title>
-            Registro - MUSA
+            Registro Conave
         </title>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
         <!-- Nucleo Icons -->
@@ -102,59 +103,59 @@ html;
           <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
            
 
-          <script>
+        <script>
             $(document).ready(function(){
-                $.validator.addMethod("checkUserCorreo",function(value, element) {
-                  var response = false;
-                    $.ajax({
-                        type:"POST",
-                        async: false,
-                        url: "/Register/isUserValidate",
-                        data: {email: $("#email").val()},
-                        success: function(data) {
-                            if(data=="true"){
-                                $('#btn_registro_email').attr("disabled", false);
-                                $('#confirm_email').attr("disabled", false);
-                                $('#email').attr("disabled", true);
+              $('#confirm_email').attr("disabled", true);
+              $.validator.addMethod("checkUserCorreo",function(value, element) {
+                var response = false;
+                  $.ajax({
+                      type:"POST",
+                      async: false,
+                      url: "/Register/isUserValidateUser",
+                      data: {email: $("#email").val()},
+                      success: function(data) {
+                          if(data=="true"){
+                              $('#btn_registro_email').attr("disabled", false);
+                              $('#confirm_email').attr("disabled", false);
+                              $('#email').attr("disabled", true);
 
-                                response = true;
-                            }else{
-                                $('#btn_registro_email').attr("disabled", true);
-                                $('#confirm_email').attr("disabled", true);
-                                document.getElementById("confirm_email").value = "";
-                            }
-                        }
-                    });
+                              response = true;
+                          }else{
+                              $('#btn_registro_email').attr("disabled", true);
+                              $('#confirm_email').attr("disabled", true);
+                              document.getElementById("confirm_email").value = "";
+                          }
+                      }
+                  });
 
-                    return response;
-                },"Usted no está registrado en la Base de Datos MUSA 2022, verifique con su área y reintente.");
+                  return response;
+              },"<b>Usted no está registrado en la Base de Datos CONAVE 2022 ó ya se registro previamente en la plataforma verifique su información.<b>");
 
-                $("#email_form").validate({
-                   rules:{
-                        email:{
-                            required: true,
-                            checkUserCorreo: true
-                        },
-                        confirm_email:{
-                            required: true,
-                            equalTo:"#email"
-                        }
-                    },
-                    messages:{
-                        email:{
-                            required: "Este campo es requerido",
-                        },
-                        confirm_email:{
-                            required: "Este campo es requerido",
-                            equalTo: "El Correo Eléctronico no coincide",
-                        }
-                    }
-                });
+              $("#email_form").validate({
+                 rules:{
+                      email:{
+                          required: true,
+                          checkUserCorreo: true
+                      },
+                      confirm_email:{
+                          required: true,
+                          equalTo:"#email"
+                      }
+                  },
+                  messages:{
+                      email:{
+                          required: "Este campo es requerido",
+                      },
+                      confirm_email:{
+                          required: "Este campo es requerido",
+                          equalTo: "El Correo Eléctronico no coincide",
+                      }
+                  }
+              });
+              
 
-                
-
-
-            });
+          });
+          
         </script>
        
 html;
@@ -1052,7 +1053,8 @@ html;
 
                 if ($id) {
                     
-
+                    RegisterDao::updatePolitica($register);
+                    
                     $msg = [
                         'email' => $email,
                         'name' =>  $userData['nombre']
@@ -1084,6 +1086,10 @@ html;
 
     public function isUserValidateRegistrate(){
         echo (count(RegisterDao::getUserRegistrate($_POST['email']))>=1)? 'true' : 'false';
+    }
+
+    public function isUserValidateUser(){
+        echo (count(RegisterDao::getUserRegisterTrue($_POST['email']))>=1)? 'true' : 'false';
     }
 
     function generateRandomString($length = 4) {

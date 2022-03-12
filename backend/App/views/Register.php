@@ -27,13 +27,13 @@ echo $header;
                             <div class="card-body pt-1">
                                 <form class="form-horizontal" id="email_form" action="/Register/Success" method="POST">
                                     <div class="mb-3 form-group">
-                                        <label style="font-weight:bold; font-size: 15px">Correo eléctronico *</label>
-                                        <input type="email" id="email" name="email" class="form-control" placeholder="Ej. usuario@adium.com.mx" aria-label="Correo Eléctronico" required="required">
+                                        <label style="font-weight:bold; font-size: 15px">Correo eléctronico institucional *</label>
+                                        <input type="email" id="email" name="email" class="form-control" placeholder="Ej. usuario@asofarma.com.mx" aria-label="Correo Eléctronico" required="required">
                                     </div>
                                     <div class="mb-3 form-group">
-                                        <label style="font-weight:bold; font-size: 15px">Escriba nuevamente su correo eléctronico *</label>
-                                        <input type="email" id="confirm_email" name="confirm_email" class="form-control" placeholder="Ej. usuario@adium.com.mx" aria-label="Confirmar tu Correo Eléctronico" required="required">
-                                    </div>
+                                        <label style="font-weight:bold; font-size: 15px">Escribe nuevamente tu correo  *</label>
+                                        <input type="email" id="confirm_email" name="confirm_email" class="form-control" placeholder="Ej. usuario@asofarma.com.mx" aria-label="Confirmar tu Correo Eléctronico" required="required">
+                                    </div>  
                                     <div class="form-group text-center">
                                         <button style="background: #02DABE;" class="btn btn-faded-danger w-100 my-4 mb-2 ms-auto" type="submit" id="btn_registro_email"><b style="color: #FFFFFF">Registrarme</b></button>
                                     </div>
@@ -51,58 +51,3 @@ echo $header;
 
 <?php echo $footer; ?>
 
-<script>
-            $(document).ready(function(){
-                $('#confirm_email').attr("disabled", true);
-                $.validator.addMethod("checkUserCorreo",function(value, element) {
-                  var response = false;
-                    $.ajax({
-                        type:"POST",
-                        async: false,
-                        url: "/Register/isUserValidateUser",
-                        data: {email: $("#email").val()},
-                        success: function(data) {
-                            if(data=="true"){
-                                $('#btn_registro_email').attr("disabled", false);
-                                $('#confirm_email').attr("disabled", false);
-                                $('#email').attr("disabled", true);
-
-                                response = true;
-                            }else{
-                                $('#btn_registro_email').attr("disabled", true);
-                                $('#confirm_email').attr("disabled", true);
-                                document.getElementById("confirm_email").value = "";
-                                
-                            }
-                        }
-                    });
-
-                    return response;
-                },"<b class=\"text-danger\">Usted no está registrado en la Base de Datos CONAVE 2022 ó ya se registro previamente en la plataforma verifique su información.</b>");
-
-                $("#email_form").validate({
-                   rules:{
-                        email:{
-                            required: true,
-                            checkUserCorreo: true
-                        },
-                        confirm_email:{
-                            required: true,
-                            equalTo:"#email"
-                        }
-                    },
-                    messages:{
-                        email:{
-                            required: "Este campo es requerido",
-                        },
-                        confirm_email:{
-                            required: "Este campo es requerido",
-                            equalTo: "El Correo Eléctronico no coincide",
-                        }
-                    }
-                });
-                
-
-            });
-            
-        </script>

@@ -36865,4 +36865,8 @@ input#chk-6:checked ~ #lbl-6{display: block;}
       height: 70px;
   }
 }
+
+#email-error{
+  color: red;
+}
 /*# sourceMappingURL=dashboard-pro.css.map */
