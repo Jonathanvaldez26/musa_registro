@@ -1082,6 +1082,10 @@ html;
         echo (count(RegisterDao::getUserRegister($_POST['email']))>=1)? 'true' : 'false';
     }
 
+    public function isUserValidateRegistrate(){
+        echo (count(RegisterDao::getUserRegistrate($_POST['email']))>=1)? 'true' : 'false';
+    }
+
     function generateRandomString($length = 4) {
         return substr(str_shuffle("0123456789"), 0, $length);
     }

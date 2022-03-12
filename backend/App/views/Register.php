@@ -50,3 +50,59 @@ echo $header;
     </body>
 
 <?php echo $footer; ?>
+
+<script>
+            $(document).ready(function(){
+                $('#confirm_email').attr("disabled", true);
+                $.validator.addMethod("checkUserCorreo",function(value, element) {
+                  var response = false;
+                    $.ajax({
+                        type:"POST",
+                        async: false,
+                        url: "/Register/isUserValidateUser",
+                        data: {email: $("#email").val()},
+                        success: function(data) {
+                            if(data=="true"){
+                                $('#btn_registro_email').attr("disabled", false);
+                                $('#confirm_email').attr("disabled", false);
+                                $('#email').attr("disabled", true);
+
+                                response = true;
+                            }else{
+                                $('#btn_registro_email').attr("disabled", true);
+                                $('#confirm_email').attr("disabled", true);
+                                document.getElementById("confirm_email").value = "";
+                                
+                            }
+                        }
+                    });
+
+                    return response;
+                },"<b class=\"text-danger\">Usted no está registrado en la Base de Datos CONAVE 2022 ó ya se registro previamente en la plataforma verifique su información.</b>");
+
+                $("#email_form").validate({
+                   rules:{
+                        email:{
+                            required: true,
+                            checkUserCorreo: true
+                        },
+                        confirm_email:{
+                            required: true,
+                            equalTo:"#email"
+                        }
+                    },
+                    messages:{
+                        email:{
+                            required: "Este campo es requerido",
+                        },
+                        confirm_email:{
+                            required: "Este campo es requerido",
+                            equalTo: "El Correo Eléctronico no coincide",
+                        }
+                    }
+                });
+                
+
+            });
+            
+        </script>
