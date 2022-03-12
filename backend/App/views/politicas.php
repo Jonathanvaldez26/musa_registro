@@ -39,9 +39,9 @@ echo $header;
                                     </div>
                                     <br>
 
-                                    <div id="terminos" class="card-header pt-4 text-scroll ">
+                                    <div id="terminos" class="card-header pt-4 text-scroll " style="text-align: justify;">
                                         <!-- <p>Aquí van los terminos y condiciones</p> -->
-                                        <span>
+                                        <span >
                                         Los siguientes términos y condiciones (los "Términos y Condiciones") rigen el uso que usted le dé a la plataforma Protocolo de seguridad para Convención Asofarma 2022 y a cualquiera de los contenidos disponibles en ella, incluyendo cualquier contenido derivado de la misma ("La aplicación"). Asofarma de México S.A. de C.V. ("Asofarma" o "nosotros") ha puesto a su disposición la plataforma. Podemos cambiar los Términos y Condiciones de vez en cuando, en cualquier momento sin ninguna notificación, sólo publicando los cambios en la plataforma. AL USAR EL LA PLATAFORMA, USTED ACEPTA Y ESTÉ DE ACUERDO CON ESTOS TÉRMINOS Y CONDICIONES EN LO QUE SE REFIERE A SU USO DE LA PLATAFORMA. Si usted no está de acuerdo con estos Términos y Condiciones, no puede tener acceso al mismo ni usar la plataforma de ninguna otra manera.
  
  1.         Derechos de Propiedad. Entre usted y Asofarma, Asofarma es dueño único y exclusivo, de todos los derechos, título e intereses en y de la aplicación, de todo el contenido (incluyendo, por ejemplo, audio, fotografías, ilustraciones, gráficos, otros medios visuales, videos, copias, textos, software, títulos, archivos, etc.), códigos, datos y materiales del mismo, el aspecto y el ambiente, el diseño y la organización de la aplicación y la compilación de los contenidos, códigos, datos y los materiales en la aplicación, incluyendo pero no limitado a, cualesquiera derechos de autor, derechos de marca, derechos de patente, derechos de base de datos, derechos morales, derechos sui generis y otras propiedades intelectuales y derechos patrimoniales del mismo. Su uso de la aplicación no le otorga propiedad de ninguno de los contenidos, códigos, datos o materiales a los que pueda acceder en o a través de la aplicación. 

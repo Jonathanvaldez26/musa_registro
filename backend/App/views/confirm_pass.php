@@ -36,7 +36,7 @@ echo $header;
                                         <input type="password" id="password" name="password" class="form-control" placeholder="Ingrese su contraseña *" aria-label="Password" required="required">
                                     </div>
                                     <div class="mb-3 form-group">
-                                        <label style="font-weight:bold; font-size: 15px">Confirma tu Contraseña *</label>
+                                        <label style="font-weight:bold; font-size: 15px">Confirma tu contraseña *</label>
                                         <input type="password" id="confirm_password" name="confirm_password" class="form-control" placeholder="Confirme su Contraseña" aria-label="Confirmar tu Password" required="required">
                                     </div>
                                     <div class="form-group text-center">

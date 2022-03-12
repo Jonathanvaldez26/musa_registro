@@ -73,7 +73,7 @@ echo $header;
 
                                         <label class="form-label mt-4">País de procedencia * </label>
 
-                                        <select class="form-control" style="cursor: pointer;" name="pais" id="pais" tabindex="-1" data-choice="active">
+                                        <select class="form-control" style="cursor: pointer;" name="pais" id="pais" tabindex="-1" data-choice="active" required>
                                             <option value="" selected disabled>Selecciona una opción</option>
                                             <option value="Argentina" >Argentina</option>
                                             <option value="Bolivia" >Bolivia</option>
