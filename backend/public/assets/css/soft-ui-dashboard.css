@@ -36869,4 +36869,8 @@ input#chk-6:checked ~ #lbl-6{display: block;}
 #email-error{
   color: red;
 }
+
+#usuario-error{
+  color:red;
+}
 /*# sourceMappingURL=dashboard-pro.css.map */
