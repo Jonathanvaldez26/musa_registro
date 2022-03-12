@@ -853,6 +853,7 @@ html;
               $telefono = $_POST['telefono'];
               $especialidad = $_POST['especialidad'];
               $alergia = $_POST['alergia'];
+              $alergia_cual = $_POST['alergia_cual'];
   
               $documento->_nombre = $nombre;
               $documento->_segundo_nombre = $segundo_nombre;
@@ -864,6 +865,7 @@ html;
               $documento->_telefono = $telefono;
               $documento->_especialidad = $especialidad;
               $documento->_alergia = $alergia;
+              $documento->_alergia_cual = $alergia_cual;
 
 
               $id = DataDao::update($documento);

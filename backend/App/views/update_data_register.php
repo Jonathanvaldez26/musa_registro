@@ -122,9 +122,43 @@ echo $header;
                                     </div>
                                     <div class="row">
                                         
-                                        <div class="col-md-6">
-                                            <label class="form-label mt-4">Restricciones alimenticias *</label>
-                                            <input class="form-control" id="alergia" maxlength="149" required name="alergia" data-color="dark" type="text" value="<?= $userData['alergia'] ?>" placeholder="Escribe las restricciones alimenticias" />
+                                        <div class="col-md-3 col-sm-12">
+                                            <label class="form-label mt-4">Restricciones Alimentarias *</label>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="alergia" id="res_ali_1" value="Vegetariano">
+                                                <label class="form-check-label" for="res_ali_1">
+                                                    Vegetariano
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="alergia" id="res_ali_2" value="Vegano">
+                                                <label class="form-check-label" for="res_ali_2">
+                                                    Vegano
+                                                </label>
+                                            </div>
+                                            <!-- <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="alergia" id="res_ali_3" value="kosher">
+                                                <label class="form-check-label" for="res_ali_3">
+                                                    Kosher
+                                                </label>
+                                            </div> -->
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="alergia" id="res_ali_4" value="Ninguna" checked>
+                                                <label class="form-check-label" for="res_ali_4">
+                                                    Ninguna
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="alergia" id="res_ali_5" value="Otro">
+                                                <label class="form-check-label" for="res_ali_5">
+                                                    Otro
+                                                </label>
+                                            </div>
+                                            <div class="col-md-12 col-sm-12 alergia" style="display: none!important;">
+                                                <label class="form-label mt-4">¿Cual?</label>
+                                                <input id="alergia_cual" name="alergia_cual" maxlength="45" class="form-control" type="text" placeholder="Escriba su restricción"  value="">
+                                                    
+                                            </div>
                                         </div>
                                         <br>
                                         <br>
@@ -155,3 +189,19 @@ echo $header;
 </body>
 
 <?php echo $footer; ?>
+
+    <script>
+        $(document).ready(function() {
+            $('input:radio[name="alergia"]').change(function() {
+                if ($("#res_ali_5").is(':checked')) {
+                    $(".alergia").css("display", "block");
+                    $("#alergia_cual").val("");
+                    $("#alergia_cual").attr('required','required');
+                }else{
+                    $(".alergia").css("display", "none");
+                    $('#alergia_cual').removeAttr('required');
+                }
+    
+            });
+        });
+    </script>

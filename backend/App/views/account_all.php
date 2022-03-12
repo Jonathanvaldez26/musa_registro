@@ -200,7 +200,8 @@
                                         
                                     <div class="col-md-6">
                                         <label class="form-label mt-4">Restricciones alimenticias *</label>
-                                        <input class="form-control" id="alergia" maxlength="149" required name="alergia" data-color="dark" type="text" value="<?= $userData['alergia'] ?>" placeholder="Escribe las restricciones alimenticias" />
+                                        <!-- <input class="form-control" id="alergia" maxlength="149" required name="alergia" data-color="dark" type="text" value="<?= $userData['alergia'] ?>" placeholder="Escribe las restricciones alimenticias" readonly/> -->
+                                        <?php echo $restricciones; ?>
                                     </div>
                                     <br>
                                 </div>
