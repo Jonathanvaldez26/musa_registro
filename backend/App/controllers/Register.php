@@ -129,7 +129,8 @@ html;
                   });
 
                   return response;
-              },"<b>Usted no está registrado en la Base de Datos CONAVE 2022 ó ya se registro previamente en la plataforma verifique su información.<b>");
+              },"<b>Usted ya se encuentra registrado en la plataforma verifique su información.<b>");
+
 
               $("#email_form").validate({
                  rules:{
