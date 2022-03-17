@@ -19,7 +19,7 @@ echo $header;
                 <div class="col-xl-4 col-lg-5 col-md-7 mx-auto">
                         <div class="card z-index-0">
                             <div class="card-header text-center pt-4">
-                                <p>Introduce tu Cuenta de Correo Electrónico para Crear tu Cuenta</p>
+                                <p>Introduzca su cuenta de correo electrónico para crear su cuenta.</p>
                                 <p class="text-sm font-weight-bold mb-2 text-secondary text-border d-inline z-index-2 bg-white px-3">
                                     <i class="fa fa-user-circle"></i>
                                 </p>
@@ -27,13 +27,13 @@ echo $header;
                             <div class="card-body pt-1">
                                 <form class="form-horizontal" id="email_form" action="/Register/Success" method="POST">
                                     <div class="mb-3 form-group">
-                                        <label style="font-weight:bold; font-size: 15px">Correo Eléctronico *</label>
-                                        <input type="email" id="email" name="email" class="form-control" placeholder="Ej. usuario@adium.com.mx" aria-label="Correo Eléctronico" required="required">
+                                        <label style="font-weight:bold; font-size: 15px">Correo eléctronico institucional *</label>
+                                        <input type="email" id="email" name="email" class="form-control" placeholder="Ej. usuario@asofarma.com.mx" aria-label="Correo Eléctronico" required="required">
                                     </div>
                                     <div class="mb-3 form-group">
-                                        <label style="font-weight:bold; font-size: 15px">Confirma tu Correo Eléctronico *</label>
-                                        <input type="email" id="confirm_email" name="confirm_email" class="form-control" placeholder="Ej. usuario@adium.com.mx" aria-label="Confirmar tu Correo Eléctronico" required="required">
-                                    </div>
+                                        <label style="font-weight:bold; font-size: 15px">Escribe nuevamente tu correo  *</label>
+                                        <input type="email" id="confirm_email" name="confirm_email" class="form-control" placeholder="Ej. usuario@asofarma.com.mx" aria-label="Confirmar tu Correo Eléctronico" required="required">
+                                    </div>  
                                     <div class="form-group text-center">
                                         <button style="background: #02DABE;" class="btn btn-faded-danger w-100 my-4 mb-2 ms-auto" type="submit" id="btn_registro_email"><b style="color: #FFFFFF">Registrarme</b></button>
                                     </div>
@@ -50,3 +50,4 @@ echo $header;
     </body>
 
 <?php echo $footer; ?>
+

@@ -21,9 +21,10 @@ class Register{
         $extraHeader =<<<html
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="icon" type="image/vnd.microsoft.icon" href="../../../assets/img/Musa0-01.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../../../assets/img/aso_icon.png">
+        <link rel="icon" type="image/vnd.microsoft.icon" href="../../../assets/img/aso_icon.png">
         <title>
-            Registro - MUSA
+            Registro Conave
         </title>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
         <!-- Nucleo Icons -->
@@ -102,59 +103,60 @@ html;
           <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
            
 
-          <script>
+        <script>
             $(document).ready(function(){
-                $.validator.addMethod("checkUserCorreo",function(value, element) {
-                  var response = false;
-                    $.ajax({
-                        type:"POST",
-                        async: false,
-                        url: "/Register/isUserValidate",
-                        data: {email: $("#email").val()},
-                        success: function(data) {
-                            if(data=="true"){
-                                $('#btn_registro_email').attr("disabled", false);
-                                $('#confirm_email').attr("disabled", false);
-                                $('#email').attr("disabled", true);
+              $('#confirm_email').attr("disabled", true);
+              $.validator.addMethod("checkUserCorreo",function(value, element) {
+                var response = false;
+                  $.ajax({
+                      type:"POST",
+                      async: false,
+                      url: "/Register/isUserValidateUser",
+                      data: {email: $("#email").val()},
+                      success: function(data) {
+                          if(data=="true"){
+                              $('#btn_registro_email').attr("disabled", false);
+                              $('#confirm_email').attr("disabled", false);
+                              $('#email').attr("disabled", true);
 
-                                response = true;
-                            }else{
-                                $('#btn_registro_email').attr("disabled", true);
-                                $('#confirm_email').attr("disabled", true);
-                                document.getElementById("confirm_email").value = "";
-                            }
-                        }
-                    });
+                              response = true;
+                          }else{
+                              $('#btn_registro_email').attr("disabled", true);
+                              $('#confirm_email').attr("disabled", true);
+                              document.getElementById("confirm_email").value = "";
+                          }
+                      }
+                  });
 
-                    return response;
-                },"Usted no está registrado en la Base de Datos MUSA 2022, verifique con su área y reintente.");
-
-                $("#email_form").validate({
-                   rules:{
-                        email:{
-                            required: true,
-                            checkUserCorreo: true
-                        },
-                        confirm_email:{
-                            required: true,
-                            equalTo:"#email"
-                        }
-                    },
-                    messages:{
-                        email:{
-                            required: "Este campo es requerido",
-                        },
-                        confirm_email:{
-                            required: "Este campo es requerido",
-                            equalTo: "El Correo Eléctronico no coincide",
-                        }
-                    }
-                });
-
-                
+                  return response;
+              },"<b>Usted ya se encuentra registrado en la plataforma verifique su información.<b>");
 
 
-            });
+              $("#email_form").validate({
+                 rules:{
+                      email:{
+                          required: true,
+                          checkUserCorreo: true
+                      },
+                      confirm_email:{
+                          required: true,
+                          equalTo:"#email"
+                      }
+                  },
+                  messages:{
+                      email:{
+                          required: "Este campo es requerido",
+                      },
+                      confirm_email:{
+                          required: "Este campo es requerido",
+                          equalTo: "El Correo Eléctronico no coincide",
+                      }
+                  }
+              });
+              
+
+          });
+          
         </script>
        
 html;
@@ -204,7 +206,7 @@ html;
         <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon.png">
         <link rel="icon" type="image/vnd.microsoft.icon" href="../../../assets/img/Musa0-01.png">
         <title>
-            Regitro - MUSA
+            Registro - MUSA
         </title>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
         <!-- Nucleo Icons -->
@@ -352,7 +354,7 @@ html;
         <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon.png">
         <link rel="icon" type="image/vnd.microsoft.icon" href="../../../assets/img/Musa0-01.png">
         <title>
-            Regitro - MUSA
+            Registro - MUSA
         </title>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
         <!-- Nucleo Icons -->
@@ -498,7 +500,7 @@ html;
             <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon.png">
             <link rel="icon" type="image/vnd.microsoft.icon" href="../../../assets/img/Musa0-01.png">
             <title>
-                Regitro - MUSA
+                Registro - MUSA
             </title>
             <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
             <!-- Nucleo Icons -->
@@ -643,15 +645,25 @@ html;
         $code_received  = $digit1.$digit2.$digit3.$digit4;
         $optionsGenero = '';
         $optionsLineaPrincipal = '';
+        $especialidad = '';
 
         $lineaGeneral = LineaGeneralDao::getLineaPrincialAll();
 
         foreach ($lineaGeneral as $key => $value) {
-            $optionsLineaPrincipal.=<<<html
-                <option value="{$value['id_linea_principal']}">{$value['nombre']}</option>
-               
+
+            
+            if ($value['id_linea_principal'] == 1 ) {
+                $optionsLineaPrincipal.=<<<html
+                    <option value="" disabled >Selecciona una opción</option>
+                    <option value="{$value['id_linea_principal']}"selected>{$value['nombre']}</option>
 html;
-        }        
+            } else {
+                $optionsLineaPrincipal.=<<<html
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="{$value['id_linea_principal']}" >{$value['nombre']}</option>
+html;
+            }
+        }   
         
         $userData = RegisterDao::getUserRegister($email)[0];
 
@@ -713,7 +725,7 @@ html;
         <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon.png">
         <link rel="icon" type="image/vnd.microsoft.icon" href="../../../assets/img/Musa0-01.png">
         <title>
-            Regitro - MUSA
+            Registro - MUSA
         </title>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
         <!-- Nucleo Icons -->
@@ -838,27 +850,24 @@ html;
               $apellido_paterno = $_POST['apellido_paterno'];
               $apellido_materno = $_POST['apellido_materno'];
               $genero = $_POST['genero'];
-              $fecha_nacimiento = $_POST['fecha_nacimiento'];
+              $pais = $_POST['pais'];
               $email = $_POST['email'];
               $telefono = $_POST['telefono'];
-              $linea_principal = $_POST['linea_principal'];
-              $actividad = $_POST['actividad'];
-              $talla = $_POST['talla'];
-              $alergias = $_POST['alergias'];
-             
+              $especialidad = $_POST['especialidad'];
+              $alergia = $_POST['alergia'];
+              $alergia_cual = $_POST['alergia_cual'];
   
               $documento->_nombre = $nombre;
               $documento->_segundo_nombre = $segundo_nombre;
               $documento->_apellido_paterno = $apellido_paterno;
               $documento->_apellido_materno = $apellido_materno;
               $documento->_genero = $genero;
-              $documento->_fecha_nacimiento = $fecha_nacimiento;
+              $documento->_pais = $pais;
               $documento->_email = $email;
               $documento->_telefono = $telefono;
-              $documento->_linea_principal = $linea_principal;
-              $documento->_actividad = $actividad;
-              $documento->_talla = $talla;
-              $documento->_alergias = $alergias;
+              $documento->_especialidad = $especialidad;
+              $documento->_alergia = $alergia;
+              $documento->_alergia_cual = $alergia_cual;
 
 
               $id = DataDao::update($documento);
@@ -894,7 +903,7 @@ html;
         <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon.png">
         <link rel="icon" type="image/vnd.microsoft.icon" href="../../../assets/img/Musa0-01.png">
         <title>
-            Regitro - MUSA
+            Registro - MUSA
         </title>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
         <!-- Nucleo Icons -->
@@ -1045,7 +1054,8 @@ html;
 
                 if ($id) {
                     
-
+                    RegisterDao::updatePolitica($register);
+                    
                     $msg = [
                         'email' => $email,
                         'name' =>  $userData['nombre']
@@ -1073,6 +1083,14 @@ html;
 
     public function isUserValidate(){
         echo (count(RegisterDao::getUserRegister($_POST['email']))>=1)? 'true' : 'false';
+    }
+
+    public function isUserValidateRegistrate(){
+        echo (count(RegisterDao::getUserRegistrate($_POST['email']))>=1)? 'true' : 'false';
+    }
+
+    public function isUserValidateUser(){
+        echo (count(RegisterDao::getUserRegisterTrue($_POST['email']))>=1)? 'true' : 'false';
     }
 
     function generateRandomString($length = 4) {

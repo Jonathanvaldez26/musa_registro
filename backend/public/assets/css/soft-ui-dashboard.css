@@ -36860,4 +36860,17 @@ input#chk-6:checked ~ #lbl-6{display: block;}
   border: none;
 }
 
+@media (max-width: 991.98px){
+  .dropdown.nav-item .dropdown-menu-animation.show {
+      height: 70px;
+  }
+}
+
+#email-error{
+  color: red;
+}
+
+#usuario-error{
+  color:red;
+}
 /*# sourceMappingURL=dashboard-pro.css.map */

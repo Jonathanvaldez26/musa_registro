@@ -15,7 +15,7 @@
             </button>
             <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
                 <ul class="navbar-nav navbar-nav-hover mx-auto">
-                    <li class="nav-item dropdown dropdown-hover mx-2">
+                    <!-- <li class="nav-item dropdown dropdown-hover mx-2">
                         <a role="button" class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center " id="dropdownMenuBlocks" data-bs-toggle="dropdown" aria-expanded="false">
                             ¿Quienes Somos?
                             <img src=" ../../../assets/img/down-arrow-dark.svg " alt="down-arrow" class="arrow ms-1 d-lg-block d-none">
@@ -96,7 +96,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <!-- responsive -->
+                            responsive
                             <div class="row d-lg-none">
                                 <div class="col-md-12">
                                     <a class="py-2 ps-3 border-radius-md" href="../../../pages/applications/kanban.html">
@@ -150,8 +150,8 @@
                                 </div>
                             </div>
                         </div>
-                    </li>
-                    <li class="nav-item dropdown dropdown-hover mx-2">
+                    </li> -->
+                    <!-- <li class="nav-item dropdown dropdown-hover mx-2">
                         <a role="button" class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center " id="dropdownMenuEcommerce" data-bs-toggle="dropdown" aria-expanded="false">
                             Nuestro Programa
                             <img src=" ../../../assets/img/down-arrow-dark.svg  " alt="down-arrow" class="arrow ms-1 d-lg-block d-none">
@@ -254,7 +254,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- responsive -->
+                            responsive
                             <div class="d-lg-none">
                                 <div class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0">
                                     <div class="d-inline-block">
@@ -343,8 +343,7 @@
                                 </a>
                             </div>
                         </div>
-                    </li>
-                    
+                    </li> -->
                 </ul>
                 <ul class="navbar-nav d-lg-block d-none">
                     <li class="nav-item">
@@ -352,6 +351,14 @@
                     </li>
                 </ul>
                 <ul class="navbar-nav d-lg-block d-none">
+                    <li class="nav-item">
+                        <a href="/Register/" style="background: #02DABE;" class="btn btn-sm  bg-gradient-faded-danger  btn-round mb-0 me-1" onclick="smoothToPricing('pricing-soft-ui')"><b style="color: #ffffff">¡Quiero Registrarme!</b></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav text-center mt-3 mb-2 d-block d-lg-none">
+                    <li class="nav-item">
+                        <a href="/Login/" style="background: #02DABE;" class="btn btn-sm  bg-gradient-faded-danger  btn-round mb-2 me-1" onclick="smoothToPricing('pricing-soft-ui')"><b style="color: #ffffff">Iniciar Sesión</b></a>
+                    </li>
                     <li class="nav-item">
                         <a href="/Register/" style="background: #02DABE;" class="btn btn-sm  bg-gradient-faded-danger  btn-round mb-0 me-1" onclick="smoothToPricing('pricing-soft-ui')"><b style="color: #ffffff">¡Quiero Registrarme!</b></a>
                     </li>
@@ -364,10 +371,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-10 col-lg-10 col-md-10 text-center mx-auto">
-                    <div class="card card-plain mt-8">
+                    <div class="card card-plain mt-8 mb-4">
                         <h2>Datos del evento</h2>
                     </div>
-                    <div class="card card-body m-2">
+                    <div class="card card-body m-2 mb-6">
                         <ul class="list-group text-left mt-2">
                             <li class="list-group-item borderless">
                                 <h4><i class="fas fa-language"></i>&nbsp;&nbsp; Idioma</h4>
@@ -433,3 +440,6 @@
         </div>
     </div>
 </main>
+
+
+<?php echo $footer; ?>

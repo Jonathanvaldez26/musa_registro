@@ -27,7 +27,7 @@ class Home extends Controller{
       <link id="pagestyle" href="/assets/css/style.css" rel="stylesheet" />
 html;
 
-        $card_permisos = HomeDao::getCountByUser($_SESSION['utilerias_asistentes_id']);
+        // $card_permisos = HomeDao::getCountByUser($_SESSION['utilerias_asistentes_id']);
         //$pickup_permisos = HomeDao::getCountPickUp($_SESSION['utilerias_asistentes_id']);
         $tabla = '';
 

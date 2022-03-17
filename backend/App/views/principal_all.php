@@ -131,17 +131,41 @@
                     </div>
                     <div class="card-body p-3 mt-2">
                         <div class="tab-content" id="v-pills-tabContent">
-                            <div class="tab-pane fade show position-relative active height-350 border-radius-lg" id="cam1" role="tabpanel" aria-labelledby="cam1" style="background-image: url('../../assets/img/curved-images/Musa/MUSA.png'); background-size:cover;">
-
+                            <div class="tab-pane fade show position-relative active height-programa border-radius-lg" id="cam1" role="tabpanel" aria-labelledby="cam1" >
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <img src="../../assets/img/curved-images/Musa/MUSA.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="tab-pane fade position-relative height-350 border-radius-lg" id="cam2" role="tabpanel" aria-labelledby="cam2" style="background-image: url('../../assets/img/curved-images/Musa/MUSA.png'); background-size:cover;">
-
+                            <div class="tab-pane fade position-relative height-programa border-radius-lg" id="cam2" role="tabpanel" aria-labelledby="cam2" >
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <img src="../../assets/img/curved-images/Musa/MUSA.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="tab-pane fade position-relative height-350 border-radius-lg" id="cam3" role="tabpanel" aria-labelledby="cam3" style="background-image: url('../../assets/img/curved-images/Musa/MUSA.png'); background-size:cover;">
-
+                            <div class="tab-pane fade position-relative height-programa border-radius-lg" id="cam3" role="tabpanel" aria-labelledby="cam3" >
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <img src="../../assets/img/curved-images/Musa/MUSA.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="tab-pane fade position-relative height-350 border-radius-lg" id="cam4" role="tabpanel" aria-labelledby="cam3" style="background-image: url('../../assets/img/curved-images/Musa/MUSA.png'); background-size:cover;">
-
+                            <div class="tab-pane fade position-relative height-programa border-radius-lg" id="cam4" role="tabpanel" aria-labelledby="cam3" >
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <img src="../../assets/img/curved-images/Musa/MUSA.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

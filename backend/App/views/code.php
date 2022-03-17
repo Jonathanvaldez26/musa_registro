@@ -44,9 +44,9 @@ echo $header;
                                         
                                         <div class="text-center text-muted mb-2">
                                             <?php echo $alerta; ?>
-                                            <h5>Ingresa tu código de verificación</h5>
+                                            <h5>Ingrece su código de verificación.</h5>
                                             
-                                            <span class="text-muted text-sm">Recibiste un código de verificación de identidad en tu cuenta de correo electrónico, introdúcelo a continuación. </span>
+                                            <span class="text-muted text-sm">Recibió un código de verificación de su identidad en su cuenta de correo electrónico, introdúzcalo a continuación. </span>
 
                                         </div>
                                         <form class="form-horizontal" id="code_form" action="/Register/Data" method="POST">
@@ -76,8 +76,8 @@ echo $header;
                                                 </div>
                                             </div>
                                             <div class="text-center">
-                                                <button style="background: #02DABE; color: #6238F6;" class="btn btn-faded-danger w-100 my-0 mb-2 ms-auto" type="submit" id="btn_registro_email"><b style="color: #FFFFFF">Verifica tu Código</b></button>
-                                                <span class="text-muted text-sm" style="font-weight:bold; font-size: 15px">¿No ha recibido recibido un código?<br><a href="javascript:0;" id="btn_reenviar_email">Reenviar un nuevo código</a>.</span>
+                                                <button style="background: #02DABE; color: #6238F6;" class="btn btn-faded-danger w-100 my-0 mb-2 ms-auto" type="submit" id="btn_registro_email"><b style="color: #FFFFFF">Verifique su código</b></button>
+                                                <span class="text-muted text-sm" style="font-weight:bold; font-size: 15px">¿No ha recibido un código?<br><a href="javascript:0;" id="btn_reenviar_email">Reenviar un nuevo código</a>.</span>
                                             </div>
                                         </form>
                                     </div>

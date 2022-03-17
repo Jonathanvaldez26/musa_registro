@@ -20,7 +20,7 @@ echo $header;
                 <div class="col-xl-8 col-lg-8 col-md-12 mx-auto">
                         <div class="card z-index-0">
                             <div class="card-header text-center pt-4">
-                                <p>Terminos y Condiciones</p>
+                                <p>Términos y Condiciones</p>
                                 <p class="text-sm font-weight-bold mb-2 text-secondary text-border d-inline z-index-2 bg-white px-3">
                                     <i class="fa fa-user-circle"></i>
                                 </p>
@@ -34,14 +34,14 @@ echo $header;
 
                                     <div class="text-center">
                                         <span class="text-danger">
-                                            Para registrarte es necesario leer completo los términos, condiciones y políticas del evento.
+                                            Para registrarse es necesario leer completo los términos, condiciones y políticas del evento.
                                         </span>
                                     </div>
                                     <br>
 
-                                    <div id="terminos" class="card-header pt-4 text-scroll ">
+                                    <div id="terminos" class="card-header pt-4 text-scroll " style="text-align: justify;">
                                         <!-- <p>Aquí van los terminos y condiciones</p> -->
-                                        <span>
+                                        <span >
                                         Los siguientes términos y condiciones (los "Términos y Condiciones") rigen el uso que usted le dé a la plataforma Protocolo de seguridad para Convención Asofarma 2022 y a cualquiera de los contenidos disponibles en ella, incluyendo cualquier contenido derivado de la misma ("La aplicación"). Asofarma de México S.A. de C.V. ("Asofarma" o "nosotros") ha puesto a su disposición la plataforma. Podemos cambiar los Términos y Condiciones de vez en cuando, en cualquier momento sin ninguna notificación, sólo publicando los cambios en la plataforma. AL USAR EL LA PLATAFORMA, USTED ACEPTA Y ESTÉ DE ACUERDO CON ESTOS TÉRMINOS Y CONDICIONES EN LO QUE SE REFIERE A SU USO DE LA PLATAFORMA. Si usted no está de acuerdo con estos Términos y Condiciones, no puede tener acceso al mismo ni usar la plataforma de ninguna otra manera.
  
  1.         Derechos de Propiedad. Entre usted y Asofarma, Asofarma es dueño único y exclusivo, de todos los derechos, título e intereses en y de la aplicación, de todo el contenido (incluyendo, por ejemplo, audio, fotografías, ilustraciones, gráficos, otros medios visuales, videos, copias, textos, software, títulos, archivos, etc.), códigos, datos y materiales del mismo, el aspecto y el ambiente, el diseño y la organización de la aplicación y la compilación de los contenidos, códigos, datos y los materiales en la aplicación, incluyendo pero no limitado a, cualesquiera derechos de autor, derechos de marca, derechos de patente, derechos de base de datos, derechos morales, derechos sui generis y otras propiedades intelectuales y derechos patrimoniales del mismo. Su uso de la aplicación no le otorga propiedad de ninguno de los contenidos, códigos, datos o materiales a los que pueda acceder en o a través de la aplicación. 
@@ -102,12 +102,12 @@ echo $header;
                                     <div class="row justify-content-center">
                                         <div class="col-md-4 col-sm-12">
                                             <button class="btn btn-sm btn-success" id="btn_success" disabled name="btn_success" value="1" type="submit">
-                                                Acepto terminos, condiciones y politicas del evento
+                                                Acepto términos, condiciones y políticas del evento
                                             </button>
                                         </div>
                                         <div class="col-md-4 col-sm-12">
                                             <button class="btn btn-sm btn-danger" id="btn_danger" disabled name="btn_danger" value="0" type="submit">
-                                                No acepto terminos, condiciones y politicas del evento 
+                                                No acepto términos, condiciones y políticas del evento 
                                             </button>
                                         </div>
                                     </div>

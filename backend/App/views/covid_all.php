@@ -59,7 +59,7 @@
             <div class="card col-lg-8 mt-lg-5 mt-1" >
                 <div class="card-header pb-0 p-3">
                     <h6 class="mb-1">Mis pruebas Covid</h6>
-                    <p class="text-sm">Registra la primera prueba Covid con anticipación de 24 o 48 horas a tu vuelo</p>
+                    <p class="text-sm">Registre la primera prueba Covid con anticipación de 24 o 48 horas a su vuelo</p>
 
                     <br>
                     <!-- <a href="#" type="button" class="btn btn-success btn-sm">Nuevo</a> -->
