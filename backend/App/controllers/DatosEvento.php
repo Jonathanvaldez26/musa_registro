@@ -5,6 +5,7 @@ defined("APPPATH") OR die("Access denied");
 use \Core\View;
 use \Core\MasterDom;
 use \App\controllers\Contenedor;
+use \Core\Controller;
 
 class DatosEvento{
 
