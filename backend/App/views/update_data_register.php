@@ -178,17 +178,12 @@ echo $header;
                                                         <!-- <p>Aquí van los terminos y condiciones</p> -->
                                                         <span>
 
-                                                            Para Asofarma de México uno de los principales objetivos es proporcionar a nuestros médicos, pacientes, clientes y sociedad en general, productos y soluciones innovadoras de la más alta calidad, para la prevención y tratamiento de múltiples padecimientos, además de una mejor calidad de vida.
-                                                            Por ello Asofarma de México ha desarrollado un Programa de Farmacovigilancia en el cual se registran los datos que ayuden a evaluar el impacto de los medicamentos en los pacientes, proporcionando datos que garanticen conocer, mejorar y guardar su nivel de seguridad.
-                                                            La Farmacovigilancia son las actividades relacionadas con la detección, evaluación, y prevención de eventos adversos o reacciones adversas relacionadas o no con los medicamentos.
-                                                            <br> <br>
-
-                                                            En esta actividad participamos todos; fabricantes de medicamentos, profesionales de la salud, autoridades sanitarias y pacientes, por medio de la notificación o reporte de sospecha de reacción adversa a un medicamento (SRAM). Esta notificación para nosotros es muy importante porque nos permite tomar acciones que ayude a los pacientes y a los médicos que prescriben nuestros medicamentos.
-                                                            Para reportar una sospecha de reacción adversa podrá hacerlo por los siguientes medios.<br> <br>
+                                                            Para leer más sobre Farmacovigilancia da clic <a href="https://asofarma.com.mx/farmacovigilancia/" target="blank_" style="text-decoration: underline;">aquí</a> 
+                                                            <br>
 
                                                             Teléfonos: +52 (55) 54248500 Ext: 8593
 
-                                                            <br> <br>
+                                                            <br>
 
                                                             Correo electrónico: farmacovigilancia@asofarma.com.mx
                                                         </span>
@@ -202,7 +197,7 @@ echo $header;
                                                             <div class="form-check">
                                                                 <input class="form-check-input" type="checkbox" value="1" id="terminos" name="terminos" required>
                                                                 <label class="form-check-label" for="terminos">
-                                                                    <b>He leído y acepto los términos y condiciones</b>
+                                                                    <b>He leído y acepto los términos y condiciones de Farmacovigilancia</b>
                                                                 </label>
                                                             </div>
 
@@ -305,7 +300,7 @@ echo $header;
                                                             <div class="form-check">
                                                                 <input class="form-check-input" type="checkbox" value="1" id="terminos1" name="terminos1" required>
                                                                 <label class="form-check-label" for="terminos1">
-                                                                    <b>He leído y acepto los términos y condiciones</b>
+                                                                    <b>He leído y acepto los términos y condiciones del aviso de privacidad</b>
                                                                 </label>
                                                             </div>
 
