@@ -1014,19 +1014,65 @@ html;
         </script>
        
 html;
-        $email = $_POST['email'];
-        $btn_politicas = '';
-        if(isset($_POST['btn_success'])){
-            $btn_politicas = $_POST['btn_success'];
-        }elseif(isset($_POST['btn_danger'])){
-            $btn_politicas = $_POST['btn_danger'];
-        }
+
+$documento = new \stdClass();
+  
+  
+          if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+              $id_registro = $_POST['id_registro'];
+              $nombre = $_POST['nombre'];
+              $segundo_nombre = $_POST['segundo_nombre'];
+              $apellido_paterno = $_POST['apellido_paterno'];
+              $apellido_materno = $_POST['apellido_materno'];
+              $genero = $_POST['genero'];
+              $pais = $_POST['pais'];
+              $email = $_POST['email'];
+              $telefono = $_POST['telefono'];
+              $especialidad = $_POST['especialidad'];
+              $alergia = $_POST['alergia'];
+              $alergia_cual = $_POST['alergia_cual'];
+              $btn_politicas = 1;
+  
+              $documento->_nombre = $nombre;
+              $documento->_segundo_nombre = $segundo_nombre;
+              $documento->_apellido_paterno = $apellido_paterno;
+              $documento->_apellido_materno = $apellido_materno;
+              $documento->_genero = $genero;
+              $documento->_pais = $pais;
+              $documento->_email = $email;
+              $documento->_telefono = $telefono;
+              $documento->_especialidad = $especialidad;
+              $documento->_alergia = $alergia;
+              $documento->_alergia_cual = $alergia_cual;
+
+
+              $id = DataDao::update($documento);
+  
+              if ($id) {
+                View::set('politica',$btn_politicas);
+                View::set('email',$email);
+                View::set('header',$extraHeader);
+                View::set('footer',$extraFooter);
+                View::render('confirm_pass');
+                //   //echo 'success';
+              } else {
+
+                //quitar esta parte
+                
+                View::set('politica',$btn_politicas);
+                View::set('email',$email);
+                View::set('header',$extraHeader);
+                View::set('footer',$extraFooter);
+                View::render('confirm_pass');
+               // print_r($id);
+                 // $this->code500();
+                  //echo 'fail';
+              }
+          } else {
+              echo 'fail REQUEST';
+          }
         
-        View::set('politica',$btn_politicas);
-        View::set('email',$email);
-        View::set('header',$extraHeader);
-        View::set('footer',$extraFooter);
-        View::render('confirm_pass');
     }
 
     public function finalize(){
