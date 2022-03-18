@@ -1,7 +1,8 @@
 <?php
 echo $header;
 ?>
-    <body class="">
+
+<body class="">
     <main class="main-content main-content-bg mt-0">
         <section>
 
@@ -11,11 +12,11 @@ echo $header;
                         Mujer Salud 2022
                     </a>
                     <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon mt-2">
-                <span class="navbar-toggler-bar bar1"></span>
-                <span class="navbar-toggler-bar bar2"></span>
-                <span class="navbar-toggler-bar bar3"></span>
-              </span>
+                        <span class="navbar-toggler-icon mt-2">
+                            <span class="navbar-toggler-bar bar1"></span>
+                            <span class="navbar-toggler-bar bar2"></span>
+                            <span class="navbar-toggler-bar bar3"></span>
+                        </span>
                     </button>
                     <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
                         <ul class="navbar-nav navbar-nav-hover mx-auto">
@@ -357,7 +358,7 @@ echo $header;
                                 <div class="dropdown-menu dropdown-menu-animation dropdown-lg mt-0 mt-lg-3 p-3 border-radius-lg" aria-labelledby="dropdownMenuDocs">
                                     <div class="d-none d-lg-block">
                                         <ul class="list-group">
-                                            
+
                                             <li class="nav-item list-group-item border-0 p-0">
                                                 <a class="dropdown-item py-2 ps-3 border-radius-md" href="/DatosEvento">
                                                     <div class="d-flex">
@@ -416,6 +417,12 @@ echo $header;
                                         </div>
                                     </div>
                                 </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://asofarma.com.mx/aviso-de-privacidad/" target="_blank" class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center " aria-expanded="false" >
+                                    Farmacovigilancia
+
+                                </a>
                             </li>
                         </ul>
                         <ul class="navbar-nav d-lg-block d-none">
@@ -478,7 +485,7 @@ echo $header;
                         <div class="col-md-6">
                             <div class="oblique position-absolute top-0 h-100 d-md-block d-none me-n9">
                                 <!-- <div class="oblique-image bg-cover position-absolute fixed-top ms-auto h-100 z-index-0 ms-n6" style="background-image:url('/assets/img/curved-images/curved9.jpg')"></div>-->
-                                <video autoplay muted loop >
+                                <video autoplay muted loop>
                                     <source class="oblique-image bg-cover position-absolute fixed-top ms-auto h-100 z-index-0 ms-n6" src="/assets/img/curved-images/Musa_Web.mp4" type="video/mp4">
                                 </video>
                             </div>
@@ -491,6 +498,6 @@ echo $header;
     <!-- -------- START FOOTER 3 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
 
 
-    </body>
+</body>
 
 <?php echo $footer; ?>
