@@ -62,26 +62,38 @@
                         <div class="nav-wrapper position-relative ms-auto w-50">
                             <ul class="nav nav-pills nav-fill p-1 flex-row" role="tablist">
                                 <li class="nav-item">
-                                    <a class="nav-link mb-0 px-0 py-1 active" data-bs-toggle="tab" href="#cam1" role="tab" aria-controls="cam1" aria-selected="true">
-                                        Jueves
+                                    <a class="nav-link mb-0 px-0 py-1 active" data-bs-toggle="tab" href="#cam" role="tab" aria-controls="cam" aria-selected="true">
+                                        <span class="fas fa-home"></span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mb-0 px-0 py-1 " data-bs-toggle="tab" href="#cam0" role="tab" aria-controls="cam0" aria-selected="false">
+                                        Programa
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mb-0 px-0 py-1" data-bs-toggle="tab" href="#cam1" role="tab" aria-controls="cam1" aria-selected="false">
+                                        28
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link mb-0 px-0 py-1" data-bs-toggle="tab" href="#cam2" role="tab" aria-controls="cam2" aria-selected="false">
-                                        Viernes
+                                        29
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link mb-0 px-0 py-1" data-bs-toggle="tab" href="#cam3" role="tab" aria-controls="cam3" aria-selected="false">
-                                        Sábado
+                                        30
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link mb-0 px-0 py-1" data-bs-toggle="tab" href="#cam4" role="tab" aria-controls="cam3" aria-selected="false">
-                                        Domingo
+                                        1
                                     </a>
                                 </li>
-                                <div class="moving-tab position-absolute nav-link" style="padding: 0px; transition: all 0.5s ease 0s; transform: translate3d(0px, 0px, 0px); "><a class="nav-link mb-0 px-0 py-1 active" data-bs-toggle="tab" href="#cam1" role="tab" aria-controls="cam1" aria-selected="true">-</a></div></ul>
+                                <div class="moving-tab position-absolute nav-link" style="padding: 0px; transition: all 0.5s ease 0s; transform: translate3d(0px, 0px, 0px); "><a class="nav-link mb-0 px-0 py-1 active" data-bs-toggle="tab" href="#cam1" role="tab" aria-controls="cam1" aria-selected="true">-</a>
+                                </div>
+                            </ul>
                         </div>
                         
                     </div>
@@ -91,23 +103,33 @@
                         <div class="nav-wrapper position-relative ms-auto">
                             <ul class="nav nav-pills nav-fill p-1 " role="tablist">
                                 <li id="movil-li" class="nav-item">
-                                    <a id="nav-day" class="nav-link mb-0 px-3 py-1 active" data-bs-toggle="tab" href="#cam1" role="tab" aria-controls="cam1" aria-selected="true">
-                                        Ju.
+                                    <a id="nav-day" class="nav-link mb-0 px-3 py-1 active" data-bs-toggle="tab" href="#cam" role="tab" aria-controls="cam" aria-selected="true">
+                                        <span class="fas fa-home"></span>
+                                    </a>
+                                </li>
+                                <li id="movil-li" class="nav-item">
+                                    <a id="nav-day" class="nav-link mb-0 px-3 py-1" data-bs-toggle="tab" href="#cam0" role="tab" aria-controls="cam0" aria-selected="false">
+                                        Programa
+                                    </a>
+                                </li>
+                                <li id="movil-li" class="nav-item">
+                                    <a id="nav-day" class="nav-link mb-0 px-3 py-1" data-bs-toggle="tab" href="#cam1" role="tab" aria-controls="cam1" aria-selected="false">
+                                        28
                                     </a>
                                 </li>
                                 <li id="movil-li" class="nav-item">
                                     <a id="nav-day" class="nav-link mb-0 px-3 py-1" data-bs-toggle="tab" href="#cam2" role="tab" aria-controls="cam2" aria-selected="false">
-                                        Vi.
+                                        29
                                     </a>
                                 </li>
                                 <li id="movil-li" class="nav-item">
                                     <a id="nav-day" class="nav-link mb-0 px-3 py-1" data-bs-toggle="tab" href="#cam3" role="tab" aria-controls="cam3" aria-selected="false">
-                                        Sa.
+                                        30
                                     </a>
                                 </li>
                                 <li id="movil-li" class="nav-item">
                                     <a id="nav-day" class="nav-link mb-0 px-3 py-1" data-bs-toggle="tab" href="#cam4" role="tab" aria-controls="cam3" aria-selected="false">
-                                        Do.
+                                        1
                                     </a>
                                 </li>
                                 <div class="dropdown pt-1">
@@ -131,11 +153,29 @@
                     </div>
                     <div class="card-body p-3 mt-2">
                         <div class="tab-content" id="v-pills-tabContent">
-                            <div class="tab-pane fade show position-relative active height-programa border-radius-lg" id="cam1" role="tabpanel" aria-labelledby="cam1" >
+                            <div class="tab-pane fade show position-relative active height-programa border-radius-lg" id="cam" role="tabpanel" aria-labelledby="cam" >
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <img src="../../assets/img/curved-images/Musa/Agenda_MUSA_2022.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade position-relative height-programa border-radius-lg" id="cam0" role="tabpanel" aria-labelledby="cam0" >
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="card">
                                             <img src="../../assets/img/curved-images/Musa/MUSA.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade position-relative height-programa border-radius-lg" id="cam1" role="tabpanel" aria-labelledby="cam1" >
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <img src="../../assets/img/curved-images/Musa/Agenda_MUSA_20222.png" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -144,7 +184,41 @@
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="card">
-                                            <img src="../../assets/img/curved-images/Musa/MUSA.png" alt="">
+                                            <ul class="nav nav-pills nav-fill p-1 flex-row" role="tablist">
+                                                <li class="nav-item">
+                                                    <a class="nav-link mb-0 px-0 py-1 active" data-bs-toggle="tab" href="#sub1" role="tab" aria-controls="sub1" aria-selected="true">
+                                                        Por la mañana
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link mb-0 px-0 py-1" data-bs-toggle="tab" href="#sub2" role="tab" aria-controls="sub2" aria-selected="false">
+                                                        Por la tarde
+                                                    </a>
+                                                </li>
+                                                <div class="moving-tab position-absolute nav-link" style="padding: 0px; transition: all 0.5s ease 0s; transform: translate3d(0px, 0px, 0px); width: 341px;">
+                                                    <a class="nav-link mb-0 px-0 py-1 active" data-bs-toggle="tab" href="#sub1" role="tab" aria-controls="sub1" aria-selected="true">-</a>
+                                                </div>
+                                            </ul>
+                                            <div class="tab-content" id="v-pills-tabContent">
+                                                <div class="tab-pane fade show position-relative active height-programa border-radius-lg" id="sub1" role="tabpanel" aria-labelledby="sub1" >
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="card">
+                                                                <img src="../../assets/img/curved-images/Musa/Agenda_MUSA_20223.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade position-relative height-programa border-radius-lg" id="sub2" role="tabpanel" aria-labelledby="sub2" >
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="card">
+                                                                <img src="../../assets/img/curved-images/Musa/Agenda_MUSA_20224.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -153,7 +227,7 @@
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="card">
-                                            <img src="../../assets/img/curved-images/Musa/MUSA.png" alt="">
+                                            <img src="../../assets/img/curved-images/Musa/Agenda_MUSA_20225.png" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -162,7 +236,7 @@
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="card">
-                                            <img src="../../assets/img/curved-images/Musa/MUSA.png" alt="">
+                                            <img src="../../assets/img/curved-images/Musa/Agenda_MUSA_20226.png" alt="">
                                         </div>
                                     </div>
                                 </div>

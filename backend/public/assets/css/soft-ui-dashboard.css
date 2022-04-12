@@ -36873,4 +36873,13 @@ input#chk-6:checked ~ #lbl-6{display: block;}
 #usuario-error{
   color:red;
 }
+
+.musa-img-inicio{
+    width: 100%;
+    position: fixed;
+    left: 1;
+    right: 1;
+    bottom: 50%;
+    top: 40%;
+}
 /*# sourceMappingURL=dashboard-pro.css.map */
