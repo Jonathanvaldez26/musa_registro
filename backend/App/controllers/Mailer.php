@@ -83,7 +83,7 @@ class Mailer
         <body leftmargin="0" topmargin="0" marginheight="0" marginwidth="0">
                     
             <div class="container">
-                <img src="https://registro.foromusa.com/img/musa-01.png" alt="">
+                <img src="https://registro.foromusa.com/img/img_correo.jpeg" alt="">
                 <br>
                 <p>
                     Estamos ansiosos de volverlo a ver…
@@ -194,7 +194,7 @@ class Mailer
                 <body leftmargin="0" topmargin="0" marginheight="0" marginwidth="0">
                     
                     <div class="container">
-                    <img src="https://registro.foromusa.com/img/musa-01.png" alt="">
+                    <img src="https://registro.foromusa.com/img/img_correo.jpeg" alt="">
                         <p style="text-align: center !important;">
                             Estimado, ' . $msg['name'] . ' : 
                             <strong>¡Su registro a MUSA fue exitoso! </strong>
