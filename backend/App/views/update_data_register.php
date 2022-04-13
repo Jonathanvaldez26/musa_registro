@@ -167,7 +167,7 @@ echo $header;
 
                                     <div class="row">
                                         <div class="col-12 text-center">
-                                            <label class="form-label mt-4"><b>TERMINOS Y CONDICIONES</b></label>
+                                            <label class="form-label mt-4"><b>TÉRMINOS Y CONDICIONES</b></label>
                                             <div class="card z-index-0">
 
                                                 <div class="card-body pt-1">
