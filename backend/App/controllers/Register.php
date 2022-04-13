@@ -1091,7 +1091,8 @@ $documento = new \stdClass();
                 
                 $id_registro_acceso = $userData['id_registro_acceso'];
                 
-                $register->_password = md5($password);
+                // $register->_password = md5($password);
+                $register->_password = $password;
                 $register->_email = $email;
                 $register->_politica = $politica;
                 $register->_id_registro_acceso = $id_registro_acceso;

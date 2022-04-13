@@ -152,7 +152,8 @@ html;
     public function verificarUsuario(){
         $usuario = new \stdClass();
         $usuario->_usuario = MasterDom::getData("usuario");
-        $usuario->_password = MD5(MasterDom::getData("password"));
+        // $usuario->_password = MD5(MasterDom::getData("password"));
+        $usuario->_password = MasterDom::getData("password");
         $user = LoginDao::getById($usuario);
         if (count($user)>=1) {
             $user['nombre'] = utf8_encode($user['nombre']);
@@ -163,7 +164,8 @@ html;
     public function crearSession(){
         $usuario = new \stdClass();
         $usuario->_usuario = MasterDom::getData("usuario");
-        $usuario->_password = MD5(MasterDom::getData("password"));
+        // $usuario->_password = MD5(MasterDom::getData("password"));
+        $usuario->_password = MasterDom::getData("password");
         $user = LoginDao::getById($usuario);
         session_start();
         $_SESSION['usuario'] = $user['usuario'];
