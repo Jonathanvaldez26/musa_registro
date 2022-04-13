@@ -127,7 +127,7 @@ class Mailer
             echo  $mail->Username;                     //SMTP username contacto@convencionasofarma2022.mx
             echo $mail->Password;
         } catch (Exception $e) {
-            // echo "No se pudo enviar el email: {$mail->ErrorInfo}";
+            echo "No se pudo enviar el email: {$mail->ErrorInfo}";
         }
     }
 
