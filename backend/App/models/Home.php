@@ -25,4 +25,16 @@ sql;
         return $mysqli->queryOne($query);
     }
 
+    public static function getQRById($id){
+      $mysqli = Database::getInstance(true);
+      $query=<<<sql
+      SELECT ra.*
+      FROM registros_acceso ra
+      INNER JOIN utilerias_asistentes ua
+      ON  ra.id_registro_acceso = ua.id_registro_acceso
+
+      WHERE ua.utilerias_asistentes_id = '$id'
+sql;
+      return $mysqli->queryOne($query);
+  }
 }
