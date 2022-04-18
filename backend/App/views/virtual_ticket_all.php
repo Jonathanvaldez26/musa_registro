@@ -80,7 +80,7 @@
                     <div class="row justify-content-center align-items-center">
                         <div class="col-sm-auto col-4">
                             <div class="avatar avatar-xl position-relative">
-                                <img src="../../assets/img/small-logos/asofarma_boleto_virtual.png" alt="bruce" class="w-100 border-radius-lg shadow-sm">
+                                <img src="../../assets/img/icons/iCONOS-05.png" alt="bruce" class="w-100 border-radius-lg shadow-sm">
                             </div>
                         </div>
                         <div class="col-sm-auto col-8 my-auto">
@@ -107,17 +107,29 @@
                         <h5>Información Básica</h5>
                     </div>
                     <div class="card-body">
-                        Estamos generando tu ticket
+                        <!-- Estamos generando tu ticket -->
                         <!--<img src="../../assets/img/boleto.png" alt="bruce" class="w-100 border-radius-lg shadow-sm"> -->
-                        <div class="row">
-                            <div class="button-row d-flex mt-4 col-12">
-                                <a class="btn bg-gradient-light mb-0 js-btn-prev" href="/Home/" title="Prev">Regresar</a>
+                        <img src="http://localhost:8103/qrs/<?php echo $qr; ?>.png" style="display: none;" alt="" hidden>
+                        <input id="codigo-qr" type="text" value="http://localhost:8103/qrs/<?php echo $qr; ?>.png" style="display: none;" hidden readonly>
+                        <input id="nombre-canvas" type="text" value="<?php echo $nombre; ?>" style="display: none;" hidden readonly>
+                        <input id="apellidos-canvas" type="text" value="<?php echo $apellidos; ?>" style="display: none;" hidden readonly>
+                        <!-- <br><br> -->
+                        <div class="col-md-12 col-12 text-center">
+                            <div id="main_ticket" hidden>
+                                <canvas id="canvas_ticket" width="1220" height="457" name="ticket-<?php echo $clave_user; ?>" alt="ticket-<?php echo $clave_user; ?>" style="background: white; width: -webkit-fill-available;">
+                                    <img src="/img/boleto.png" alt="">
+                                </canvas> <!--  background-image: url('/img/ticket.jpg'); -->
                             </div>
                         </div>
+                        
                     </div>
-
+                    
                </div>
-
+               <div class="row">
+                    <div class="button-row d-flex mt-4 col-12">
+                        <a class="btn bg-gradient-light mb-4 mt-11 mt-md-0 js-btn-prev" href="/Home/" title="Prev">Regresar</a>
+                    </div>
+                </div>
            </div>
            <div class="col-lg-2">
            </div>
@@ -127,6 +139,107 @@
 
 </main>
 
+<script>
+    $(document).ready(function() {
+        // document.getElementById('main_ticket').removeAttribute('hidden');
+        // app.loadPicture();
+
+        var app = (function() {
+            var canvas = document.getElementById('canvas_ticket');
+            context = canvas.getContext('2d');
+
+            var imgTicketFondo = new Image();
+            imgTicketFondo.src = '/img/boleto.png';
+
+            imgTicketFondo.onload = function() {
+                context.drawImage(imgTicketFondo, 0, 0);
+            }
+
+            // API
+            public = {};
+
+            // Public methods goes here...
+
+            public.loadPicture = function() {
+
+                var imgTicketFondo = new Image();
+                imgTicketFondo.src = '/img/boleto.png';
+
+                imgTicketFondo.onload = function() {
+                    context.drawImage(imgTicketFondo, 0, 0);
+                }
+
+                context = canvas.getContext('2d');
+
+                var imgCodeQr = new Image();
+                imgCodeQr.src = $('#codigo-qr').val();
+
+                imgCodeQr.onload = function() {
+                    context.drawImage(imgTicketFondo, 0, 0);
+                    context.drawImage(imgCodeQr, 870, 90);
+                
+
+                    var centerX = canvas.width/2;
+                    var centerY = canvas.height/2;
+
+                    context = canvas.getContext('2d');
+
+                    context.font="20pt Verdana";
+                    context.fillStyle = "white";
+
+                    context.fillText($('#nombre-canvas').val(),430, centerY-50);
+
+                    context.font="20pt Verdana";
+                    context.fillStyle = "white";
+
+                    context.fillText($('#apellidos-canvas').val(),430, centerY);
+                }
+
+            };
+
+            return public;
+        }());
+
+        function loadPicture() {
+
+            context = canvas.getContext('2d');
+
+            var imgCodeQr = new Image();
+            imgCodeQr.src = $('#codigo-qr').val();
+
+            imgCodeQr.onload = function() {
+                context.drawImage(imgTicketFondo, 0, 0);
+                context.drawImage(imgCodeQr, 870, 90);
 
 
+                var centerX = canvas.width/2;
+                var centerY = canvas.height/2;
 
+                context = canvas.getContext('2d');
+
+                context.font="20pt Verdana";
+                context.fillStyle = "white";
+
+                context.fillText($('#nombre-canvas').val(),430, centerY-50);
+
+                context.font="20pt Verdana";
+                context.fillStyle = "white";
+
+                context.fillText($('#apellidos-canvas').val(),430, centerY);
+            }
+
+            };
+
+        $('#show_ticket').on('click', function(event) {
+            // alert('Mostrar Ticket');
+            // console.log('asdasdasdas');
+            document.getElementById('main_ticket').removeAttribute('hidden');
+            app.loadPicture();
+        });
+
+        app;
+        document.getElementById('main_ticket').removeAttribute('hidden');
+        app.loadPicture();
+        // loadPicture();
+    });
+</script>

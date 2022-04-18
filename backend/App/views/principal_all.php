@@ -271,7 +271,21 @@
                     </div>
                 </div>
                 <div class="row mt-4">
-                    
+                    <div class="col-md-6 mt-md-0 mt-4">
+                        <a href="/VirtualTicket/">
+                            <div class="card card-link">
+                                <div class="card-body text-center">
+                                    <div class="col-12 text-center">
+                                        <img class="w-30 btn-img-home" src="../../assets/img/icons/iCONOS-05.png">
+                                        <br>
+                                    </div>
+                                    <br>
+                                    <h6 class="mb-0 font-weight-bolder">Ticket Virtual</h6>
+                                    <p class="opacity-8 mb-0 text-sm">Disponible</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                     <div class="col-md-6 mt-md-0 mt-4">
                         <a href="/News/">
                             <div class="card card-link">
@@ -287,7 +301,6 @@
                             </div>
                         </a>
                     </div>
-
                 </div>
             </div>
         </div>
