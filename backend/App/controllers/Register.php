@@ -1047,28 +1047,29 @@ $documento = new \stdClass();
               $documento->_alergia_cual = $alergia_cual;
 
 
-              $id = DataDao::update($documento);
+               //$id = DataDao::update($documento);
   
-              if ($id) {
+            //   if ($id) {
                 View::set('politica',$btn_politicas);
                 View::set('email',$email);
                 View::set('header',$extraHeader);
                 View::set('footer',$extraFooter);
+                View::set('data',$documento);
                 View::render('confirm_pass');
                 //   //echo 'success';
-              } else {
+            //   } else {
 
-                //quitar esta parte
+            //     //quitar esta parte
                 
-                View::set('politica',$btn_politicas);
-                View::set('email',$email);
-                View::set('header',$extraHeader);
-                View::set('footer',$extraFooter);
-                View::render('confirm_pass');
-               // print_r($id);
-                 // $this->code500();
-                  //echo 'fail';
-              }
+            //     View::set('politica',$btn_politicas);
+            //     View::set('email',$email);
+            //     View::set('header',$extraHeader);
+            //     View::set('footer',$extraFooter);
+            //     View::render('confirm_pass');
+            //    // print_r($id);
+            //      // $this->code500();
+            //       //echo 'fail';
+            //   }
           } else {
               echo 'fail REQUEST';
           }
@@ -1099,9 +1100,38 @@ $documento = new \stdClass();
 
                 $id = DataDao::insert($register);
 
+
+                $nombre = $_POST['nombre'];
+                $segundo_nombre = $_POST['segundo_nombre'];
+                $apellido_paterno = $_POST['apellido_paterno'];
+                $apellido_materno = $_POST['apellido_materno'];
+                $genero = $_POST['genero'];
+                $pais = $_POST['pais'];
+                $email = $_POST['email'];
+                $telefono = $_POST['telefono'];
+                $especialidad = $_POST['especialidad'];
+                $alergia = $_POST['alergia'];
+                $alergia_cual = $_POST['alergia_cual'];
+                $politica = 1;
+
+                $documento = new \stdClass();
+                $documento->_nombre = $nombre;
+                $documento->_segundo_nombre = $segundo_nombre;
+                $documento->_apellido_paterno = $apellido_paterno;
+                $documento->_apellido_materno = $apellido_materno;
+                $documento->_genero = $genero;
+                $documento->_pais = $pais;
+                $documento->_email = $email;
+                $documento->_telefono = $telefono;
+                $documento->_especialidad = $especialidad;
+                $documento->_alergia = $alergia;
+                $documento->_alergia_cual = $alergia_cual;
+                $documento->_politica = $politica;
+
                 if ($id) {
-                    
-                    RegisterDao::updatePolitica($register);
+
+                   DataDao::update($documento);                    
+                   //RegisterDao::updatePolitica($register);
                     
                     $msg = [
                         'email' => $email,

@@ -11,6 +11,7 @@ echo $header;
                     <div class="col-lg-5 text-center mx-auto">
                         <h1 class="text-dark mb-2 mt-5">¡Bienvenido!</h1>
                         <p class="text-lead text-dark">MUSA, Mujer Salud 2022. </p>
+                        <?php //var_dump($data); ?>
                     </div>
                 </div>
             </div>
@@ -28,6 +29,18 @@ echo $header;
                             </div>
                             <div class="card-body pt-0">
                                 <form class="form-horizontal" id="pass_form" action="" method="POST">
+
+                                <input type="hidden" name="nombre" value="<?= $data->_nombre; ?>">
+                                <input type="hidden" name="segundo_nombre" value="<?= $data->_segundo_nombre; ?>">
+                                <input type="hidden" name="apellido_materno" value="<?= $data->_apellido_materno; ?>">
+                                <input type="hidden" name="apellido_paterno" value="<?= $data->_apellido_paterno; ?>">
+                                <input type="hidden" name="genero" value="<?= $data->_genero; ?>">
+                                <input type="hidden" name="pais" value="<?= $data->_pais; ?>">                               
+                                <input type="hidden" name="telefono" value="<?= $data->_telefono; ?>">
+                                <input type="hidden" name="especialidad" value="<?= $data->_especialidad; ?>">
+                                <input type="hidden" name="alergia" value="<?= $data->_alergia; ?>">
+                                <input type="hidden" name="alergia_cual" value="<?= $data->_alergia_cual; ?>">
+
                                     <!-- <input type="hidden" id="id_registro" name="id_registro" value="<?=$id_registro?>"> -->
                                     <input type="hidden" id="email" name="email" value="<?=$email?>">
                                     <input type="hidden" id="politica" name="politica" value="<?=$politica?>">
