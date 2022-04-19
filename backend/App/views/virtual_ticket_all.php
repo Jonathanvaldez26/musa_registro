@@ -109,8 +109,8 @@
                     <div class="card-body">
                         <!-- Estamos generando tu ticket -->
                         <!--<img src="../../assets/img/boleto.png" alt="bruce" class="w-100 border-radius-lg shadow-sm"> -->
-                        <img src="http://localhost:8103/qrs/<?php echo $qr; ?>.png" style="display: none;" alt="" hidden>
-                        <input id="codigo-qr" type="text" value="http://localhost:8103/qrs/<?php echo $qr; ?>.png" style="display: none;" hidden readonly>
+                        <img src="https://admin.foromusa.com/qrs/<?php echo $qr; ?>.png" style="display: none;" alt="" hidden>
+                        <input id="codigo-qr" type="text" value="https://admin.foromusa.com/qrs/<?php echo $qr; ?>.png" style="display: none;" hidden readonly>
                         <input id="nombre-canvas" type="text" value="<?php echo $nombre; ?>" style="display: none;" hidden readonly>
                         <input id="apellidos-canvas" type="text" value="<?php echo $apellidos; ?>" style="display: none;" hidden readonly>
                         <!-- <br><br> -->
