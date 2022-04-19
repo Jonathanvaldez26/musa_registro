@@ -104,7 +104,7 @@
                                             </div>
                                         </div>
                                         <div class="d-flex">
-                                            <button class="btn btn-success btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto" data-toggle="modal" data-target="#ver-pase-salida"><i class="ni ni-bold-right" aria-hidden="true"></i></button>
+                                            <button class="btn btn-success btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto" data-toggle="modal" data-target="#ver-pase-llegada"><i class="ni ni-bold-right" aria-hidden="true"></i></button>
                                         </div>
                                     </li>
                                     <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
