@@ -409,5 +409,27 @@ sql;
       return $mysqli->insert($query);
     }
 
+    public static function getPaseLlegada($id){
+      $mysqli = Database::getInstance();
+      $query=<<<sql
+      SELECT * FROM pases_abordar pa
+      INNER JOIN utilerias_asistentes ua
+      ON ua.utilerias_asistentes_id = pa.utilerias_asistentes_id
 
+      WHERE pa.tipo = 1 AND ua.utilerias_asistentes_id = $id
+sql;
+      return $mysqli->queryOne($query);
+    }
+
+    public static function getPaseSalida($id){
+      $mysqli = Database::getInstance();
+      $query=<<<sql
+      SELECT * FROM pases_abordar pa
+      INNER JOIN utilerias_asistentes ua
+      ON ua.utilerias_asistentes_id = pa.utilerias_asistentes_id
+
+      WHERE pa.tipo = 2 AND ua.utilerias_asistentes_id = $id
+sql;
+      return $mysqli->queryOne($query);
+    }
 }

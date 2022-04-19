@@ -5,6 +5,7 @@ defined("APPPATH") OR die("Access denied");
 use \Core\View;
 use \Core\MasterDom;
 use \App\controllers\Contenedor;
+use App\models\General;
 use \Core\Controller;
 
 class Passes extends Controller{
@@ -61,8 +62,40 @@ html;
     <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
     <script src="../../assets/js/soft-ui-dashboard.min.js?v=1.0.5"></script>
 html;
-      View::set('header',$this->_contenedor->header($extraHeader));
-      View::set('footer',$this->_contenedor->footer($extraFooter));
-      View::render("passes_work");
+
+        $pase_llegada = General::getPaseLlegada($_SESSION['utilerias_asistentes_id']);
+        $pase_salida = General::getPaseSalida($_SESSION['utilerias_asistentes_id']);
+
+        if ($pase_salida) {
+            $modal = <<<html
+            <span class="font-weight-bold text-xl" style="color: #01a31c"> Disponible para Descarga</span>
+            <span class="text-xs">Asegurate de descargar tu boleto antes de abordar, ya esta disponible.</span>
+html;
+            
+            $btn_salida = <<<html
+            <div class="d-flex">
+                <button class="btn btn-success btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto" data-toggle="modal" data-target="#ver-pase-salida"><i class="ni ni-bold-right" aria-hidden="true"></i></button>
+            </div>
+html;
+        } else {
+            $modal = <<<html
+            <span class="font-weight-bold text-xl" style="color: #940e0e">Aún NO Disponible para Descarga</span>
+            <span class="text-xs">Asegurate de descargar tu boleto antes de abordar una vez que se encuentre disponible.</span>
+html;
+            $btn_salida = '';
+        }
+        
+        View::set('pase_llegada',$pase_llegada);
+        View::set('pase_salida',$pase_salida);
+        View::set('modal',$modal);
+        View::set('btn_salida',$btn_salida);
+        View::set('header',$this->_contenedor->header($extraHeader));
+        View::set('footer',$this->_contenedor->footer($extraFooter));
+
+        if ($pase_llegada) {
+            View::render("passes_all");
+        } else {
+            View::render("passes_work");
+        }
     }
 }
