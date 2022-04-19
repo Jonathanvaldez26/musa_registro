@@ -84,10 +84,13 @@ html;
 html;
             $btn_salida = '';
         }
+
+        $nombre_completo = General::getUserByUAId($_SESSION['utilerias_asistentes_id'])['nombre_completo'];
         
         View::set('pase_llegada',$pase_llegada);
         View::set('pase_salida',$pase_salida);
         View::set('modal',$modal);
+        View::set('nombre_completo',$nombre_completo);
         View::set('btn_salida',$btn_salida);
         View::set('header',$this->_contenedor->header($extraHeader));
         View::set('footer',$this->_contenedor->footer($extraFooter));
