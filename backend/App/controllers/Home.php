@@ -5,7 +5,7 @@ defined("APPPATH") OR die("Access denied");
 use \Core\View;
 use \Core\Controller;
 use \App\models\Home AS HomeDao;
-
+use App\models\RegistroAcceso as RegistroAccesoDao;
 
 class Home extends Controller{
 
@@ -44,7 +44,13 @@ html;
           //  }
         //}
 
+        $data_user = HomeDao::getDataUser($this->__usuario);
+
+        $permisos_mexico = $data_user['pais'] != 'México' ? "style=\"display:none;\"" : "";
+
+
         View::set('header',$this->_contenedor->header($extraHeader));
+        View::set('permisos_mexico',$permisos_mexico);
         //View::set('tabla',$tabla);
         View::render("principal_all");
     }
