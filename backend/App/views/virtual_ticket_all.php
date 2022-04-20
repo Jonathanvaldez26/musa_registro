@@ -108,7 +108,7 @@
                     </div>
                     <div class="card-body">
                         <!-- Estamos generando tu ticket -->
-                        <!--<img src="../../assets/img/boleto.png" alt="bruce" class="w-100 border-radius-lg shadow-sm"> -->
+                        <!--<img src="../../assets/assets/img/boleto_musa.jpeg" alt="bruce" class="w-100 border-radius-lg shadow-sm"> -->
                         <img src="https://admin.foromusa.com/qrs/<?php echo $qr; ?>.png" style="display: none;" alt="" hidden>
                         <input id="codigo-qr" type="text" value="https://admin.foromusa.com/qrs/<?php echo $qr; ?>.png" style="display: none;" hidden readonly>
                         <input id="nombre-canvas" type="text" value="<?php echo $nombre; ?>" style="display: none;" hidden readonly>
@@ -117,7 +117,7 @@
                         <div class="col-md-12 col-12 text-center">
                             <div id="main_ticket" hidden>
                                 <canvas id="canvas_ticket" width="1220" height="457" name="ticket-<?php echo $clave_user; ?>" alt="ticket-<?php echo $clave_user; ?>" style="background: white; width: -webkit-fill-available;">
-                                    <img src="/img/boleto.png" alt="">
+                                    <img src="/assets/img/boleto_musa.jpeg" alt="">
                                 </canvas> <!--  background-image: url('/img/ticket.jpg'); -->
                             </div>
                         </div>
@@ -149,7 +149,7 @@
             context = canvas.getContext('2d');
 
             var imgTicketFondo = new Image();
-            imgTicketFondo.src = '/img/boleto.png';
+            imgTicketFondo.src = '/assets/img/boleto_musa.jpeg';
 
             imgTicketFondo.onload = function() {
                 context.drawImage(imgTicketFondo, 0, 0);
@@ -163,7 +163,7 @@
             public.loadPicture = function() {
 
                 var imgTicketFondo = new Image();
-                imgTicketFondo.src = '/img/boleto.png';
+                imgTicketFondo.src = '/assets/img/boleto_musa.jpeg';
 
                 imgTicketFondo.onload = function() {
                     context.drawImage(imgTicketFondo, 0, 0);
@@ -185,14 +185,14 @@
                     context = canvas.getContext('2d');
 
                     context.font="20pt Verdana";
-                    context.fillStyle = "white";
+                    context.fillStyle = "black";
 
-                    context.fillText($('#nombre-canvas').val(),430, centerY-50);
+                    context.fillText($('#nombre-canvas').val(),280, centerY+80);
 
                     context.font="20pt Verdana";
-                    context.fillStyle = "white";
+                    context.fillStyle = "black";
 
-                    context.fillText($('#apellidos-canvas').val(),430, centerY);
+                    context.fillText($('#apellidos-canvas').val(),280, centerY+110);
                 }
 
             };
