@@ -38,6 +38,14 @@ sql;
         return $mysqli->update($query, $parametros);
     }
 
+    public static function getDataUser($user){
+      $mysqli = Database::getInstance(true);
+      $query=<<<sql
+      SELECT * FROM registros_acceso WHERE email = '$user'
+sql;
+      return $mysqli->queryOne($query);
+  }
+
 
     
 }

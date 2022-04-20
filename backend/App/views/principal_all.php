@@ -207,7 +207,7 @@
                     </div>
                 </div>
                 <div class="row  mt-md-4 mt-0">
-                    <div class="col-md-6 mt-md-0 mt-4">
+                    <div class="col-md-6 mt-4">
                         <a href="/Account/">
                             <div class="card card-link">
                                 <div class="card-body text-center">
@@ -222,7 +222,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-6 mt-md-0 mt-4">
+                    <div class="col-md-6 mt-4">
                         <a href="/Vaccination/">
                             <div class="card card-link">
                                 <div class="card-body text-center">
@@ -237,9 +237,9 @@
                             </div>
                         </a>
                     </div>
-                </div>
-                <div class="row mt-4">
-                    <div class="col-md-6">
+                <!-- -</div>
+                -<div class="row mt-4"> -->
+                    <div class="col-md-6 mt-4">
                         <a href="/Covid/">
                             <div class="card card-link">
                                 <div class="card-body text-center">
@@ -254,7 +254,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-6 mt-md-0 mt-4">
+                    <div class="col-md-6 mt-4" <?= $permisos_mexico;?>>
                         <a href="/Passes/">
                             <div class="card card-link">
                                 <div class="card-body text-center">
@@ -269,9 +269,9 @@
                             </div>
                         </a>
                     </div>
-                </div>
-                <div class="row mt-4">
-                    <div class="col-md-6 mt-md-0 mt-4">
+               <!-- - </div>
+                -<div class="row mt-4"> -->
+                    <div class="col-md-6 mt-4">
                         <a href="/VirtualTicket/">
                             <div class="card card-link">
                                 <div class="card-body text-center">
@@ -286,7 +286,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-6 mt-md-0 mt-4">
+                    <div class="col-md-6 mt-4">
                         <a href="/News/">
                             <div class="card card-link">
                                 <div class="card-body text-center">
