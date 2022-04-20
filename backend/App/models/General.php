@@ -409,5 +409,39 @@ sql;
       return $mysqli->insert($query);
     }
 
+    public static function getPaseLlegada($id){
+      $mysqli = Database::getInstance();
+      $query=<<<sql
+      SELECT * FROM pases_abordar pa
+      INNER JOIN utilerias_asistentes ua
+      ON ua.utilerias_asistentes_id = pa.utilerias_asistentes_id
 
+      WHERE pa.tipo = 1 AND ua.utilerias_asistentes_id = $id
+sql;
+      return $mysqli->queryOne($query);
+    }
+
+    public static function getPaseSalida($id){
+      $mysqli = Database::getInstance();
+      $query=<<<sql
+      SELECT * FROM pases_abordar pa
+      INNER JOIN utilerias_asistentes ua
+      ON ua.utilerias_asistentes_id = pa.utilerias_asistentes_id
+
+      WHERE pa.tipo = 2 AND ua.utilerias_asistentes_id = $id
+sql;
+      return $mysqli->queryOne($query);
+    }
+
+    public static function getUserByUAId($id){
+      $mysqli = Database::getInstance();
+      $query=<<<sql
+      SELECT *, CONCAT(ra.nombre,' ',ra.segundo_nombre,' ',ra.apellido_paterno,' ',ra.apellido_materno) AS nombre_completo FROM utilerias_asistentes ua
+		  INNER JOIN registros_acceso ra
+      ON ua.id_registro_acceso = ra.id_registro_acceso
+
+      WHERE ua.utilerias_asistentes_id = $id
+sql;
+      return $mysqli->queryOne($query);
+    }
 }

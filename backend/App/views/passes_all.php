@@ -61,7 +61,7 @@
                             <div class="overflow-hidden position-relative border-radius-lg bg-cover h-100" style="background-image: url('../../assets/img/ivancik.png');">
                                 <span class="mask bg-gradient-dark"></span>
                                 <div class="card-body position-relative z-index-1 h-100 p-3">
-                                    <h6 class="text-white font-weight-bolder mb-3">Hey Dr. Carlos Cruz Sánchez</h6>
+                                    <h6 class="text-white font-weight-bolder mb-3">Hey <?php echo $nombre_completo;?> </h6>
                                     <p class="text-white mb-3">Los boletos estarán disponibles en todo momento con días de anticipación, una vez tengamos tus comprobantes de vacunación y tu prueba Covid.</p>
                                     <a class="btn btn-round btn-outline-white mb-0" href="https://api.whatsapp.com/send?phone=+5215627307605&text=¡Hola, necesito ayuda con mis pases de abordar!">
                                         ¡QUIERO CONTACTAR A SOPORTE!
@@ -99,7 +99,8 @@
                                             </div>
                                             <div class="d-flex flex-column">
                                                 <h6 class="mb-1 text-dark text-sm">Ticket Llegada</h6>
-                                                <span class="font-weight-bold text-xl" style="color: #01a31c"> Disponible para Descarga</span><span class="text-xs">Asegurate de descargar tu boleto antes de abordar, ya esta disponible.</span>
+                                                <span class="font-weight-bold text-xl" style="color: #01a31c"> Disponible para Descarga</span>
+                                                <span class="text-xs">Asegurate de descargar tu boleto antes de abordar, ya esta disponible.</span>
                                             </div>
                                         </div>
                                         <div class="d-flex">
@@ -126,9 +127,10 @@
                                             </div>
                                             <div class="d-flex flex-column">
                                                 <h6 class="mb-1 text-dark text-sm">Ticket Salida</h6>
-                                                <span class="font-weight-bold text-xl" style="color: #940e0e">Aún NO Disponible para Descarga</span><span class="text-xs">Asegurate de descargar tu boleto antes de abordar una vez que se encuentre disponible.</span>
+                                                <?php echo $modal;?>
                                             </div>
                                         </div>
+                                        <?php echo $btn_salida;?>
                                     </li>
                                 </ul>
                                 <div class="row">
@@ -144,130 +146,92 @@
             <div class="col-xl-5 col-lg-7 mt-lg-0 mt-4">
                 <div class="row">
                     <div class="col-12">
-                        <div class="card widget-calendar h-100">
-                            <!-- Card header -->
-                            <div class="card-header p-3 pb-0">
-                                <h6 class="mb-0">Calendario para Vuelos</h6>
-                                <div class="d-flex">
-                                    <div class="p text-sm font-weight-bold mb-0 widget-calendar-day">Abril</div>
-                                    <span>,&nbsp;</span>
-                                    <div class="p text-sm font-weight-bold mb-1 widget-calendar-year">2022</div>
-                                </div>
-                            </div>
-                            <!-- Card body -->
-                            <div class="card-body p-3">
-                                <div data-toggle="widget-calendar" class="fc fc-media-screen fc-direction-ltr fc-theme-standard"><div class="fc-view-harness fc-view-harness-passive"><div class="fc-daygrid fc-dayGridMonth-view fc-view"><table class="fc-scrollgrid "><thead><tr class="fc-scrollgrid-section fc-scrollgrid-section-header "><td><div class="fc-scroller-harness"><div class="fc-scroller" style="overflow: visible;"><table class="fc-col-header " style="width: 557px;"><colgroup></colgroup><tbody><tr><th class="fc-col-header-cell fc-day fc-day-sun"><div class="fc-scrollgrid-sync-inner"><a class="fc-col-header-cell-cushion ">Sun</a></div></th><th class="fc-col-header-cell fc-day fc-day-mon"><div class="fc-scrollgrid-sync-inner"><a class="fc-col-header-cell-cushion ">Mon</a></div></th><th class="fc-col-header-cell fc-day fc-day-tue"><div class="fc-scrollgrid-sync-inner"><a class="fc-col-header-cell-cushion ">Tue</a></div></th><th class="fc-col-header-cell fc-day fc-day-wed"><div class="fc-scrollgrid-sync-inner"><a class="fc-col-header-cell-cushion ">Wed</a></div></th><th class="fc-col-header-cell fc-day fc-day-thu"><div class="fc-scrollgrid-sync-inner"><a class="fc-col-header-cell-cushion ">Thu</a></div></th><th class="fc-col-header-cell fc-day fc-day-fri"><div class="fc-scrollgrid-sync-inner"><a class="fc-col-header-cell-cushion ">Fri</a></div></th><th class="fc-col-header-cell fc-day fc-day-sat">
-                                <div class="fc-scrollgrid-sync-inner">
-                                    <a class="fc-col-header-cell-cushion">Sat</a>
-                                </div></th></tr></tbody></table></div></div></td></tr>
+                        <div class="row mt-4">
+                            <div class="col-lg-12">
+                                <div class="card widget-calendar">
+                                    <div class="card-header p-3 pb-0">
+                                        <h6 class="mb-0 text-center">Calendario</h6>
+                                        <div hidden class="text-center">
+                                            <span class="p text-sm font-weight-bold mb-0">Hoy es &nbsp;</span>
+                                            <span class="p text-sm font-weight-bold mb-0 text-dark widget-calendar-num-day"></span>
+                                                <span class="p text-sm font-weight-bold mb-0 widget-calendar-num-day">&nbsp; de &nbsp;</span>
+                                            <span class="p text-sm font-weight-bold mb-0 text-dark widget-calendar-month"></span>
+                                                <span class="p text-sm font-weight-bold mb-0 widget-calendar-num-day">&nbsp; del &nbsp;</span>
+                                            <span class="p text-sm font-weight-bold mb-1 text-dark widget-calendar-year"></span>
+                                        </div>
+                                        <!-- <hr class="horizontal dark mb-0"> -->
+                                        <div class="text-center">
+                                            <span class="badge badge-info">Rumbo a la convención</span>
+                                            <span class="badge badge-success">Regreso a casa</span> <br>
+                                        </div>
+                                    </div>
+                                    <!-- Card body -->
+                                    <div class="card-body p-3">
+                                        <div data-toggle="widget-calendar"></div>
+                                        <div>
+                                            <table class="table">
+                                                <thead class="thead-light" style="font-size: small;">
+                                                    <tr>
+                                                        <td>Lunes</td>
+                                                        <td>Martes</td>
+                                                        <td>Miércoles</td>
+                                                        <td>Jueves</td>
+                                                        <td>Viernes</td>
+                                                        <td>Sábado</td>
+                                                        <td>Domingo</td>
+                                                    </tr>
                                                 </thead>
-                                                <tbody>
-                                                <tr class="fc-scrollgrid-section fc-scrollgrid-section-body "><td>
-                                                        <div class="fc-scroller-harness"><div class="fc-scroller" style="overflow: visible;">
-                                                                <div class="fc-daygrid-body fc-daygrid-body-unbalanced fc-daygrid-body-natural" style="width: 557px;">
-                                                                    <table class="fc-scrollgrid-sync-table" style="width: 557px;">
-                                                                        <colgroup>
-
-                                                                        </colgroup>
-                                                                        <tbody
-                                                                        ><tr>
-                                                                            <td class="fc-daygrid-day fc-day fc-day-sun fc-day-past fc-day-other" data-date="2022-03-27"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top">
-                                                                                        <a class="fc-daygrid-day-number">27</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-event-harness">
-                                                                                            <a class="fc-daygrid-event fc-daygrid-block-event fc-h-event fc-event fc-event-draggable fc-event-resizable fc-event-start fc-event-end fc-event-past bg-gradient-success">
-                                                                                                <div class="fc-event-main"><div class="fc-event-main-frame"><div class="fc-event-title-container"><div class="fc-event-title fc-sticky">All day conference</div>
-                                                                                                        </div></div></div><div class="fc-event-resizer fc-event-resizer-end"></div></a></div></div><div class="fc-daygrid-day-bg"></div></div></td>
-                                                                            <td class="fc-daygrid-day fc-day fc-day-mon fc-day-past fc-day-other" data-date="2020-11-30"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner">
-                                                                                    <div class="fc-daygrid-day-top"><a class="fc-daygrid-day-number">28</a></div>
-                                                                                    <div class="fc-daygrid-day-events"></div><div class="fc-daygrid-day-bg"></div></div></td>
-                                                                            <td class="fc-daygrid-day fc-day fc-day-tue fc-day-past" data-date="2020-12-01"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top">
-                                                                                        <a class="fc-daygrid-day-number">29</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-event-harness">
-                                                                                            <a class="fc-daygrid-event fc-daygrid-block-event fc-h-event fc-event fc-event-draggable fc-event-resizable fc-event-start fc-event-end fc-event-past bg-gradient-info"><div class="fc-event-main"><div class="fc-event-main-frame"><div class="fc-event-title-container">
-                                                                                                            <div class="fc-event-title fc-sticky">Meeting with Mary</div></div></div></div><div class="fc-event-resizer fc-event-resizer-end"></div></a>
-                                                                                        </div></div><div class="fc-daygrid-day-bg"></div></div></td>
-                                                                            <td class="fc-daygrid-day fc-day fc-day-wed fc-day-past" data-date="2020-12-02">
-                                                                                <div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a class="fc-daygrid-day-number">30</a>
-                                                                                    </div><div class="fc-daygrid-day-events"><div class="fc-daygrid-event-harness">
-                                                                                            <a class="fc-daygrid-event fc-daygrid-block-event fc-h-event fc-event fc-event-draggable fc-event-resizable fc-event-start fc-event-end fc-event-past bg-gradient-warning"><div class="fc-event-main"><div class="fc-event-main-frame"><div class="fc-event-title-container"><div class="fc-event-title fc-sticky">Cyber Week</div>
-                                                                                                        </div></div></div><div class="fc-event-resizer fc-event-resizer-end"></div></a></div></div><div class="fc-daygrid-day-bg"></div></div>
-                                                                            </td><td class="fc-daygrid-day fc-day fc-day-thu fc-day-past" data-date="2020-12-03"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner">
-                                                                                    <div class="fc-daygrid-day-top"><a class="fc-daygrid-day-number">31</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-event-harness">
-                                                                                            <a class="fc-daygrid-event fc-daygrid-block-event fc-h-event fc-event fc-event-draggable fc-event-resizable fc-event-start fc-event-end fc-event-past bg-gradient-danger">
-                                                                                                <div class="fc-event-main"><div class="fc-event-main-frame"><div class="fc-event-title-container"><div class="fc-event-title fc-sticky">Winter Hackaton</div></div></div>
-                                                                                                </div><div class="fc-event-resizer fc-event-resizer-end"></div></a></div></div><div class="fc-daygrid-day-bg"></div></div>
-                                                                            </td><td class="fc-daygrid-day fc-day fc-day-fri fc-day-past" data-date="2020-12-04"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner">
-                                                                                    <div class="fc-daygrid-day-top"><a class="fc-daygrid-day-number">1</a></div><div class="fc-daygrid-day-events"></div><div class="fc-daygrid-day-bg"></div></div>
-                                                                            </td><td class="fc-daygrid-day fc-day fc-day-sat fc-day-past" data-date="2020-12-05"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner">
-                                                                                    <div class="fc-daygrid-day-top"><a class="fc-daygrid-day-number">2</a></div><div class="fc-daygrid-day-events"></div><div class="fc-daygrid-day-bg"></div></div></td>
-                                                                        </tr><tr><td class="fc-daygrid-day fc-day fc-day-sun fc-day-past" data-date="2020-12-06"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top">
-                                                                                        <a class="fc-daygrid-day-number">3</a></div><div class="fc-daygrid-day-events"></div><div class="fc-daygrid-day-bg"></div></div></td>
-                                                                            <td class="fc-daygrid-day fc-day fc-day-mon fc-day-past" data-date="2020-12-07"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner">
-                                                                                    <div class="fc-daygrid-day-top"><a class="fc-daygrid-day-number">4</a></div><div class="fc-daygrid-day-events" style="padding-bottom: 29.125px;">
-                                                                                        <div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="right: -79.5625px;"><a class="fc-daygrid-event fc-daygrid-block-event fc-h-event fc-event fc-event-draggable fc-event-resizable fc-event-start fc-event-end fc-event-past bg-gradient-warning">
-                                                                                                <div class="fc-event-main"><div class="fc-event-main-frame"><div class="fc-event-title-container"><div class="fc-event-title fc-sticky">Digital event</div>
-                                                                                                        </div></div></div><div class="fc-event-resizer fc-event-resizer-end"></div></a></div></div><div class="fc-daygrid-day-bg"></div></div></td>
-                                                                            <td class="fc-daygrid-day fc-day fc-day-tue fc-day-past" data-date="2020-12-08"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top">
-                                                                                        <a class="fc-daygrid-day-number">8</a></div><div class="fc-daygrid-day-events" style="padding-bottom: 29.125px;"></div><div class="fc-daygrid-day-bg"></div></div>
-                                                                            </td><td class="fc-daygrid-day fc-day fc-day-wed fc-day-past" data-date="2020-12-09"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top">
-                                                                                        <a class="fc-daygrid-day-number">9</a></div><div class="fc-daygrid-day-events"></div><div class="fc-daygrid-day-bg"></div></div></td>
-                                                                            <td class="fc-daygrid-day fc-day fc-day-thu fc-day-past" data-date="2020-12-10"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top">
-                                                                                        <a class="fc-daygrid-day-number">10</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-event-harness">
-                                                                                            <a class="fc-daygrid-event fc-daygrid-block-event fc-h-event fc-event fc-event-draggable fc-event-resizable fc-event-start fc-event-end fc-event-past bg-gradient-primary"><div class="fc-event-main">
-                                                                                                    <div class="fc-event-main-frame"><div class="fc-event-title-container"><div class="fc-event-title fc-sticky">Marketing event</div>
-                                                                                                        </div></div></div><div class="fc-event-resizer fc-event-resizer-end"></div></a></div></div><div class="fc-daygrid-day-bg"></div></div></td>
-                                                                            <td class="fc-daygrid-day fc-day fc-day-fri fc-day-past" data-date="2020-12-11"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top">
-                                                                                        <a class="fc-daygrid-day-number">11</a></div><div class="fc-daygrid-day-events"></div><div class="fc-daygrid-day-bg"></div></div></td>
-                                                                            <td class="fc-daygrid-day fc-day fc-day-sat fc-day-past" data-date="2020-12-12"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top">
-                                                                                        <a class="fc-daygrid-day-number">12</a></div><div class="fc-daygrid-day-events"></div><div class="fc-daygrid-day-bg"></div></div></td></tr><tr>
-                                                                            <td class="fc-daygrid-day fc-day fc-day-sun fc-day-past" data-date="2020-12-13"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top">
-                                                                                        <a class="fc-daygrid-day-number">13</a></div><div class="fc-daygrid-day-events"></div><div class="fc-daygrid-day-bg"></div></div></td>
-                                                                            <td class="fc-daygrid-day fc-day fc-day-mon fc-day-past" data-date="2020-12-14"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner">
-                                                                                    <div class="fc-daygrid-day-top"><a class="fc-daygrid-day-number">14</a></div><div class="fc-daygrid-day-events"></div><div class="fc-daygrid-day-bg"></div>
-                                                                                </div></td><td class="fc-daygrid-day fc-day fc-day-tue fc-day-past" data-date="2020-12-15"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner">
-                                                                                    <div class="fc-daygrid-day-top"><a class="fc-daygrid-day-number">15</a></div><div class="fc-daygrid-day-events"></div><div class="fc-daygrid-day-bg"></div>
-                                                                                </div></td><td class="fc-daygrid-day fc-day fc-day-wed fc-day-past" data-date="2020-12-16"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner">
-                                                                                    <div class="fc-daygrid-day-top"><a class="fc-daygrid-day-number">16</a></div><div class="fc-daygrid-day-events"></div><div class="fc-daygrid-day-bg"></div></div></td>
-                                                                            <td class="fc-daygrid-day fc-day fc-day-thu fc-day-past" data-date="2020-12-17"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top">
-                                                                                        <a class="fc-daygrid-day-number">17</a></div><div class="fc-daygrid-day-events"></div><div class="fc-daygrid-day-bg"></div></div></td>
-                                                                            <td class="fc-daygrid-day fc-day fc-day-fri fc-day-past" data-date="2020-12-18"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top">
-                                                                                        <a class="fc-daygrid-day-number">18</a></div><div class="fc-daygrid-day-events"></div><div class="fc-daygrid-day-bg"></div></div></td>
-                                                                            <td class="fc-daygrid-day fc-day fc-day-sat fc-day-past" data-date="2020-12-19"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a class="fc-daygrid-day-number">19</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-event-harness"><a class="fc-daygrid-event fc-daygrid-block-event fc-h-event fc-event fc-event-draggable fc-event-resizable fc-event-start fc-event-end fc-event-past bg-gradient-danger"><div class="fc-event-main"><div class="fc-event-main-frame"><div class="fc-event-title-container"><div class="fc-event-title fc-sticky">Dinner with Family</div></div></div></div><div class="fc-event-resizer fc-event-resizer-end"></div></a></div></div><div class="fc-daygrid-day-bg"></div></div></td></tr><tr><td class="fc-daygrid-day fc-day fc-day-sun fc-day-past" data-date="2020-12-20"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a class="fc-daygrid-day-number">20</a></div><div class="fc-daygrid-day-events"></div><div class="fc-daygrid-day-bg"></div></div></td><td class="fc-daygrid-day fc-day fc-day-mon fc-day-past" data-date="2020-12-21"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a class="fc-daygrid-day-number">21</a></div><div class="fc-daygrid-day-events"></div><div class="fc-daygrid-day-bg"></div></div></td><td class="fc-daygrid-day fc-day fc-day-tue fc-day-past" data-date="2020-12-22"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a class="fc-daygrid-day-number">22</a></div><div class="fc-daygrid-day-events"></div><div class="fc-daygrid-day-bg"></div></div></td><td class="fc-daygrid-day fc-day fc-day-wed fc-day-past" data-date="2020-12-23"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top"><a class="fc-daygrid-day-number">23</a></div><div class="fc-daygrid-day-events"><div class="fc-daygrid-event-harness"><a class="fc-daygrid-event fc-daygrid-block-event fc-h-event fc-event fc-event-draggable fc-event-resizable fc-event-start fc-event-end fc-event-past bg-gradient-info"><div class="fc-event-main"><div class="fc-event-main-frame">
-                                                                                                        <div class="fc-event-title-container"><div class="fc-event-title fc-sticky">Black Friday</div></div></div>
-                                                                                                </div><div class="fc-event-resizer fc-event-resizer-end"></div></a></div></div><div class="fc-daygrid-day-bg"></div></div></td>
-                                                                            <td class="fc-daygrid-day fc-day fc-day-thu fc-day-past" data-date="2020-12-24"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner">
-                                                                                    <div class="fc-daygrid-day-top"><a class="fc-daygrid-day-number">24</a></div><div class="fc-daygrid-day-events"></div><div class="fc-daygrid-day-bg">
-                                                                                    </div></div></td><td class="fc-daygrid-day fc-day fc-day-fri fc-day-past" data-date="2020-12-25"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner">
-                                                                                    <div class="fc-daygrid-day-top"><a class="fc-daygrid-day-number">25</a></div><div class="fc-daygrid-day-events"></div><div class="fc-daygrid-day-bg"></div>
-                                                                                </div></td><td class="fc-daygrid-day fc-day fc-day-sat fc-day-past" data-date="2020-12-26"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner">
-                                                                                    <div class="fc-daygrid-day-top"><a class="fc-daygrid-day-number">26</a></div><div class="fc-daygrid-day-events"></div><div class="fc-daygrid-day-bg"></div>
-                                                                                </div></td></tr><tr><td class="fc-daygrid-day fc-day fc-day-sun fc-day-past" data-date="2020-12-27"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner">
-                                                                                    <div class="fc-daygrid-day-top"><a class="fc-daygrid-day-number">27</a></div><div class="fc-daygrid-day-events"></div><div class="fc-daygrid-day-bg"></div></div>
-                                                                            </td><td class="fc-daygrid-day fc-day fc-day-mon fc-day-past" data-date="2020-12-28"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top">
-                                                                                        <a class="fc-daygrid-day-number">28</a></div><div class="fc-daygrid-day-events"></div><div class="fc-daygrid-day-bg"></div></div></td>
-                                                                            <td class="fc-daygrid-day fc-day fc-day-tue fc-day-past" data-date="2022-03-27"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top">
-                                                                                        <a class="fc-daygrid-day-number">27</a></div><div class="fc-daygrid-day-events"></div><div class="fc-daygrid-day-bg"></div></div></td>
-                                                                            <td class="fc-daygrid-day fc-day fc-day-wed fc-day-past" data-date="2020-12-30"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-top">
-                                                                                        <a class="fc-daygrid-day-number">30</a></div><div class="fc-daygrid-day-events"></div><div class="fc-daygrid-day-bg"></div></div></td>
-                                                                            <td class="fc-daygrid-day fc-day fc-day-thu fc-day-past" data-date="2020-12-31"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner">
-                                                                                    <div class="fc-daygrid-day-top"><a class="fc-daygrid-day-number">31</a></div><div class="fc-daygrid-day-events"></div><div class="fc-daygrid-day-bg"></div></div></td>
-                                                                            <td class="fc-daygrid-day fc-day fc-day-fri fc-day-past fc-day-other" data-date="2021-01-01"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner">
-                                                                                    <div class="fc-daygrid-day-top"><a class="fc-daygrid-day-number">1</a></div><div class="fc-daygrid-day-events"></div><div class="fc-daygrid-day-bg"></div>
-                                                                                </div></td><td class="fc-daygrid-day fc-day fc-day-sat fc-day-past fc-day-other" data-date="2021-01-02"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner">
-                                                                                    <div class="fc-daygrid-day-top"><a class="fc-daygrid-day-number">2</a></div><div class="fc-daygrid-day-events"></div><div class="fc-daygrid-day-bg"></div></div>
-                                                                            </td></tr><tr><td class="fc-daygrid-day fc-day fc-day-sun fc-day-past fc-day-other" data-date="2021-01-03"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner">
-                                                                                    <div class="fc-daygrid-day-top"><a class="fc-daygrid-day-number">3</a></div><div class="fc-daygrid-day-events"></div><div class="fc-daygrid-day-bg"></div></div></td>
-                                                                            <td class="fc-daygrid-day fc-day fc-day-mon fc-day-past fc-day-other" data-date="2021-01-04"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner">
-                                                                                    <div class="fc-daygrid-day-top"><a class="fc-daygrid-day-number">4</a></div><div class="fc-daygrid-day-events"></div><div class="fc-daygrid-day-bg"></div></div>
-                                                                            </td><td class="fc-daygrid-day fc-day fc-day-tue fc-day-past fc-day-other" data-date="2021-01-05"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner">
-                                                                                    <div class="fc-daygrid-day-top"><a class="fc-daygrid-day-number">5</a></div><div class="fc-daygrid-day-events"></div><div class="fc-daygrid-day-bg"></div></div></td>
-                                                                            <td class="fc-daygrid-day fc-day fc-day-wed fc-day-past fc-day-other" data-date="2021-01-06"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner">
-                                                                                    <div class="fc-daygrid-day-top"><a class="fc-daygrid-day-number">6</a></div><div class="fc-daygrid-day-events"></div><div class="fc-daygrid-day-bg"></div>
-                                                                                </div></td><td class="fc-daygrid-day fc-day fc-day-thu fc-day-past fc-day-other" data-date="2021-01-07"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner">
-                                                                                    <div class="fc-daygrid-day-top"><a class="fc-daygrid-day-number">7</a></div><div class="fc-daygrid-day-events"></div><div class="fc-daygrid-day-bg"></div></div>
-                                                                            </td><td class="fc-daygrid-day fc-day fc-day-fri fc-day-past fc-day-other" data-date="2021-01-08"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner">
-                                                                                    <div class="fc-daygrid-day-top"><a class="fc-daygrid-day-number">8</a></div><div class="fc-daygrid-day-events"></div><div class="fc-daygrid-day-bg"></div>
-                                                                                </div></td><td class="fc-daygrid-day fc-day fc-day-sat fc-day-past fc-day-other" data-date="2021-01-09"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner">
-                                                                                    <div class="fc-daygrid-day-top"><a class="fc-daygrid-day-number">9</a></div><div class="fc-daygrid-day-events"></div><div class="fc-daygrid-day-bg"></div></div>
-                                                                            </td></tr></tbody></table></div></div></div></td></tr></tbody></table></div></div></div>
+                                                <tbody class="text-center">
+                                                    <tr>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>1</td>
+                                                        <td>2</td>
+                                                        <td>3</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>5</td>
+                                                        <td>6</td>
+                                                        <td>7</td>
+                                                        <td>8</td>
+                                                        <td>9</td>
+                                                        <td>10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>11</td>
+                                                        <td>12</td>
+                                                        <td>13</td>
+                                                        <td>14</td>
+                                                        <td>15</td>
+                                                        <td>16</td>
+                                                        <td>17</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>18</td>
+                                                        <td>19</td>
+                                                        <td>20</td>
+                                                        <td>21</td>
+                                                        <td>22</td>
+                                                        <td>23</td>
+                                                        <td>24</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>25</td>
+                                                        <td>26</td>
+                                                        <td>27</td>
+                                                        <td><span class="badge badge-info" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Rumbo a la Convención">28</span></td>
+                                                        <td>29</td>
+                                                        <td>30</td>
+                                                        <td><span class="badge badge-success" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Regreso a casa">1</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -275,29 +239,180 @@
             </div>
         </div>
     </div>
-
 </main>
+
 <!-- MODAL VISTA - COMPROBANTE -->
-<div class="modal fade" id="ver-pase-llegada" tabindex="-1" role="dialog" aria-labelledby="ver-comprobante" aria-hidden="true">
+<div class="modal fade" id="ver-pase-llegada" tabindex="-1" role="dialog" aria-labelledby="ver-pase-llegada" aria-hidden="true">
     <div class="modal-dialog" role="document" style="max-width: 590px;">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">PICKUP MUSA 2022</h5>
+                <h5 class="modal-title" id="ver-pase-llegada">Pase de Abordar (Llegada) - MUSA 2022</h5>
                 <span type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
-                            X
-                        </span>
+                    X
+                </span>
             </div>
             <!-- <div class="modal-header">
                 <p>Por su seguridad y la de las demás personas, le pedimos que nos proporcione la Información siguiente para comprobar que no este contagiado de COVID.</p>
             </div> -->
             <div class="modal-body">
-                <iframe src="/assets/pdf/passes/boleto.pdf"
+                <!-- <span><?php echo $pase_llegada['url'];?></span> -->
+                <iframe src="https://admin.foromusa.com/comprobante_vuelo_uno/<?php echo $pase_llegada['url'];?>"
                         style="width:100%; height:780px;" frameborder="0" >
                 </iframe>
             </div>
         </div>
     </div>
 </div>
+
+<div class="modal fade" id="ver-pase-salida" tabindex="-1" role="dialog" aria-labelledby="ver-pase-salida" aria-hidden="true">
+    <div class="modal-dialog" role="document" style="max-width: 590px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="ver-pase-salida">Pase de Abordar (Salida) - MUSA 2022</h5>
+                <span type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                    X
+                </span>
+            </div>
+            <!-- <div class="modal-header">
+                <p>Por su seguridad y la de las demás personas, le pedimos que nos proporcione la Información siguiente para comprobar que no este contagiado de COVID.</p>
+            </div> -->
+            <div class="modal-body">
+                <span><?php echo $pase_salida['url'];?></span>
+                <iframe src="https://admin.foromusa.com/comprobante_vuelo_dos/<?php echo $pase_salida['url'];?>"
+                        style="width:100%; height:780px;" frameborder="0" >
+                </iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function (){
+        if (document.querySelector('[data-toggle="widget-calendar"]')) {
+            var calendarEl = document.querySelector('[data-toggle="widget-calendar"]');
+            var today = new Date();
+            var mYear = today.getFullYear();
+            var weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            var mDay = weekday[today.getDay()];
+            var numDay = today.getDate();
+
+            var m = today.getMonth();
+            var d = today.getDate();
+            document.getElementsByClassName('widget-calendar-year')[0].innerHTML = mYear;
+            document.getElementsByClassName('widget-calendar-day')[0].innerHTML = mDay;
+            switch (m+1) {
+                case 1:
+                    document.getElementsByClassName('widget-calendar-month')[0].innerHTML = 'Enero';
+                    break;
+                
+                case 2:
+                    document.getElementsByClassName('widget-calendar-month')[0].innerHTML = 'Febrero';
+                    break;
+
+                case 3:
+                    document.getElementsByClassName('widget-calendar-month')[0].innerHTML = 'Marzo';
+                    break;
+
+                case 4:
+                    document.getElementsByClassName('widget-calendar-month')[0].innerHTML = 'Abril';
+                    break;
+            
+                case 5:
+                    document.getElementsByClassName('widget-calendar-month')[0].innerHTML = 'Mayo';
+                    break;
+
+                case 6:
+                    document.getElementsByClassName('widget-calendar-month')[0].innerHTML = 'Junio';
+                    break;
+
+                default:
+                    break;
+            }
+            document.getElementsByClassName('widget-calendar-num-day')[0].innerHTML = numDay;
+
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                contentHeight: 'auto',
+                initialView: 'dayGridMonth',
+                selectable: true,
+                initialDate: '2020-12-01',
+                editable: true,
+                headerToolbar: false,
+                events: [{
+                    title: 'Call with Dave',
+                    start: '2020-11-18',
+                    end: '2020-11-18',
+                    className: 'bg-gradient-danger'
+                },
+
+                {
+                    title: 'Lunch meeting',
+                    start: '2020-11-21',
+                    end: '2020-11-22',
+                    className: 'bg-gradient-warning'
+                },
+
+                {
+                    title: 'All day conference',
+                    start: '2020-11-29',
+                    end: '2020-11-29',
+                    className: 'bg-gradient-success'
+                },
+
+                {
+                    title: 'Meeting with Mary',
+                    start: '2020-12-01',
+                    end: '2020-12-01',
+                    className: 'bg-gradient-info'
+                },
+
+                {
+                    title: 'Winter Hackaton',
+                    start: '2020-12-03',
+                    end: '2020-12-03',
+                    className: 'bg-gradient-danger'
+                },
+
+                {
+                    title: 'Digital event',
+                    start: '2020-12-07',
+                    end: '2020-12-09',
+                    className: 'bg-gradient-warning'
+                },
+
+                {
+                    title: 'Marketing event',
+                    start: '2020-12-10',
+                    end: '2020-12-10',
+                    className: 'bg-gradient-primary'
+                },
+
+                {
+                    title: 'Dinner with Family',
+                    start: '2020-12-19',
+                    end: '2020-12-19',
+                    className: 'bg-gradient-danger'
+                },
+
+                {
+                    title: 'Black Friday',
+                    start: '2020-12-23',
+                    end: '2020-12-23',
+                    className: 'bg-gradient-info'
+                },
+
+                {
+                    title: 'Cyber Week',
+                    start: '2020-12-02',
+                    end: '2020-12-02',
+                    className: 'bg-gradient-warning'
+                },
+
+                ]
+            });
+            calendar.render();
+            }
+    })
+</script>
 
 <?php echo $footer; ?>
 
