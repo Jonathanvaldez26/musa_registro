@@ -126,4 +126,10 @@ html;
         View::render("code");
     }
 
+    function getItinerario(){
+      $id_asis = $_POST['id'];
+      $asistenteItinerario = HomeDao::getItinerarioAsistente($id_asis)[0];
+      echo json_encode($asistenteItinerario);
+    }
+
 }
