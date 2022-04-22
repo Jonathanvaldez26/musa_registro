@@ -129,7 +129,7 @@ html;
                   });
 
                   return response;
-              },"<b>Usted ya se encuentra registrado en la plataforma verifique su información.<b>");
+              },"<b>Usted no tiene acceso a la plataforma, por favor contacte a soporte.<b>");
 
 
               $("#email_form").validate({
