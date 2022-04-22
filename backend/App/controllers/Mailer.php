@@ -89,7 +89,8 @@ class Mailer
                     Estamos ansiosos de volverlo a ver…
                 </p>
                 <p>
-                    Este mensaje se le envió porque usted está intentando registrar su cuenta de correo electrónico a <b>Mujer Salud 2022 - MUSA</b>. Si no fue usted ignore este mensaje.
+                    Este mensaje se le envió porque usted está intentando registrar su cuenta de correo electrónico a <b>FORO MUSA Mujer Salud 2022</b>
+                     Si no fue usted ignore este mensaje.
                 </p>
                 
                 <p>
@@ -197,7 +198,8 @@ class Mailer
                     <img src="https://registro.foromusa.com/img/musa-01.png" alt="">
                         <p style="text-align: center !important;">
                             Estimado, ' . $msg['name'] . ' : 
-                            <strong>¡Su registro a MUSA fue exitoso! </strong>
+                            <strong>¡Su registro a FORO MUSA Mujer Salud 2022 fue exitoso!</strong>
+                            
                         </p>
                     </div>
                     
