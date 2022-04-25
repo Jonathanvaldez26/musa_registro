@@ -129,7 +129,7 @@ html;
                   });
 
                   return response;
-              },"<b>Usted no tiene acceso a la plataforma, por favor contacte a soporte.<b>");
+              },"<b>Usted no tiene acceso a la plataforma ó ya se registro previamente en la plataforma, por favor contacte a soporte.<b>");
 
 
               $("#email_form").validate({
