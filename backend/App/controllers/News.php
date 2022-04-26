@@ -67,7 +67,7 @@ html;
 html;
       View::set('header',$this->_contenedor->header($extraHeader));
       View::set('footer',$this->_contenedor->footer($extraFooter));
-      View::render("work");
+      View::render("news_all");
     }
 
 }
