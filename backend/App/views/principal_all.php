@@ -133,7 +133,7 @@
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="card">
-                                            <img src="../../assets/img/curved-images/Musa/Agenda_MUSA_2022.png" alt="">
+                                            <img src="../../assets/img/curved-images/Musa/musa_home2.png" alt="">
                                         </div>
                                     </div>
                                 </div>

@@ -156,6 +156,10 @@
                                             <input class="form-check-input" type="checkbox" value="Moderna" name="checkbox_marcas[]">
                                             <label class="form-check-label" for="flexCheckDefault">Moderna</label>
                                         </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="Sinopharm" name="checkbox_marcas[]">
+                                            <label class="form-check-label" for="flexCheckDefault">Sinopharm</label>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="form-group col-md-12">
