@@ -100,7 +100,7 @@ html;
                       if(respuesta == 'success'){
                          // $('#modal_payment_ticket').modal('toggle');
                          
-                          swal("¡Se ha guardado tu la prueba correctamente!", "", "success").
+                          swal("¡Se ha guardado tu prueba correctamente!", "", "success").
                           then((value) => {
                               window.location.replace("/Covid/");
                           });
@@ -215,19 +215,9 @@ html;
   }
 
   public function uploadPrueba(){
-
-      // $ticket = $_FILES["file_"];
-    // $ticket_name = $_FILES["file_"]['name'];
-    // $nota = $_POST['note_'];
-    // echo $nota;
-    // var_dump($ticket);
-    // echo $ticket_name;
-
     $documento = new \stdClass();
 
-
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-
 
         $titulo = 'PruebaCovid';
         $fecha_prueba = $_POST['fecha_'];
@@ -241,18 +231,7 @@ html;
 
 
 
-        // var_dump($fecha_prueba);
-        // echo "<br>";
-        // var_dump($tipo_prueba);
-        // echo "<br>";
-        // var_dump($resultado);
-        // echo "<br>";
-        // var_dump($file);
-        // echo "<br>";
-        // var_dump($usuario);
-        // exit;
-
-        move_uploaded_file($file["tmp_name"], "pruebas_covid/".$pdf.'.pdf');
+        //move_uploaded_file($file["tmp_name"], "pruebas_covid/".$pdf.'.pdf');
 
         $documento->_url = $pdf.'.pdf';
         $documento->_user = $usuario;
@@ -260,15 +239,18 @@ html;
         $documento->_tipo_prueba = $tipo_prueba;
         $documento->_resultado = $resultado;
 
-        
-        $id = CovidDao::insert($documento);
 
-        if ($id) {
-            echo 'success';
+        if(move_uploaded_file($file["tmp_name"], "pruebas_covid/".$pdf.'.pdf')){
+          $id = CovidDao::insert($documento);
 
-        } else {
-            echo 'fail';
+          if ($id) {
+              echo 'success';
+  
+          } else {
+              echo 'fail';
+          }
         }
+      
     } else {
         echo 'fail REQUEST';
     }
