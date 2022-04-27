@@ -59,7 +59,7 @@
             <div class="card col-lg-8 mt-lg-5 mt-1" >
                 <div class="card-header pb-0 p-3">
                     <h6 class="mb-1">Mi comprobante de vacunación</h6>
-                    <p class="text-sm">Registre su comprobante de vacunación antes del 25/04/2022</p>
+                    <!--p class="text-sm">Registre su comprobante de vacunación antes del 25/04/2022</p-->
                 </div>
                 <div class="card-body p-3">
                     <div class="row">
