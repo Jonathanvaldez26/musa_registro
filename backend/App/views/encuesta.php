@@ -38,14 +38,14 @@ echo $header;
                                                                     <div class="col-sm-1 ms-auto">
                                                                         <input type="checkbox" class="btn-check" id="btncheck2" name="group1[]" value="electronic" data-bs-toggle="modal" data-bs-target="#ModalPayOne">
                                                                         <label class="btn btn-lg btn-outline-secondary border-2 px-2 py-2" for="btncheck2">
-                                                                            <i class="fa fa-user" aria-hidden="true"></i>
+                                                                            <i class="far fa-grin-beam"></i>
                                                                         </label>
                                                                         <h6></h6>
                                                                     </div>
                                                                     <div class="col-sm-1 me-auto">
                                                                         <input type="checkbox" class="btn-check" id="btncheck3" name="group1[]" value="paypal" data-bs-toggle="modal" data-bs-target="#ModalPayOne">
                                                                         <label class="btn btn-lg btn-outline-secondary border-2 px-2 py-2" for="btncheck3">
-                                                                            <i class="fa fa-wpexplorer" aria-hidden="true"></i>
+                                                                            <i class="far fa-frown"></i>
                                                                         </label>
                                                                         <h6></h6>
                                                                     </div>
@@ -55,7 +55,7 @@ echo $header;
                                                                 <div class="row">
                                                                     <div class="col-md-12">
 
-                                                                        <ul>
+                                                                        <ul style="list-style-type: none;">
                                                                             <li>
                                                                                 <p>1. Coordinación de Traslados.</p>
                                                                                 <div class="row mt-4 d-flex justify-content-center text-center">

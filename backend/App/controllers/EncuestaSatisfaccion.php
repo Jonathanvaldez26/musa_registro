@@ -29,6 +29,7 @@ class EncuestaSatisfaccion{
         <link id="pagestyle" href="/assets/css/soft-ui-dashboard.css?v=1.0.5" rel="stylesheet" />
         <link rel="stylesheet" href="/css/alertify/alertify.core.css" />
         <link rel="stylesheet" href="/css/alertify/alertify.default.css" id="toggleCSS" />
+        
 html;
         $extraFooter =<<<html
 
