@@ -75,28 +75,28 @@ echo $header;
                                                                                 <p>2. Calidad de las instalaciones (alojamiento y salones).</p>
                                                                                 <div class="row mt-4 d-flex justify-content-center text-center">
                                                                                     <div class="col-sm-1 ">
-                                                                                        <input type="radio" class="btn-check btn-face-" id="btncheck8" name="group3" value="3">
+                                                                                        <input type="radio" class="btn-check btn-face-green" id="btncheck8" name="group3" value="3">
                                                                                         <label class="btn btn-lg btn-outline-secondary border-2 px-2 py-2" for="btncheck8">
                                                                                             <i class="far fa-grin-beam"></i>
                                                                                         </label>
                                                                                         <h6></h6>
                                                                                     </div>
                                                                                     <div class="col-sm-1 ">
-                                                                                        <input type="radio" class="btn-check btn-face-" id="btncheck9" name="group3" value="2">
+                                                                                        <input type="radio" class="btn-check btn-face-yellow" id="btncheck9" name="group3" value="2">
                                                                                         <label class="btn btn-lg btn-outline-secondary border-2 px-2 py-2" for="btncheck9">
                                                                                             <i class="far fa-grin"></i>
                                                                                         </label>
                                                                                         <h6></h6>
                                                                                     </div>
                                                                                     <div class="col-sm-1 ">
-                                                                                        <input type="radio" class="btn-check btn-face-" id="btncheck10" name="group3" value="1">
+                                                                                        <input type="radio" class="btn-check btn-face-orange" id="btncheck10" name="group3" value="1">
                                                                                         <label class="btn btn-lg btn-outline-secondary border-2 px-2 py-2" for="btncheck10">
                                                                                             <i class="far fa-meh"></i>
                                                                                         </label>
                                                                                         <h6></h6>
                                                                                     </div>
                                                                                     <div class="col-sm-1 ">
-                                                                                        <input type="radio" class="btn-check btn-face-" id="btncheck11" name="group3" value="0">
+                                                                                        <input type="radio" class="btn-check btn-face-red" id="btncheck11" name="group3" value="0">
                                                                                         <label class="btn btn-lg btn-outline-secondary border-2 px-2 py-2" for="btncheck11">
                                                                                             <i class="far fa-frown"></i>
                                                                                         </label>
