@@ -1438,6 +1438,16 @@ echo $header;
                                                                                 </div>
                                                                             </li>
 
+
+                                                                            <li>
+                                                                               <div class="row mt-3">
+                                                                                   <div class="col-md-6">
+                                                                                        <button class="btn btn-info">Enviar respuestas y descargar constancia</button>
+                                                                                   </div>
+                                                                               </div>
+                                                                            </li>
+
+
                                                                         </ul>
                                                                     </div>
 
