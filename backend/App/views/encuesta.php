@@ -660,7 +660,7 @@ echo $header;
                                                                                                     <h6></h6>
                                                                                                 </div>
                                                                                                 <div class="col-sm-1 ">
-                                                                                                    <input type="radio" class="btn-check btn-face-redd="btncheck71" name="group18" value="0">
+                                                                                                    <input type="radio" class="btn-check btn-face-red" id="btncheck71" name="group18" value="0">
                                                                                                     <label class="color-face-red btn btn-lg btn-outline-secondary border-2 px-2 py-2" for="btncheck71">
                                                                                                         <i class="far fa-frown"></i>
                                                                                                     </label>
@@ -697,7 +697,7 @@ echo $header;
                                                                                                     <h6></h6>
                                                                                                 </div>
                                                                                                 <div class="col-sm-1 ">
-                                                                                                    <input type="radio" class="btn-check btn-face-redd="btncheck75" name="group19" value="0">
+                                                                                                    <input type="radio" class="btn-check btn-face-red" id="btncheck75" name="group19" value="0">
                                                                                                     <label class="color-face-red btn btn-lg btn-outline-secondary border-2 px-2 py-2" for="btncheck75">
                                                                                                         <i class="far fa-frown"></i>
                                                                                                     </label>
@@ -734,7 +734,7 @@ echo $header;
                                                                                                     <h6></h6>
                                                                                                 </div>
                                                                                                 <div class="col-sm-1 ">
-                                                                                                    <input type="radio" class="btn-check btn-face-redd="btncheck79" name="group20" value="0">
+                                                                                                    <input type="radio" class="btn-check btn-face-red" id="btncheck79" name="group20" value="0">
                                                                                                     <label class="color-face-red btn btn-lg btn-outline-secondary border-2 px-2 py-2" for="btncheck79">
                                                                                                         <i class="far fa-frown"></i>
                                                                                                     </label>
@@ -773,7 +773,7 @@ echo $header;
                                                                                         <h6></h6>
                                                                                     </div>
                                                                                     <div class="col-sm-1 ">
-                                                                                        <input type="radio" class="btn-check btn-face-redd="btncheck143" name="group36" value="0">
+                                                                                        <input type="radio" class="btn-check btn-face-red" id="btncheck143" name="group36" value="0">
                                                                                         <label class="color-face-red btn btn-lg btn-outline-secondary border-2 px-2 py-2" for="btncheck143">
                                                                                             <i class="far fa-frown"></i>
                                                                                         </label>
@@ -885,7 +885,7 @@ echo $header;
                                                                             <li>
                                                                                <div class="row mt-3">
                                                                                    <div class="col-md-6 m-auto">
-                                                                                        <button class="btn btn-info">Enviar respuestas y descargar constancia</button>
+                                                                                        <button class="btn btn-secondary">Enviar respuestas y descargar constancia</button>
                                                                                    </div>
                                                                                </div>
                                                                             </li>
