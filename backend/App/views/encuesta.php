@@ -190,7 +190,7 @@ echo $header;
                                                                                 <p>5. Nivel de los expositores.</p>
                                                                                 <table class="table">
                                                                                     <tr>
-                                                                                        <td>Diaz López</td>
+                                                                                        <td>DIAZ LOPEZ ELSA</td>
                                                                                         <td>
                                                                                             <div class="row mt-4 d-flex justify-content-center text-center">
                                                                                                 <div class="col-sm-1 ">
@@ -227,7 +227,7 @@ echo $header;
                                                                                     </tr>
 
                                                                                     <tr>
-                                                                                        <td>Barrios Martínez</td>
+                                                                                        <td>BARRIOS MARTINEZ DAVID</td>
                                                                                         <td>
                                                                                             <div class="row mt-4 d-flex justify-content-center text-center">
                                                                                                 <div class="col-sm-1 ">
@@ -264,7 +264,7 @@ echo $header;
                                                                                     </tr>
 
                                                                                     <tr>
-                                                                                        <td>Gallo</td>
+                                                                                        <td>GALLO GABRIEL</td>
                                                                                         <td>
                                                                                             <div class="row mt-4 d-flex justify-content-center text-center">
                                                                                                 <div class="col-sm-1 ">
@@ -301,7 +301,7 @@ echo $header;
                                                                                     </tr>
 
                                                                                     <tr>
-                                                                                        <td>Vélez González</td>
+                                                                                        <td>VELEZ GONZALEZ JUAN</td>
                                                                                         <td>
                                                                                             <div class="row mt-4 d-flex justify-content-center text-center">
                                                                                                 <div class="col-sm-1 ">
@@ -338,7 +338,7 @@ echo $header;
                                                                                     </tr>
 
                                                                                     <tr>
-                                                                                        <td>Tiran</td>
+                                                                                        <td>TIRAN JOSE</td>
                                                                                         <td>
                                                                                             <div class="row mt-4 d-flex justify-content-center text-center">
                                                                                                 <div class="col-sm-1 ">
@@ -375,7 +375,7 @@ echo $header;
                                                                                     </tr>
 
                                                                                     <tr>
-                                                                                        <td>Cortes</td>
+                                                                                        <td>CORTES EDNA</td>
                                                                                         <td>
                                                                                             <div class="row mt-4 d-flex justify-content-center text-center">
                                                                                                 <div class="col-sm-1 ">
@@ -412,7 +412,7 @@ echo $header;
                                                                                     </tr>
 
                                                                                     <tr>
-                                                                                        <td>Mirassou</td>
+                                                                                        <td>MIRASSOU MANUEL</td>
                                                                                         <td>
                                                                                             <div class="row mt-4 d-flex justify-content-center text-center">
                                                                                                 <div class="col-sm-1 ">
@@ -449,7 +449,7 @@ echo $header;
                                                                                     </tr>
 
                                                                                     <tr>
-                                                                                        <td>Velasco</td>
+                                                                                        <td>VELASCO CESAR</td>
                                                                                         <td>
                                                                                             <div class="row mt-4 d-flex justify-content-center text-center">
                                                                                                 <div class="col-sm-1 ">
@@ -486,7 +486,7 @@ echo $header;
                                                                                     </tr>
 
                                                                                     <tr>
-                                                                                        <td>Mercado</td>
+                                                                                        <td>MERCADO VICTOR</td>
                                                                                         <td>
                                                                                             <div class="row mt-4 d-flex justify-content-center text-center">
                                                                                                 <div class="col-sm-1 ">
@@ -524,7 +524,7 @@ echo $header;
 
                                                                                     
                                                                                     <tr>
-                                                                                        <td>Culebro</td>
+                                                                                        <td>CULEBRO ENRIQUE</td>
                                                                                         <td>
                                                                                             <div class="row mt-4 d-flex justify-content-center text-center">
                                                                                                 <div class="col-sm-1 ">
@@ -561,7 +561,7 @@ echo $header;
                                                                                     </tr>
 
                                                                                     <tr>
-                                                                                        <td>Villalobos</td>
+                                                                                        <td>VILLALOBOS ALEJANDRO</td>
                                                                                         <td>
                                                                                             <div class="row mt-4 d-flex justify-content-center text-center">
                                                                                                 <div class="col-sm-1 ">
@@ -598,7 +598,7 @@ echo $header;
                                                                                     </tr>
 
                                                                                     <tr>
-                                                                                        <td>Neyro Bilbao</td>
+                                                                                        <td>NEYRO BILBAO JOSE LUIS</td>
                                                                                         <td>
                                                                                             <div class="row mt-4 d-flex justify-content-center text-center">
                                                                                                 <div class="col-sm-1 ">
@@ -635,7 +635,7 @@ echo $header;
                                                                                     </tr>
 
                                                                                     <tr>
-                                                                                        <td>Rencoret del Valle</td>
+                                                                                        <td>RENCORET DEL VALLE CARLOS</td>
                                                                                         <td>
                                                                                             <div class="row mt-4 d-flex justify-content-center text-center">
                                                                                                 <div class="col-sm-1 ">
@@ -672,7 +672,7 @@ echo $header;
                                                                                     </tr>
 
                                                                                     <tr>
-                                                                                        <td>Zanchetta</td>
+                                                                                        <td>ZANCHETTA MARIA BELEN</td>
                                                                                         <td>
                                                                                             <div class="row mt-4 d-flex justify-content-center text-center">
                                                                                                 <div class="col-sm-1 ">
@@ -709,7 +709,7 @@ echo $header;
                                                                                     </tr>
 
                                                                                     <tr>
-                                                                                        <td>Duarte de la Terza</td>
+                                                                                        <td>DUARTE DE LATERZA MARGARITA</td>
                                                                                         <td>
                                                                                             <div class="row mt-4 d-flex justify-content-center text-center">
                                                                                                 <div class="col-sm-1 ">
@@ -1437,6 +1437,16 @@ echo $header;
                                                                                     </div>
                                                                                 </div>
                                                                             </li>
+
+
+                                                                            <li>
+                                                                               <div class="row mt-3">
+                                                                                   <div class="col-md-6">
+                                                                                        <button class="btn btn-info">Enviar respuestas y descargar constancia</button>
+                                                                                   </div>
+                                                                               </div>
+                                                                            </li>
+
 
                                                                         </ul>
                                                                     </div>
