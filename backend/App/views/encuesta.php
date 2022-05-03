@@ -40,29 +40,29 @@ echo $header;
                                                                                 <p>1. Coordinación de Traslados.</p>
                                                                                 <div class="row mt-4 d-flex justify-content-center text-center">
                                                                                     <div class="col-sm-1 ">
-                                                                                        <input type="radio" class="btn-check btn-face-" id="btncheck4" name="group2" value="3">
-                                                                                        <label class="btn btn-lg btn-outline-secondary border-2 px-2 py-2" for="btncheck4">
+                                                                                        <input type="radio" class="btn-check btn-face-green" id="btncheck4" name="group2" value="3">
+                                                                                        <label class="btn btn-lg btn-outline-secondary border-2 px-2 py-2 color-face-green" for="btncheck4">
                                                                                             <i class="far fa-grin-beam"></i>
                                                                                         </label>
                                                                                         <h6></h6>
                                                                                     </div>
                                                                                     <div class="col-sm-1 ">
-                                                                                        <input type="radio" class="btn-check btn-face-" id="btncheck5" name="group2" value="2">
-                                                                                        <label class="btn btn-lg btn-outline-secondary border-2 px-2 py-2" for="btncheck5">
+                                                                                        <input type="radio" class="btn-check btn-face-yellow" id="btncheck5" name="group2" value="2">
+                                                                                        <label class="btn btn-lg btn-outline-secondary border-2 px-2 py-2 color-face-yellow" for="btncheck5">
                                                                                             <i class="far fa-grin"></i>
                                                                                         </label>
                                                                                         <h6></h6>
                                                                                     </div>
                                                                                     <div class="col-sm-1 ">
-                                                                                        <input type="radio" class="btn-check btn-face-" id="btncheck6" name="group2" value="1">
-                                                                                        <label class="btn btn-lg btn-outline-secondary border-2 px-2 py-2" for="btncheck6">
+                                                                                        <input type="radio" class="btn-check btn-face-orange" id="btncheck6" name="group2" value="1">
+                                                                                        <label class="btn btn-lg btn-outline-secondary border-2 px-2 py-2 color-face-orange" for="btncheck6">
                                                                                             <i class="far fa-meh"></i>
                                                                                         </label>
                                                                                         <h6></h6>
                                                                                     </div>
                                                                                     <div class="col-sm-1 ">
-                                                                                        <input type="radio" class="btn-check btn-face-" id="btncheck7" name="group2" value="0">
-                                                                                        <label class="btn btn-lg btn-outline-secondary border-2 px-2 py-2" for="btncheck7">
+                                                                                        <input type="radio" class="btn-check btn-face-red" id="btncheck7" name="group2" value="0">
+                                                                                        <label class="btn btn-lg btn-outline-secondary border-2 px-2 py-2 color-face-red" for="btncheck7">
                                                                                             <i class="far fa-frown"></i>
                                                                                         </label>
                                                                                         <h6></h6>
