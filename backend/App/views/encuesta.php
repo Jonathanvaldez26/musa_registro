@@ -19,7 +19,9 @@ echo $header;
                                                 <div class="col-12 col-lg-12 m-auto">
                                                     <form class="multisteps-form__form" id="add" action="/Registro/Success" method="POST" style="height: 403px;">
                                                         <div id="card_three" class="card multisteps-form__panel p-1 border-radius-xl bg-white js-active" data-animation="FadeIn">
-                                                            <div class="row text-center">
+
+
+                                                            <div class="row text-center mt-4">
                                                                 <div class="col-10 mx-auto">
                                                                     <h5 class="font-weight-normal"><strong>FORO DE GINECOLOGÍA – LATAM 2022
                                                                             CANCÚN. MÉXICO
@@ -29,10 +31,23 @@ echo $header;
                                                             </div>
                                                             <br>
                                                             <div class="multisteps-form__content row text-center">
-                                                                
-                                                                <br>
 
-                                                                <div class="row">
+                                                                <br>
+                                                                <div class="row mx-auto">
+                                                                    <div class="col-md-6">
+                                                                        <label for="nombre">Nombre :</label>
+                                                                        <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Escriba su nombre completo" required>
+                                                                        
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <label for="nombre">Correo :</label>
+                                                                        <input type="email" id="email" name="email" class="form-control" placeholder="Escriba su email" required>
+                                                                    </div>
+                                                                    <span>* Verifique que sus datos esten escritos correctamenrte.</span>
+
+                                                                </div>
+
+                                                                <div class="row mt-3">
                                                                     <div class="col-md-12">
 
                                                                         <ul style="list-style-type: none;">
@@ -190,9 +205,12 @@ echo $header;
                                                                                 <p>5. Nivel de los expositores.</p>
                                                                                 <table class="table">
                                                                                     <tr>
-                                                                                        <td>DIAZ LOPEZ ELSA</td>
                                                                                         <td>
-                                                                                            <div class="row mt-4 d-flex justify-content-center text-center">
+                                                                                            <img src="/assets/images/dr_musa/dra (3).png" alt="" class="photo">
+                                                                                            DIAZ LOPEZ ELSA
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <div class="row mt-4 d-flex justify-content-around text-center">
                                                                                                 <div class="col-sm-1 ">
                                                                                                     <input type="radio" class="btn-check btn-face-green" id="btncheck20" name="group6" value="3">
                                                                                                     <label class="color-face-green btn btn-lg btn-outline-secondary border-2 px-2 py-2" for="btncheck20">
@@ -227,9 +245,12 @@ echo $header;
                                                                                     </tr>
 
                                                                                     <tr>
-                                                                                        <td>BARRIOS MARTINEZ DAVID</td>
                                                                                         <td>
-                                                                                            <div class="row mt-4 d-flex justify-content-center text-center">
+                                                                                            <img src="/assets/images/dr_musa/dr (3).png" alt="" class="photo">
+                                                                                            BARRIOS MARTINEZ DAVID
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <div class="row mt-4 d-flex justify-content-around text-center">
                                                                                                 <div class="col-sm-1 ">
                                                                                                     <input type="radio" class="btn-check btn-face-green" id="btncheck24" name="group7" value="3">
                                                                                                     <label class="color-face-green btn btn-lg btn-outline-secondary border-2 px-2 py-2" for="btncheck24">
@@ -264,9 +285,12 @@ echo $header;
                                                                                     </tr>
 
                                                                                     <tr>
-                                                                                        <td>GALLO GABRIEL</td>
                                                                                         <td>
-                                                                                            <div class="row mt-4 d-flex justify-content-center text-center">
+                                                                                            <img src="/assets/images/dr_musa/dr (4).png" alt="" class="photo">
+                                                                                            GALLO GABRIEL
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <div class="row mt-4 d-flex justify-content-around text-center">
                                                                                                 <div class="col-sm-1 ">
                                                                                                     <input type="radio" class="btn-check btn-face-green" id="btncheck28" name="group8" value="3">
                                                                                                     <label class="color-face-green btn btn-lg btn-outline-secondary border-2 px-2 py-2" for="btncheck28">
@@ -301,9 +325,12 @@ echo $header;
                                                                                     </tr>
 
                                                                                     <tr>
-                                                                                        <td>VELEZ GONZALEZ JUAN</td>
                                                                                         <td>
-                                                                                            <div class="row mt-4 d-flex justify-content-center text-center">
+                                                                                            <img src="/assets/images/dr_musa/dr (7).png" alt="" class="photo">
+                                                                                            VÉLEZ GONZALEZ JUAN
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <div class="row mt-4 d-flex justify-content-around text-center">
                                                                                                 <div class="col-sm-1 ">
                                                                                                     <input type="radio" class="btn-check btn-face-green" id="btncheck32" name="group9" value="3">
                                                                                                     <label class="color-face-green btn btn-lg btn-outline-secondary border-2 px-2 py-2" for="btncheck32">
@@ -338,9 +365,12 @@ echo $header;
                                                                                     </tr>
 
                                                                                     <tr>
-                                                                                        <td>TIRAN JOSE</td>
                                                                                         <td>
-                                                                                            <div class="row mt-4 d-flex justify-content-center text-center">
+                                                                                            <img src="/assets/images/dr_musa/dr (6).png" alt="" class="photo">
+                                                                                            TIRÁN JOSÉ
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <div class="row mt-4 d-flex justify-content-around text-center">
                                                                                                 <div class="col-sm-1 ">
                                                                                                     <input type="radio" class="btn-check btn-face-green" id="btncheck36" name="group10" value="3">
                                                                                                     <label class="color-face-green btn btn-lg btn-outline-secondary border-2 px-2 py-2" for="btncheck36">
@@ -375,9 +405,12 @@ echo $header;
                                                                                     </tr>
 
                                                                                     <tr>
-                                                                                        <td>CORTES EDNA</td>
                                                                                         <td>
-                                                                                            <div class="row mt-4 d-flex justify-content-center text-center">
+                                                                                            <img src="/assets/images/dr_musa/dra (2).png" alt="" class="photo">
+                                                                                            CORTÉS EDNA
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <div class="row mt-4 d-flex justify-content-around text-center">
                                                                                                 <div class="col-sm-1 ">
                                                                                                     <input type="radio" class="btn-check btn-face-green" id="btncheck40" name="group11" value="3">
                                                                                                     <label class="color-face-green btn btn-lg btn-outline-secondary border-2 px-2 py-2" for="btncheck40">
@@ -412,9 +445,12 @@ echo $header;
                                                                                     </tr>
 
                                                                                     <tr>
-                                                                                        <td>MIRASSOU MANUEL</td>
                                                                                         <td>
-                                                                                            <div class="row mt-4 d-flex justify-content-center text-center">
+                                                                                            <img src="/assets/images/dr_musa/dr (8).png" alt="" class="photo">
+                                                                                            MIRASSOU MANUEL
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <div class="row mt-4 d-flex justify-content-around text-center">
                                                                                                 <div class="col-sm-1 ">
                                                                                                     <input type="radio" class="btn-check btn-face-green" id="btncheck44" name="group12" value="3">
                                                                                                     <label class="color-face-green btn btn-lg btn-outline-secondary border-2 px-2 py-2" for="btncheck44">
@@ -449,9 +485,12 @@ echo $header;
                                                                                     </tr>
 
                                                                                     <tr>
-                                                                                        <td>VELASCO CESAR</td>
                                                                                         <td>
-                                                                                            <div class="row mt-4 d-flex justify-content-center text-center">
+                                                                                            <img src="/assets/images/dr_musa/dr (2).png" alt="" class="photo">
+                                                                                            VELASCO CÉSAR
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <div class="row mt-4 d-flex justify-content-around text-center">
                                                                                                 <div class="col-sm-1 ">
                                                                                                     <input type="radio" class="btn-check btn-face-green" id="btncheck48" name="group13" value="3">
                                                                                                     <label class="color-face-green btn btn-lg btn-outline-secondary border-2 px-2 py-2" for="btncheck48">
@@ -486,9 +525,12 @@ echo $header;
                                                                                     </tr>
 
                                                                                     <tr>
-                                                                                        <td>MERCADO VICTOR</td>
                                                                                         <td>
-                                                                                            <div class="row mt-4 d-flex justify-content-center text-center">
+                                                                                            <img src="/assets/images/dr_musa/dr (9).png" alt="" class="photo">
+                                                                                            MERCADO VÍCTOR
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <div class="row mt-4 d-flex justify-content-around text-center">
                                                                                                 <div class="col-sm-1 ">
                                                                                                     <input type="radio" class="btn-check btn-face-green" id="btncheck52" name="group14" value="3">
                                                                                                     <label class="color-face-green btn btn-lg btn-outline-secondary border-2 px-2 py-2" for="btncheck52">
@@ -522,11 +564,14 @@ echo $header;
                                                                                         </td>
                                                                                     </tr>
 
-                                                                                    
+
                                                                                     <tr>
-                                                                                        <td>CULEBRO ENRIQUE</td>
                                                                                         <td>
-                                                                                            <div class="row mt-4 d-flex justify-content-center text-center">
+                                                                                            <img src="/assets/images/dr_musa/dr (10).png" alt="" class="photo">
+                                                                                            CULEBRO ENRIQUE
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <div class="row mt-4 d-flex justify-content-around text-center">
                                                                                                 <div class="col-sm-1 ">
                                                                                                     <input type="radio" class="btn-check btn-face-green" id="btncheck56" name="group15" value="3">
                                                                                                     <label class="color-face-green btn btn-lg btn-outline-secondary border-2 px-2 py-2" for="btncheck56">
@@ -561,9 +606,12 @@ echo $header;
                                                                                     </tr>
 
                                                                                     <tr>
-                                                                                        <td>VILLALOBOS ALEJANDRO</td>
                                                                                         <td>
-                                                                                            <div class="row mt-4 d-flex justify-content-center text-center">
+                                                                                            <img src="/assets/images/dr_musa/dr (1).png" alt="" class="photo">
+                                                                                            VILLALOBOS ALEJANDRO
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <div class="row mt-4 d-flex justify-content-around text-center">
                                                                                                 <div class="col-sm-1 ">
                                                                                                     <input type="radio" class="btn-check btn-face-green" id="btncheck60" name="group16" value="3">
                                                                                                     <label class="color-face-green btn btn-lg btn-outline-secondary border-2 px-2 py-2" for="btncheck60">
@@ -598,9 +646,12 @@ echo $header;
                                                                                     </tr>
 
                                                                                     <tr>
-                                                                                        <td>NEYRO BILBAO JOSE LUIS</td>
                                                                                         <td>
-                                                                                            <div class="row mt-4 d-flex justify-content-center text-center">
+                                                                                            <img src="/assets/images/dr_musa/dr (5).png" alt="" class="photo">
+                                                                                            NEYRO BILBAO JOSÉ LUIS
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <div class="row mt-4 d-flex justify-content-around text-center">
                                                                                                 <div class="col-sm-1 ">
                                                                                                     <input type="radio" class="btn-check btn-face-green" id="btncheck64" name="group17" value="3">
                                                                                                     <label class="color-face-green btn btn-lg btn-outline-secondary border-2 px-2 py-2" for="btncheck64">
@@ -635,9 +686,12 @@ echo $header;
                                                                                     </tr>
 
                                                                                     <tr>
-                                                                                        <td>RENCORET DEL VALLE CARLOS</td>
                                                                                         <td>
-                                                                                            <div class="row mt-4 d-flex justify-content-center text-center">
+                                                                                            <img src="/assets/images/dr_musa/dr.png" alt="" class="photo">
+                                                                                            RENCORET DEL VALLE CARLOS
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <div class="row mt-4 d-flex justify-content-around text-center">
                                                                                                 <div class="col-sm-1 ">
                                                                                                     <input type="radio" class="btn-check btn-face-green" id="btncheck68" name="group18" value="3">
                                                                                                     <label class="color-face-green btn btn-lg btn-outline-secondary border-2 px-2 py-2" for="btncheck68">
@@ -672,9 +726,12 @@ echo $header;
                                                                                     </tr>
 
                                                                                     <tr>
-                                                                                        <td>ZANCHETTA MARIA BELEN</td>
                                                                                         <td>
-                                                                                            <div class="row mt-4 d-flex justify-content-center text-center">
+                                                                                            <img src="/assets/images/dr_musa/dra (1).png" alt="" class="photo">
+                                                                                            ZANCHETTA MARÍA BELÉN
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <div class="row mt-4 d-flex justify-content-around text-center">
                                                                                                 <div class="col-sm-1 ">
                                                                                                     <input type="radio" class="btn-check btn-face-green" id="btncheck72" name="group19" value="3">
                                                                                                     <label class="color-face-green btn btn-lg btn-outline-secondary border-2 px-2 py-2" for="btncheck72">
@@ -709,9 +766,12 @@ echo $header;
                                                                                     </tr>
 
                                                                                     <tr>
-                                                                                        <td>DUARTE DE LATERZA MARGARITA</td>
                                                                                         <td>
-                                                                                            <div class="row mt-4 d-flex justify-content-center text-center">
+                                                                                            <img src="/assets/images/dr_musa/dra (4).png" alt="" class="photo">
+                                                                                            DUARTE DE LATERZA MARGARITA
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <div class="row mt-4 d-flex justify-content-around text-center">
                                                                                                 <div class="col-sm-1 ">
                                                                                                     <input type="radio" class="btn-check btn-face-green" id="btncheck76" name="group20" value="3">
                                                                                                     <label class="color-face-green btn btn-lg btn-outline-secondary border-2 px-2 py-2" for="btncheck76">
@@ -789,28 +849,28 @@ echo $header;
                                                                                     <div class="col-sm-1 ">
                                                                                         <input type="checkbox" class="btn-check btn-face-" id="btncheck144" name="group37[]" value="3">
                                                                                         <label class="btn btn-lg btn-outline-secondary border-2 px-2 py-2" for="btncheck144">
-                                                                                        Hormonas, salud sexual y emotiva: el arte de prescribir 
+                                                                                            Hormonas, salud sexual y emotiva: el arte de prescribir
                                                                                         </label>
                                                                                         <h6></h6>
                                                                                     </div>
                                                                                     <div class="col-sm-1 ">
                                                                                         <input type="checkbox" class="btn-check btn-face-" id="btncheck145" name="group37[]" value="2">
                                                                                         <label class="btn btn-lg btn-outline-secondary border-2 px-2 py-2" for="btncheck145">
-                                                                                        Infecciones genitourinarias 
+                                                                                            Infecciones genitourinarias
                                                                                         </label>
                                                                                         <h6></h6>
                                                                                     </div>
                                                                                     <div class="col-sm-1 ">
                                                                                         <input type="checkbox" class="btn-check btn-face-" id="btncheck146" name="group37[]" value="1">
                                                                                         <label class="btn btn-lg btn-outline-secondary border-2 px-2 py-2" for="btncheck146">
-                                                                                        Climaterio 
+                                                                                            Climaterio
                                                                                         </label>
                                                                                         <h6></h6>
                                                                                     </div>
                                                                                     <div class="col-sm-1 ">
                                                                                         <input type="checkbox" class="btn-check btn-face-" id="btncheck147" name="group37[]" value="0">
                                                                                         <label class="btn btn-lg btn-outline-secondary border-2 px-2 py-2" for="btncheck147">
-                                                                                        Una hormona vital
+                                                                                            Una hormona vital
                                                                                         </label>
                                                                                         <h6></h6>
                                                                                     </div>
@@ -819,12 +879,12 @@ echo $header;
                                                                             </li>
 
                                                                             <li>
-                                                                                <p>8.	Considera que hubo temas importantes que quedaron fuera de la agenda</p>
+                                                                                <p>8. Considera que hubo temas importantes que quedaron fuera de la agenda</p>
                                                                                 <div class="row mt-4 d-flex justify-content-center text-center">
                                                                                     <div class="col-sm-1 ">
                                                                                         <input type="radio" class="btn-check btn-face-" id="btncheck148" name="group38" value="si">
                                                                                         <label class="btn btn-lg btn-outline-secondary border-2 px-2 py-2" for="btncheck148">
-                                                                                           SI
+                                                                                            SI
                                                                                         </label>
                                                                                         <h6></h6>
                                                                                     </div>
@@ -834,14 +894,14 @@ echo $header;
                                                                                             NO
                                                                                         </label>
                                                                                         <h6></h6>
-                                                                                    </div>                                                                                  
+                                                                                    </div>
 
                                                                                 </div>
 
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
-                                                                                    <label>
-                                                                                            Cuales 
+                                                                                        <label>
+                                                                                            Cuales
                                                                                         </label>
                                                                                         <textarea name="txt_preg_8" id="txt_preg_8" class="form-control"></textarea>
                                                                                     </div>
@@ -849,12 +909,12 @@ echo $header;
                                                                             </li>
 
                                                                             <li>
-                                                                                <p>9.	Desde el punto de vista científico, volvería a participar de un foro de ginecología – latam?</p>
+                                                                                <p>9. Desde el punto de vista científico, volvería a participar de un foro de ginecología – latam?</p>
                                                                                 <div class="row mt-4 d-flex justify-content-center text-center">
-                                                                                <div class="col-sm-1 ">
+                                                                                    <div class="col-sm-1 ">
                                                                                         <input type="radio" class="btn-check btn-face-" id="btncheck150" name="group39" value="si">
                                                                                         <label class="btn btn-lg btn-outline-secondary border-2 px-2 py-2" for="btncheck150">
-                                                                                           SI
+                                                                                            SI
                                                                                         </label>
                                                                                         <h6></h6>
                                                                                     </div>
@@ -864,18 +924,18 @@ echo $header;
                                                                                             NO
                                                                                         </label>
                                                                                         <h6></h6>
-                                                                                    </div> 
+                                                                                    </div>
 
                                                                                 </div>
                                                                             </li>
 
                                                                             <li>
-                                                                                <p>10.	Desea agregar algún comentario adicional.</p>
-                                                                                                      
+                                                                                <p>10. Desea agregar algún comentario adicional.</p>
+
 
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
-                                                                                    
+
                                                                                         <textarea name="txt_preg_10" id="txt_preg_10" class="form-control"></textarea>
                                                                                     </div>
                                                                                 </div>
@@ -883,11 +943,11 @@ echo $header;
 
 
                                                                             <li>
-                                                                               <div class="row mt-3">
-                                                                                   <div class="col-md-6 m-auto">
+                                                                                <div class="row mt-3">
+                                                                                    <div class="col-md-6 m-auto">
                                                                                         <button class="btn btn-secondary">Enviar respuestas y descargar constancia</button>
-                                                                                   </div>
-                                                                               </div>
+                                                                                    </div>
+                                                                                </div>
                                                                             </li>
 
 
