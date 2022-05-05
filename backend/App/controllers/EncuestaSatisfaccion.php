@@ -208,24 +208,33 @@ html;
 
             if($id >= 1){
                 $user = EncuestasDao::getUserEncuesta($email)[0];
-                $nombre_completo = $user['nombre']." ".$user['segundo_nombre']." ".$user['apellido_paterno']." ".$user['apellido_materno'];
-                $data_pdf = [
-                    "nombre"  => $nombre_completo,
-                    "email" => $email,
-                    "clave" => $user['clave']
-                    
-                ];
-                $this->generarPDF($data_pdf);
-                $datos = [
-                    "status" => "success",
-                    "msg" => "Sus datos se han cargado correctamente",
-                    "clave" =>  $user['clave']
-                ];
+                if($user){
+                    $nombre_completo = $user['nombre']." ".$user['segundo_nombre']." ".$user['apellido_paterno']." ".$user['apellido_materno'];
+                    $data_pdf = [
+                        "nombre"  => $nombre_completo,
+                        "email" => $email,
+                        "clave" => $user['clave']
+                        
+                    ];
+                    $this->generarPDF($data_pdf);
+                    $datos = [
+                        "status" => "success",
+                        "msg" => "Sus datos se han cargado correctamente",
+                        "clave" =>  $user['clave']                    
+                    ];
+                } else{
+                    $datos = [
+                        "status" => "success_2",
+                        "msg" => "Sus datos se han cargado correctamente",
+                        "msg2" => "Recuerda que la constancia solo sera liberada para aquellas personas que cuentan con el 70% de asistencia al evento."
+                                           
+                    ];
+                }               
                 
             }else{
                 $datos = [
                     "status" => "error",
-                    "msg" => "Hubo un error al guardar la información"
+                    "msg" => "Hubo un error al guardar la información",                    
                 ];
             }
         }  

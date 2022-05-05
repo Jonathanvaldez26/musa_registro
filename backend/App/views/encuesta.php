@@ -946,9 +946,9 @@ echo $header;
                                                                             <li>
                                                                                 <div class="row mt-3">
                                                                                     <div class="col-md-6 m-auto">
-                                                                                        <button class="btn btn-secondary" id="btnEnviar">Enviar respuestas y descargar constancia</button>
-                                                                                        <!-- <button id="btn_prueba">Prueba</button>
-                                                                                        <a href="" id="btn_download_pdf">descargar</a> -->
+                                                                                        <button class="btn btn-secondary" id="btnEnviar" >Enviar respuestas y descargar constancia</button>
+                                                                                        
+                                                                                        <a href="" id="btn_download_pdf" style="display: none;">descargar</a>
                                                                                     </div>
                                                                                 </div>
                                                                             </li>
@@ -1034,19 +1034,26 @@ echo $header;
                         console.log("Procesando....");
                     },
                     success: function(respuesta) {
-                        if (respuesta == 'success') {
-
-                            $("#btn_download_pdf").attr("href", '../PDF/'+respuesta.clave); 
-                            $("#btn_download_pdf").attr("download","");
-                            $("#btn_download_pdf")[0].click();
+                        if (respuesta.status == 'success') {
 
                             Swal.fire(respuesta.msg, "", respuesta.status).
-                                then((value) => {                            
+                                then((value) => {       
+                                                      
                                 // window.location.replace("/Vuelos/");
                             });
+                            $("#btn_download_pdf").attr("href", '../PDF/'+respuesta.clave+'.pdf'); 
+                            $("#btn_download_pdf").attr("download","");
+                            $("#btn_download_pdf")[0].click();
                         
                         
-                        }else{
+                        }else if(respuesta.status == 'success_2'){
+                            Swal.fire(respuesta.msg, respuesta.msg2, 'success').
+                                then((value) => {       
+                                                      
+                                // window.location.replace("/Vuelos/");
+                            });
+                        }
+                        else{
 
                             Swal.fire(respuesta.msg, "", respuesta.status).
                                 then((value) => {

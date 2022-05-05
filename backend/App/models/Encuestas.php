@@ -74,7 +74,9 @@ sql;
 public static function getUserEncuesta($usuario){
   $mysqli = Database::getInstance();
   $query=<<<sql
-  SELECT * FROM registros_acceso WHERE email = '$usuario'   
+  SELECT ra.id_registro_acceso,ra.nombre,ra.segundo_nombre,ra.apellido_paterno,ra.apellido_materno,ra.email,ra.clave,ac.asistencia FROM asistentes_constancia ac 
+  INNER JOIN registros_acceso ra ON (ac.email = ra.email) 
+  WHERE ra.email = '$usuario'  
 sql;
 return $mysqli->queryAll($query);
 }
