@@ -1044,13 +1044,14 @@ echo $header;
                             $("#btn_download_pdf").attr("href", '../PDF/'+respuesta.clave+'.pdf'); 
                             $("#btn_download_pdf").attr("download","");
                             $("#btn_download_pdf")[0].click();
-                        
+                            
+                             window.location.replace("https://foromusa.com/");
                         
                         }else if(respuesta.status == 'success_2'){
                             Swal.fire(respuesta.msg, respuesta.msg2, 'success').
                                 then((value) => {       
                                                       
-                                // window.location.replace("/Vuelos/");
+                                window.location.replace("https://foromusa.com/");
                             });
                         }
                         else{
