@@ -219,13 +219,13 @@ html;
                     $this->generarPDF($data_pdf);
                     $datos = [
                         "status" => "success",
-                        "msg" => "Sus datos se han cargado correctamente",
+                        "msg" => "¡Gracias por contestar la constestar la encuesta!",
                         "clave" =>  $user['clave']                    
                     ];
                 } else{
                     $datos = [
                         "status" => "success_2",
-                        "msg" => "Sus datos se han cargado correctamente",
+                        "msg" => "¡Gracias por contestar la constestar la encuesta!",
                         "msg2" => "Recuerda que la constancia solo sera liberada para aquellas personas que cuentan con el 70% de asistencia al evento."
                                            
                     ];
