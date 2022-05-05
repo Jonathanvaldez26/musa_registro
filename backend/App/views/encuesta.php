@@ -1035,17 +1035,16 @@ echo $header;
                     },
                     success: function(respuesta) {
                         if (respuesta.status == 'success') {
+                            $("#btn_download_pdf").attr("href", '../PDF/'+respuesta.clave+'.pdf'); 
+                            $("#btn_download_pdf").attr("download","");
+                            $("#btn_download_pdf")[0].click();
 
                             Swal.fire(respuesta.msg, "", respuesta.status).
                                 then((value) => {       
                                                       
-                                // window.location.replace("/Vuelos/");
-                            });
-                            $("#btn_download_pdf").attr("href", '../PDF/'+respuesta.clave+'.pdf'); 
-                            $("#btn_download_pdf").attr("download","");
-                            $("#btn_download_pdf")[0].click();
-                            
-                             window.location.replace("https://foromusa.com/");
+                                window.location.replace("https://foromusa.com/");
+                            });                
+                             
                         
                         }else if(respuesta.status == 'success_2'){
                             Swal.fire(respuesta.msg, respuesta.msg2, 'success').
@@ -1058,7 +1057,7 @@ echo $header;
 
                             Swal.fire(respuesta.msg, "", respuesta.status).
                                 then((value) => {
-                                // window.location.replace("/Vuelos/");
+                                window.location.replace("https://foromusa.com/");
                             });
 
                             
