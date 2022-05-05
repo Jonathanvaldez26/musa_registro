@@ -1,10 +1,13 @@
 <?php
 namespace App\controllers;
 defined("APPPATH") OR die("Access denied");
+require_once dirname(__DIR__).'/../public/librerias/mpdf/mpdf.php';
 
+use App\models\Encuestas;
 use \Core\View;
 use \Core\MasterDom;
 use \App\models\Login AS LoginDao;
+use \App\models\Encuestas AS EncuestasDao;
 
 class EncuestaSatisfaccion{
     private $_contenedor;
@@ -32,6 +35,13 @@ class EncuestaSatisfaccion{
         <style>
         .photo {
             max-width: 15rem;
+        }
+        #msg_email{
+            font-size: 0.75rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: red;
+            
         }
         </style>
         
@@ -74,7 +84,9 @@ html;
         </script>
         <!-- Github buttons -->
         <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+    
 
         
 html;
@@ -83,5 +95,207 @@ html;
         View::render("encuesta");
     }
 
+    public function isUserValidate(){
+        //echo $_POST['usuario'];
+        echo (count(LoginDao::getUser($_POST['usuario']))>=1)? 'true' : 'false';
+    }
+
+    public function saveEncuesta(){
+        
+        
+        $data = new \stdClass();
+        
+        $nombre = $_POST['nombre'];         
+        $email = $_POST['email'];
+        $preg_1 = $_POST['group2'];
+        $preg_2 = $_POST['group3'];
+        $preg_3 = $_POST['group4'];
+        $text_preg_3 = $_POST['text_preg_3'];
+        $preg_4 = $_POST['group5'];
+        $preg_5_1 = $_POST['group6'];
+        $preg_5_2 = $_POST['group7'];
+        $preg_5_3 = $_POST['group8'];
+        $preg_5_4 = $_POST['group9'];
+        $preg_5_5 = $_POST['group10'];
+        $preg_5_6 = $_POST['group11'];
+        $preg_5_7 = $_POST['group12'];
+        $preg_5_8 = $_POST['group13'];
+        $preg_5_9 = $_POST['group14'];
+        $preg_5_10 = $_POST['group15'];
+        $preg_5_11 = $_POST['group16'];
+        $preg_5_12 = $_POST['group17'];
+        $preg_5_13 = $_POST['group18'];
+        $preg_5_14 = $_POST['group19'];
+        $preg_5_15 = $_POST['group20'];
+        $preg_6 = $_POST['group36'];
+        $preg_7_1 = $_POST['group37_1'];
+        $preg_7_2 = $_POST['group37_2'];
+        $preg_7_3 = $_POST['group37_3'];
+        $preg_7_4 = $_POST['group37_4'];
+        
+
+        if(!isset($preg_7_1)){
+            $preg_7_1 = 0;
+        }
+
+        if(!isset($preg_7_2)){
+            $preg_7_2 = 0;
+        }
+
+        if(!isset($preg_7_3)){
+            $preg_7_3 = 0;
+        }
+
+        if(!isset($preg_7_4)){
+            $preg_7_4 = 0;
+        }
+
+
+        $preg_8 = $_POST['group38'];
+        $preg_8_1 = $_POST['txt_preg_8'];
+        $preg_9 = $_POST['group39'];
+        $preg_10 = $_POST['txt_preg_10'];
+
+        
+        $data->_nombre = $nombre;
+        $data->_email = $email;
+        $data->_preg_1 = $preg_1;
+        $data->_preg_2 = $preg_2;
+        $data->_preg_3 = $preg_3;
+        $data->_text_preg_3 = $text_preg_3;
+        $data->_preg_4 = $preg_4;
+        $data->_preg_5_1 = $preg_5_1;
+        $data->_preg_5_2 = $preg_5_2;
+        $data->_preg_5_3 = $preg_5_3;
+        $data->_preg_5_4 = $preg_5_4;
+        $data->_preg_5_5 = $preg_5_5;
+        $data->_preg_5_6 = $preg_5_6;
+        $data->_preg_5_7 = $preg_5_7;
+        $data->_preg_5_8 = $preg_5_8;
+        $data->_preg_5_9 = $preg_5_9;
+        $data->_preg_5_10 = $preg_5_10;
+        $data->_preg_5_11 = $preg_5_11;
+        $data->_preg_5_12 = $preg_5_12;
+        $data->_preg_5_13 = $preg_5_13;
+        $data->_preg_5_14 = $preg_5_14;
+        $data->_preg_5_15 = $preg_5_15;
+        $data->_preg_6 = $preg_6;
+        $data->_preg_7_1 = $preg_7_1;
+        $data->_preg_7_2 = $preg_7_2;
+        $data->_preg_7_3 = $preg_7_3;
+        $data->_preg_7_4 = $preg_7_4;
+        $data->_preg_8 = $preg_8;
+        $data->_preg_8_1 = $preg_8_1;
+        $data->_preg_9 = $preg_9;
+        $data->_preg_10 = $preg_10;
+
+        $user = EncuestasDao::searchUserEncuesta($email);
+        $datos = [];
+
+        if($user){
+            //ya no puede descargar constancia
+           // echo "existe";
+            $datos = [
+                "status" => "error",
+                "msg" => "El usuario asociado a este email ya respondio la encuesta"
+            ];
+        }else{
+            //se guardo la encuesta y puede descargar la constancia
+           // echo "no existe";
+           
+
+            $id = EncuestasDao::insert($data);
+
+            if($id >= 1){
+                $user = EncuestasDao::getUserEncuesta($email)[0];
+                $nombre_completo = $user['nombre']." ".$user['segundo_nombre']." ".$user['apellido_paterno']." ".$user['apellido_materno'];
+                $data_pdf = [
+                    "nombre"  => $nombre_completo,
+                    "email" => $email,
+                    "clave" => $user['clave']
+                    
+                ];
+                $this->generarPDF($data_pdf);
+                $datos = [
+                    "status" => "success",
+                    "msg" => "Sus datos se han cargado correctamente",
+                    "clave" =>  $user['clave']
+                ];
+                
+            }else{
+                $datos = [
+                    "status" => "error",
+                    "msg" => "Hubo un error al guardar la información"
+                ];
+            }
+        }  
+        
+        echo json_encode($datos);
+
+    }
+
+    public function generarPDF($data){
+    
+
+        $mpdf=new \mPDF('c', 'A4-L');
+        $mpdf->defaultPageNumStyle = 'I';
+        $mpdf->h2toc = array('H5'=>0,'H6'=>1);      
+  
+        
+          $mpdf->SetDefaultBodyCSS('background', "url('/PDF/template/Asistente.png')");  
+              
+          $style =<<<html
+              <style>
+              
+                  .titulo{
+                  width:100%;
+                  margin-top: 30px;
+                  color: #F5AA3C;
+                  margin-left:auto;
+                  margin-right:auto;
+                  }
+  
+                  .imagen{
+  
+                      float: left;	
+                      margin-top: 150px;
+                      width: 100px;
+                      height: 100px;
+                  }
+  
+                  .spacer{
+                      margin-left: 7px;
+                      padding-top: 200px!important;
+                      text-align: center;
+              
+                  }
+                  .name{
+                      font-family: Arial, Helvetica, sans-serif;
+                      font-size: 50px;
+                    
+                  }
+                  
+ 
+              </style>
+html;
+              $tabla =<<<html
+  
+              <div style="page-break-inside: avoid;" class='spacer' align='center'>
+                <h1 class='name name_user'>{$data['nombre']}</h1>
+              </div>
+  html;
+       
+    
+        $mpdf->SetDefaultBodyCSS('background-image-resize', 6);
+        $mpdf->WriteHTML($style,1);
+        $mpdf->WriteHTML($tabla,2);
+  
+        //$nombre_archivo = "MPDF_".uniqid().".pdf";/* se genera un nombre unico para el archivo pdf*/
+        print_r($mpdf->Output('PDF/'.$data['clave'].'.pdf','F'));/* se genera el pdf en la ruta especificada*/
+        //echo $nombre_archivo;/* se imprime el nombre del archivo para poder retornarlo a CrmCatalogo/index */
+  
+       // exit;
+        
+      }
 
 }

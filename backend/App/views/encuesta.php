@@ -17,7 +17,7 @@ echo $header;
                                             <!--form panels-->
                                             <div class="row">
                                                 <div class="col-12 col-lg-12 m-auto">
-                                                    <form class="multisteps-form__form" id="add" action="/Registro/Success" method="POST" style="height: 403px;">
+                                                    <form class="multisteps-form__form" id="form_encuesta" method="POST" action="/EncuestaSatisfaccion/saveEncuesta" style="height: 403px;">
                                                         <div id="card_three" class="card multisteps-form__panel p-1 border-radius-xl bg-white js-active" data-animation="FadeIn">
 
 
@@ -42,6 +42,7 @@ echo $header;
                                                                     <div class="col-md-6">
                                                                         <label for="nombre">Correo :</label>
                                                                         <input type="email" id="email" name="email" class="form-control" placeholder="Escriba su email" required>
+                                                                        <span id="msg_email"></span>
                                                                     </div>
                                                                     <span>* Verifique que sus datos esten escritos correctamenrte.</span>
 
@@ -847,28 +848,28 @@ echo $header;
                                                                                 <p>7. Seleccione cuáles fueron los temas de mayor interés para su práctica diaria (seleccionar hasta 3):</p>
                                                                                 <div class="row mt-4 d-flex justify-content-evenly text-center">
                                                                                     <div class="col-sm-1 ">
-                                                                                        <input type="checkbox" class="btn-check btn-face-" id="btncheck144" name="group37[]" value="3">
+                                                                                        <input type="checkbox" class="btn-check btn-face-" id="btncheck144" name="group37_1" value="3">
                                                                                         <label class="btn btn-lg btn-outline-secondary border-2 px-2 py-2" for="btncheck144">
                                                                                             Hormonas, salud sexual y emotiva: el arte de prescribir
                                                                                         </label>
                                                                                         <h6></h6>
                                                                                     </div>
                                                                                     <div class="col-sm-1 ">
-                                                                                        <input type="checkbox" class="btn-check btn-face-" id="btncheck145" name="group37[]" value="2">
+                                                                                        <input type="checkbox" class="btn-check btn-face-" id="btncheck145" name="group37_2" value="2">
                                                                                         <label class="btn btn-lg btn-outline-secondary border-2 px-2 py-2" for="btncheck145">
                                                                                             Infecciones genitourinarias
                                                                                         </label>
                                                                                         <h6></h6>
                                                                                     </div>
                                                                                     <div class="col-sm-1 ">
-                                                                                        <input type="checkbox" class="btn-check btn-face-" id="btncheck146" name="group37[]" value="1">
+                                                                                        <input type="checkbox" class="btn-check btn-face-" id="btncheck146" name="group37_3" value="1">
                                                                                         <label class="btn btn-lg btn-outline-secondary border-2 px-2 py-2" for="btncheck146">
                                                                                             Climaterio
                                                                                         </label>
                                                                                         <h6></h6>
                                                                                     </div>
                                                                                     <div class="col-sm-1 ">
-                                                                                        <input type="checkbox" class="btn-check btn-face-" id="btncheck147" name="group37[]" value="0">
+                                                                                        <input type="checkbox" class="btn-check btn-face-" id="btncheck147" name="group37_4" value="0">
                                                                                         <label class="btn btn-lg btn-outline-secondary border-2 px-2 py-2" for="btncheck147">
                                                                                             Una hormona vital
                                                                                         </label>
@@ -945,7 +946,9 @@ echo $header;
                                                                             <li>
                                                                                 <div class="row mt-3">
                                                                                     <div class="col-md-6 m-auto">
-                                                                                        <button class="btn btn-secondary">Enviar respuestas y descargar constancia</button>
+                                                                                        <button class="btn btn-secondary" id="btnEnviar">Enviar respuestas y descargar constancia</button>
+                                                                                        <!-- <button id="btn_prueba">Prueba</button>
+                                                                                        <a href="" id="btn_download_pdf">descargar</a> -->
                                                                                     </div>
                                                                                 </div>
                                                                             </li>
@@ -975,6 +978,92 @@ echo $header;
         </div>
     </main>
 
+    
+
 </body>
 
+
+
 <?php echo $footer; ?>
+<script>
+        $(document).ready(function(){
+
+            $("#email").on("blur",function(){
+                
+                var usuario = $(this).val();
+                console.log(usuario);
+                $.ajax({
+                    type:"POST",
+                    // async: false,
+                    url: "/EncuestaSatisfaccion/isUserValidate",
+                    data: {usuario},
+                    success: function(data) {
+                        console.log(data);
+                        if(data=="true"){
+                            $('#btnEnviar').attr("disabled", false);
+                            $('#msg_email').html('');
+                            response = true;
+                        }else{
+                            $('#btnEnviar').attr("disabled", true);
+                            $('#msg_email').html('Este email no fue registrado en Foro Mujer Salud Musa 2022');
+                        }
+                    }
+                });
+            });
+
+            $("#btn_prueba").on("click", function(){
+                $("#btn_download_pdf").attr("href", '../PDF/vsMNShBOU5.pdf'); 
+                $("#btn_download_pdf").attr("download","");
+                $("#btn_download_pdf")[0].click();
+            });
+
+            $("#form_encuesta").on("submit", function(event){
+               event.preventDefault();
+                var formData = $(this).serialize();
+
+                // for (var value of formData.values()) {
+                //     console.log(value);
+                // }
+
+                $.ajax({
+                    url: "/EncuestaSatisfaccion/saveEncuesta",
+                    type: "POST",
+                    data: formData, 
+                    dataType: 'json',                
+                    beforeSend: function() {
+                        console.log("Procesando....");
+                    },
+                    success: function(respuesta) {
+                        if (respuesta == 'success') {
+
+                            $("#btn_download_pdf").attr("href", '../PDF/'+respuesta.clave); 
+                            $("#btn_download_pdf").attr("download","");
+                            $("#btn_download_pdf")[0].click();
+
+                            Swal.fire(respuesta.msg, "", respuesta.status).
+                                then((value) => {                            
+                                // window.location.replace("/Vuelos/");
+                            });
+                        
+                        
+                        }else{
+
+                            Swal.fire(respuesta.msg, "", respuesta.status).
+                                then((value) => {
+                                // window.location.replace("/Vuelos/");
+                            });
+
+                            
+                        }
+                       
+                        console.log(respuesta);
+                        console.log(respuesta.msg);
+                        console.log(respuesta.status);
+                    },
+                    error: function(respuesta) {
+                        console.log(respuesta);
+                    }
+                });                
+            });
+        });
+    </script> 
