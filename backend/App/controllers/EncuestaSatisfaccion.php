@@ -211,7 +211,7 @@ html;
                 if($user){
                     $nombre_completo = $user['nombre']." ".$user['segundo_nombre']." ".$user['apellido_paterno']." ".$user['apellido_materno'];
                     $data_pdf = [
-                        "nombre"  => $nombre_completo,
+                        "nombre"  => mb_strtoupper($nombre_completo),
                         "email" => $email,
                         "clave" => $user['clave']
                         
